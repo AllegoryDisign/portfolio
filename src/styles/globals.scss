@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'animate.css';
+
+$animationCoef: 2;
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+.container {
+  @apply xl:px-[12px] mx-auto my-0 w-full max-w-[1240px] px-[20px];
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animate-left {
+  animation: moveLeft calc($animationCoef * 40s) linear infinite;
+}
+
+.animate-right {
+  animation: moveRight calc($animationCoef * 40s) linear infinite;
+}
