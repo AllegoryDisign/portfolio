@@ -14,7 +14,7 @@ export function ContactSection() {
               the next level. If you have a project in mind, shoot me a message
               and I will get back to you shortly
             </p>
-            <a>\-</a>
+            <span>\-</span>
           </div>
         </div>
         <form className='relative mt-[60px] flex flex-col justify-between gap-[40px] sm:flex-row sm:items-end'>

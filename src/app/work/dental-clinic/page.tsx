@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 
@@ -7,11 +8,14 @@ export default function Page() {
     <>
       <Header />
       <main className='flex flex-col'>
-        <img
+        <Image
           className='w-full'
           src='/img/work/dental-clinic/main.png'
           alt=''
-          width='100%'
+          width={1920}
+          height={1080}
+          layout="responsive"
+          priority
         />
         <div className='flex w-full items-center justify-between bg-[#D8DEE4]'>
           <div className='container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[70px] lg:pb-[120px] lg:pt-[100px]'>

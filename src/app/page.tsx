@@ -15,8 +15,8 @@ export default function Home() {
               Web ui ux Web ui ux Web ui ux Web ui ux Web ui ux Web ui ux Web ui
               ux Web ui ux Web ui ux Web ui ux
             </div>
-            <div className='z-20 h-[600px] w-[583px] lg:h-[800px] lg:w-[777px]'>
-              <Image src='/img/portrait/photo_1.png' alt='' layout='fill' />
+            <div className='z-20 h-[600px] w-[600px] lg:h-[800px] lg:w-[800px]'>
+              <Image src='/img/portrait/photo_1.png' alt='' width={800} height={800} layout="responsive" priority  />
             </div>
 
             <div className='animate-right absolute -right-full bottom-[150px] z-20 whitespace-nowrap text-[160px] font-bold leading-[80%] text-white opacity-85 sm:text-[200px] md:bottom-[112px] lg:bottom-[152px] lg:text-[280px]'>
@@ -87,12 +87,12 @@ export default function Home() {
               </li>
             </ul>
 
-            <a
+            <Link
               href='/work'
               className='mx-auto mb-40 mt-[60px] flex h-[180px] w-[180px] items-center justify-center rounded-full border border-grayBorder bg-white text-lg font-medium text-blackText'
             >
               More work
-            </a>
+            </Link>
             <div
               className='relative hidden flex-col gap-5 pb-[calc(36%+20px)] md:flex'
               id='scroll-slider'

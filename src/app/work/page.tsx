@@ -80,7 +80,7 @@ export default function Work() {
       <main className='flex flex-col'>
         <section className='container pb-[50px] pt-[106px]'>
           <h1 className='relative text-[44px] font-bold uppercase leading-[120%] text-[#404040] sm:text-[52px] md:text-[90px] lg:text-[120px] xl:text-[150px]'>
-            <div>Creating next</div>
+            <div >Creating next</div>
             <div className='mt-[4px] flex justify-between sm:mt-[8px] sm:text-[52px] md:text-[90px] lg:text-[120px] xl:text-[150px]'>
               leveldigital
               <Svg
@@ -115,10 +115,10 @@ function WorkItem({ title, descr, date, href, img, bg }: WorkType) {
   return (
     <Link href={href} className='flex flex-col'>
       <div
-        className={'relative mb-[20px] w-full px-[20px] pb-[100%]' + ' ' + bg}
+        className={ 'group relative mb-[20px] w-full px-[20px] pb-[100%]' + ' ' + bg}
       >
         <img
-          className='absolute left-1/2 top-1/2 w-[calc(100%-40px)] -translate-x-1/2 -translate-y-1/2'
+          className='absolute left-1/2 top-1/2 w-[calc(100%-40px)] -translate-x-1/2 -translate-y-1/2 transition-all group-hover:w-[calc(100%-20px)]'
           src={img}
         />
       </div>

@@ -12,9 +12,9 @@ export default function About() {
             © Alina Gavrilovich
           </Link>
           <nav className='animate__animated animate__fadeIn flex items-center gap-11 text-white'>
-            <a href='/work'>Work</a>
-            <a href='/about'>About</a>
-            <a href='/contact'>Contact</a>
+            <Link href='/work'>Work</Link>
+            <Link href='/about'>About</Link>
+            <Link href='/contact'>Contact</Link>
           </nav>
         </header>
       </div>

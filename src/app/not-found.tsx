@@ -12,9 +12,9 @@ export default function Home() {
             © Alina Gavrilovich
           </Link>
           <nav className='animate__animated animate__fadeIn hidden items-center gap-11 text-blackText md:flex'>
-            <a href='/work'>Work</a>
-            <a href='/about'>About</a>
-            <a href='/contact'>Contact</a>
+            <Link href='/work'>Work</Link>
+            <Link href='/about'>About</Link>
+            <Link href='/contact'>Contact</Link>
           </nav>
         </header>
       </div>
@@ -97,12 +97,12 @@ export default function Home() {
               </li>
             </ul>
 
-            <a
+            <Link
               href='/work'
               className='mx-auto mb-40 mt-[60px] flex h-[180px] w-[180px] items-center justify-center rounded-full border border-grayBorder bg-white text-lg font-medium text-blackText'
             >
               More work
-            </a>
+            </Link>
             <div
               className='relative hidden flex-col gap-5 pb-[calc(36%+20px)] md:flex'
               id='scroll-slider'
