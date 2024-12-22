@@ -5,6 +5,20 @@ import { Header } from "@/components/Header";
 import MainTitleList from "@/components/MainTitleList";
 import { Svg } from "@/components/Svg";
 
+import MainBgImage from "../../../../public/img/work/tennis/main.jpg";
+import TableImage from "../../../../public/img/work/tennis/tablet.png";
+
+import Mob1Image from "../../../../public/img/work/tennis/mob1.png";
+import Mob2Image from "../../../../public/img/work/tennis/mob2.png";
+import Mob3Image from "../../../../public/img/work/tennis/mob3.png";
+
+import Tablet2Image from "../../../../public/img/work/tennis/tablet2.png";
+import Tablet3Image from "../../../../public/img/work/tennis/tablet3.png";
+
+import Mob5Image from "../../../../public/img/work/tennis/mob5.png";
+import Mob4Image from "../../../../public/img/work/tennis/mob4.png";
+
+import PreviewImage from "../../../../public/img/work/medical-dashboard/preview.png";
 export default function Page() {
   return (
     <>
@@ -36,47 +50,51 @@ export default function Page() {
         <section>
           <Image
             className=" h-[350px] sm:h-[800px] w-full object-cover"
-            src="/img/work/tennis/main.jpg"
-            alt=""
-            width={1920}
-            height={1080}
+            src={MainBgImage}
+            sizes="100vw"
+            layout="responsive"
+            quality={100}
             priority
+            alt=""
           />
         </section>
         <section className="bg-[#E2E2E2]">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[70px] lg:pb-[120px] lg:pt-[100px]">
             <Image
-              width={1216}
-              height={700}
+              sizes="100vw"
+              quality={100}
               layout="responsive"
-              src="/img/work/tennis/tablet.png"
+              src={TableImage}
               alt=""
             />
             <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px]">
               <Image
-                width={317}
-                height={626}
-                src="/img/work/tennis/mob1.png"
+                quality={100}
+                sizes="33vw"
+                src={Mob1Image}
+                layout="responsive"
                 alt=""
               />
               <Image
-                width={317}
-                height={626}
-                src="/img/work/tennis/mob2.png"
+                quality={100}
+                sizes="33vw"
+                src={Mob2Image}
+                layout="responsive"
                 alt=""
               />
               <Image
-                width={317}
-                height={626}
-                src="/img/work/tennis/mob3.png"
+                quality={100}
+                sizes="33vw"
+                src={Mob3Image}
+                layout="responsive"
                 alt=""
               />
             </div>
             <Image
-              width={1010}
-              height={774}
+              quality={100}
+              sizes="100vw"
               layout="responsive"
-              src="/img/work/tennis/tablet2.png"
+              src={Tablet2Image}
               alt=""
             />
           </div>
@@ -84,25 +102,10 @@ export default function Page() {
 
         <section className="flex w-full items-center justify-between bg-white">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[90px] lg:pb-[120px] lg:pt-[100px]">
-            <Image
-              width={1216}
-              height={683}
-              src="/img/work/tennis/tablet3.png"
-              alt=""
-            />
+            <Image sizes="100vw" src={Tablet3Image} alt="" quality={100} />
             <div className="grid grid-cols-1 gap-[60px] sm:grid-cols-2 sm:gap-[20px]">
-              <Image
-                width={598}
-                height={780}
-                src="/img/work/tennis/mob5.png"
-                alt=""
-              />
-              <Image
-                width={598}
-                height={780}
-                src="/img/work/tennis/mob4.png"
-                alt=""
-              />
+              <Image src={Mob5Image} sizes="50vw" alt="" quality={100} />
+              <Image src={Mob4Image} sizes="50vw" alt="" quality={100} />
             </div>
           </div>
         </section>
@@ -115,14 +118,20 @@ export default function Page() {
             <span className="mb-[36px] mt-[12px] text-[24px] font-semibold uppercase leading-[130%] text-white sm:text-[40px] md:mb-[45px] md:mt-[45px] lg:text-[64px]">
               Medical Dashboard
             </span>
-            <div className="flex w-full justify-center border-b border-b-[#656565]">
-              <div className="md:w-[458px]sm:pb-0 relative w-full overflow-hidden bg-[#E3E3E3] pb-[50%] sm:h-[calc(180px)] sm:w-[358px] sm:pb-0 md:h-[200px] md:w-[458px] lg:h-[200px] lg:w-[600px]">
-                <img
+            <Link
+              href="/work/medical-dashboard"
+              className="flex w-full justify-center border-b border-b-[#656565]"
+            >
+              <div className=" relative w-full overflow-hidden bg-[#E3E3E3] pb-[50%] sm:h-[calc(180px)] sm:w-[358px] sm:pb-0 md:h-[200px] md:w-[458px] lg:h-[200px] lg:w-[600px]">
+                <Image
                   className="absolute -bottom-[50%] left-[20px] w-[calc(100%-40px)] lg:-bottom-[125%]"
-                  src="/img/work/medical-dashboard/preview.png"
+                  src={PreviewImage}
+                  quality={100}
+                  sizes="50vw"
+                  alt=""
                 />
               </div>
-            </div>
+            </Link>
             <Link
               className="mt-[60px] flex h-[180px] w-[180px] min-w-[180px] cursor-pointer items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover"
               href="/work"
