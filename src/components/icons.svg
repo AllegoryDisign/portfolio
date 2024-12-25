@@ -2,4 +2,12 @@
   <symbol id="icon-arrow" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M26 2.675V26M26 26H2.74766M26 26L2 2" stroke="currentColor" stroke-width="3"/>
   </symbol>
+
+
+
+
+  <symbol id="icon-logo-photographer" viewBox="0 0 197 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M34.0828 97V6.09714L36.8537 8.86857H0V0H78.2795V8.86857H41.5643L44.1968 6.09714V97H34.0828ZM96.2756 97V0H104.727L149.062 75.66H144.629L188.549 0H197V97H187.163V15.3814H189.518L149.062 84.6671H144.213L103.48 15.3814H106.113V97H96.2756Z" fill="white"/>
+  </symbol>
+
 </svg>

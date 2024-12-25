@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Footer } from "@/components/Footer";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Header } from "@/components/Header";
+
 export default function Home() {
   return (
     <>

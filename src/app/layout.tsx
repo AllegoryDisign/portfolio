@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
 import "@/styles/globals.scss";
+import { AnimationScroll } from "@/components/logics/AnimationScroll";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -30,7 +31,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="relative bg-white">{children}</body>
+      <body className="relative bg-white">
+        {children}
+        <AnimationScroll />
+      </body>
     </html>
   );
 }
