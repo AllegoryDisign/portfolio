@@ -6,10 +6,12 @@ export function NextPageSection({
   image,
   href,
   bgColor,
+  title,
 }: {
   image: StaticImport;
   href: string;
   bgColor: string;
+  title: string;
 }) {
   return (
     <div className="flex flex-col items-center justify-center bg-[#26292E] py-[60px]">
@@ -19,7 +21,7 @@ export function NextPageSection({
         </span>
 
         <span className="mb-[36px] mt-[12px] text-[24px] font-semibold uppercase leading-[130%] text-white sm:text-[40px] md:mb-[45px] md:mt-[45px] lg:text-[64px]">
-          Web Banners collection
+          {title}
         </span>
         <div className="flex w-full justify-center border-b border-b-[#656565]">
           <Link

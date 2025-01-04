@@ -50,6 +50,7 @@ export default function Page() {
           image={PreviewImage}
           href="/work/404"
           bgColor="#ECECEC"
+          title="404 page collection"
         />
       </main>
       <Footer />
