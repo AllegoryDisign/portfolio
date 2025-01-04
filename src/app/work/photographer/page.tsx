@@ -39,7 +39,7 @@ export default function Page() {
         />
         <section className="relative">
           <Image
-            className="w-full"
+            className="w-full min-h-[350px] object-cover md:min-h-[800px]"
             src={MainBgImage}
             alt=""
             quality={90}
@@ -101,6 +101,7 @@ export default function Page() {
         </section>
         <section className="flex">
           <Image
+            className="min-h-[350px] object-cover md:min-h-[800px]"
             src={Main2Image}
             alt=""
             quality={100}
