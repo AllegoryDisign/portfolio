@@ -13,6 +13,7 @@ import Mob3Image from "../../../../public/img/work/photographer/mob3.png";
 import Main2Image from "../../../../public/img/work/photographer/main2.png";
 import Tablet2Image from "../../../../public/img/work/photographer/tablet2.png";
 import PreviewImage from "../../../../public/img/work/web-banners/preview.png";
+import { NextPageSection } from "@/components/sections/NextPageSection";
 
 export default function Page() {
   return (
@@ -61,7 +62,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <section className=" bg-[#E5E0DC] py-[60px] md:pt-[50px] md:pb-[80px] xl:pt-[80px] xl:pb-[120px]">
+        <section className=" bg-[#E5E0DC] py-[60px] md:pt-[50px] md:pb-[80px] xl:pt-[80px] xl:pb-[120px] overflow-hidden">
           <div className="container flex flex-col items-center">
             <Image
               className="mb-[60px] xl:mb-[90px] animate__animated opacity-0"
@@ -74,24 +75,24 @@ export default function Page() {
 
             <div className=" grid grid-cols-3 gap-[10px] sm:gap-[30px] md:gap-[40px] lg:gap-[52px] xl:gap-[72px]">
               <Image
-                className="animate__animated opacity-0 duration-1s"
+                className="animate__animated opacity-0"
                 data-animation="animate__fadeInUp"
                 src={Mob1Image}
                 alt=""
                 quality={100}
               />
               <Image
-                className="animate__animated opacity-0 duration-1s"
-                data-animation="animate__fadeInUp delay-2s"
-                data-delay="250"
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="200"
                 src={Mob2Image}
                 alt=""
                 quality={100}
               />
               <Image
-                className="animate__animated opacity-0 duration-1s"
-                data-animation="animate__fadeInUp delay-3s"
-                data-delay="500"
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="400"
                 src={Mob3Image}
                 alt=""
                 quality={100}
@@ -99,7 +100,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <section className="flex">
+        <section className="flex overflow-hidden">
           <Image
             className="min-h-[350px] object-cover md:min-h-[800px]"
             src={Main2Image}
@@ -110,7 +111,7 @@ export default function Page() {
             priority
           />
         </section>
-        <section className="flex py-[60px] lg:py-[80px] xl:pb-[100px] bg-[#E5E0DC]">
+        <section className="flex py-[60px] lg:py-[80px] xl:pb-[100px] bg-[#E5E0DC] overflow-hidden relative">
           <div className="container flex items-center justify-center">
             <Image
               className="animate__animated opacity-0"
@@ -153,6 +154,12 @@ export default function Page() {
             </Link>
           </div>
         </div>
+        <NextPageSection
+          title="Web Banners collection"
+          href="/work/web-banners"
+          bgColor="#000000"
+          image={PreviewImage}
+        />
       </main>
       <Footer />
     </>

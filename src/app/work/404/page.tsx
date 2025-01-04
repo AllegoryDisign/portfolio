@@ -9,7 +9,7 @@ import Banner2Image from "../../../../public/img/work/404/error2.png";
 import Banner3Image from "../../../../public/img/work/404/error3.png";
 import Banner4Image from "../../../../public/img/work/404/error4.png";
 import Banner5Image from "../../../../public/img/work/404/error5.png";
-import PreviewImage from "../../../../public/img/work/404/preview.png";
+import PreviewImage from "../../../../public/img/work/dental-clinic/preview.png";
 
 export default function Page() {
   return (
