@@ -70,7 +70,7 @@ export default function Page() {
               sizes="50vw"
               src={TabletImage}
               alt=""
-              quality={100}
+              quality={95}
             />
 
             <div className=" grid grid-cols-3 gap-[10px] sm:gap-[30px] md:gap-[40px] lg:gap-[52px] xl:gap-[72px]">
@@ -79,7 +79,7 @@ export default function Page() {
                 data-animation="animate__fadeInUp"
                 src={Mob1Image}
                 alt=""
-                quality={100}
+                quality={95}
               />
               <Image
                 className="animate__animated opacity-0"
@@ -87,7 +87,7 @@ export default function Page() {
                 data-delay="200"
                 src={Mob2Image}
                 alt=""
-                quality={100}
+                quality={95}
               />
               <Image
                 className="animate__animated opacity-0"
@@ -95,7 +95,7 @@ export default function Page() {
                 data-delay="400"
                 src={Mob3Image}
                 alt=""
-                quality={100}
+                quality={95}
               />
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Page() {
             className="min-h-[350px] object-cover md:min-h-[800px]"
             src={Main2Image}
             alt=""
-            quality={100}
+            quality={95}
             sizes="100vw"
             layout="responsive"
             priority
@@ -119,41 +119,10 @@ export default function Page() {
               src={Tablet2Image}
               sizes="50vw"
               alt=""
-              quality={100}
+              quality={95}
             />
           </div>
         </section>
-        <div className="flex flex-col items-center justify-center bg-[#26292E] py-[60px]">
-          <div className="container flex flex-col items-center">
-            <span className="inter font-medium leading-[120%] text-white sm:text-[18px]">
-              Next work
-            </span>
-
-            <span className="mb-[36px] mt-[12px] text-[24px] font-semibold uppercase leading-[130%] text-white sm:text-[40px] md:mb-[45px] md:mt-[45px] lg:text-[64px]">
-              Web Banners collection
-            </span>
-            <div className="flex w-full justify-center border-b border-b-[#656565]">
-              <Link
-                href="/work/web-banners"
-                className=" flex md:w-[458px]sm:pb-0 relative w-full overflow-hidden bg-[#000000] pb-[50%] sm:h-[calc(180px)] sm:w-[358px] sm:pb-0 md:h-[200px] md:w-[458px] lg:h-[200px] lg:w-[600px] group"
-              >
-                <Image
-                  className="absolute -bottom-[50%] left-[20px] w-[calc(100%-40px)] lg:-bottom-[125%] group-hover:-bottom-[25%] lg:group-hover:-bottom-[100%] transition-all"
-                  src={PreviewImage}
-                  sizes="50vw"
-                  quality={100}
-                  alt=""
-                />
-              </Link>
-            </div>
-            <Link
-              className="mt-[60px] flex h-[180px] w-[180px] min-w-[180px] cursor-pointer items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover"
-              href="/work"
-            >
-              All work
-            </Link>
-          </div>
-        </div>
         <NextPageSection
           title="Web Banners collection"
           href="/work/web-banners"

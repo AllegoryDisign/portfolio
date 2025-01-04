@@ -99,7 +99,7 @@ export default function About() {
               src="/img/portrait/photo_about.png"
               alt=""
               objectFit="cover"
-              quality={100}
+              quality={95}
               width={598}
               height={740}
             />

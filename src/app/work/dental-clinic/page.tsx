@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Svg } from "@/components/Svg";
 import Image from "next/image";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -15,29 +15,56 @@ import BoshkaImage from "../../../../public/img/work/dental-clinic/boshka.png";
 import Tablet1Image from "../../../../public/img/work/dental-clinic/tablet1.png";
 import Tablet2Image from "../../../../public/img/work/dental-clinic/tablet2.png";
 
-import TennisImage from "../../../../public/img/work/dental-clinic/tenis.png";
+import PrewiewImage from "../../../../public/img/work/dental-clinic/preview.png";
+import { MainSection1 } from "@/components/sections/MainSection1";
+import { NextPageSection } from "@/components/sections/NextPageSection";
 
 export default function Page() {
   return (
     <>
       <Header />
       <main className="flex flex-col">
-        <Image
-          className="w-full"
-          src={MainBgImage}
-          alt=""
-          quality={100}
-          sizes="100vw"
-          layout="responsive"
-          priority
+        <MainSection1
+          title={<>Dental clinic</>}
+          subTitle={<span className="text-[#362EEC]">Ortodent</span>}
+          table={[
+            { title: "Year:", value: "2024" },
+            { title: "Services:", value: "Design & Development" },
+            { title: "Industry:", value: "Medical / Healthcare" },
+          ]}
         />
+
+        <section className="relative">
+          <Image
+            className="w-full min-h-[350px] object-cover md:min-h-[800px]"
+            src={MainBgImage}
+            alt=""
+            quality={90}
+            sizes="100vw"
+            layout="responsive"
+            priority
+          />
+          <div className="flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[200px] md:h-[100px]">
+            <div
+              className="animate__animated opacity-0"
+              data-animation="animate__fadeInUp"
+            >
+              <Svg
+                className="w-full h-full md:w-[220px] md:h-[100px]"
+                width={99}
+                height={49}
+                iconId="icon-logo-dental"
+              />
+            </div>
+          </div>
+        </section>
         <div className="flex w-full items-center justify-between bg-[#D8DEE4]">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[70px] lg:pb-[120px] lg:pt-[100px]">
-            <Image quality={100} sizes="100vw" src={VideoImage} alt="" />
+            <Image quality={95} sizes="100vw" src={VideoImage} alt="" />
             <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px]">
-              <Image src={Phone1Image} alt="" sizes="33vw" quality={100} />
-              <Image src={Phone2Image} alt="" sizes="33vw" quality={100} />
-              <Image src={Phone3Image} alt="" sizes="33vw" quality={100} />
+              <Image src={Phone1Image} alt="" sizes="33vw" quality={95} />
+              <Image src={Phone2Image} alt="" sizes="33vw" quality={95} />
+              <Image src={Phone3Image} alt="" sizes="33vw" quality={95} />
             </div>
           </div>
         </div>
@@ -46,45 +73,23 @@ export default function Page() {
           src={BoshkaImage}
           alt=""
           sizes="100vw"
-          quality={100}
+          quality={95}
         />
         <div className="flex w-full items-center justify-between bg-white">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[90px] lg:pb-[120px] lg:pt-[100px]">
             <img src="/img/work/dental-clinic/video2.png" alt="" />
             <div className="grid grid-cols-1 gap-[60px] sm:grid-cols-2 sm:gap-[20px]">
-              <Image src={Tablet1Image} alt="" sizes="50vw" quality={100} />
-              <Image src={Tablet2Image} alt="" sizes="50vw" quality={100} />
+              <Image src={Tablet1Image} alt="" sizes="50vw" quality={95} />
+              <Image src={Tablet2Image} alt="" sizes="50vw" quality={95} />
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center bg-[#26292E] py-[60px]">
-          <div className="container flex flex-col items-center">
-            <span className="inter font-medium leading-[120%] text-white sm:text-[18px]">
-              Next work
-            </span>
-
-            <span className="mb-[36px] mt-[12px] text-[24px] font-semibold uppercase leading-[130%] text-white sm:text-[40px] md:mb-[45px] md:mt-[45px] lg:text-[64px]">
-              tennis club
-            </span>
-            <div className="flex w-full justify-center border-b border-b-[#656565]">
-              <div className="md:w-[458px]sm:pb-0 relative w-full overflow-hidden bg-[#213D5C] pb-[50%] sm:h-[calc(180px)] sm:w-[358px] sm:pb-0 md:h-[200px] md:w-[458px] lg:h-[200px] lg:w-[600px]">
-                <Image
-                  className="absolute -bottom-[50%] left-[20px] w-[calc(100%-40px)] lg:-bottom-[125%]"
-                  src={TennisImage}
-                  sizes="50vw"
-                  quality={100}
-                  alt=""
-                />
-              </div>
-            </div>
-            <Link
-              className="mt-[60px] flex h-[180px] w-[180px] min-w-[180px] cursor-pointer items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover"
-              href="/work"
-            >
-              All work
-            </Link>
-          </div>
-        </div>
+        <NextPageSection
+          title="tennis club"
+          bgColor="#213d5c"
+          image={PrewiewImage}
+          href="/work/tennis"
+        />
       </main>
       <Footer />
     </>

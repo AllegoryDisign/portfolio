@@ -33,7 +33,7 @@ export function NextPageSection({
               className="absolute -bottom-[50%] left-[20px] w-[calc(100%-40px)] lg:-bottom-[125%] group-hover:-bottom-[25%] lg:group-hover:-bottom-[100%] transition-all"
               src={image}
               sizes="50vw"
-              quality={100}
+              quality={95}
               alt=""
             />
           </Link>

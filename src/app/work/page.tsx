@@ -125,7 +125,7 @@ function WorkItem({ title, descr, date, href, img, bg }: WorkType) {
           src={img}
           width={558}
           height={330}
-          quality={100}
+          quality={95}
           alt=""
           sizes="50vw"
         />

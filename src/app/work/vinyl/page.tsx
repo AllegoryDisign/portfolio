@@ -81,7 +81,7 @@ export default function Page() {
             className="min-h-[350px] object-cover md:min-h-[800px]"
             src={MainBgImage2}
             alt=""
-            quality={100}
+            quality={95}
             sizes="100vw"
             layout="responsive"
             priority
@@ -122,7 +122,7 @@ export default function Page() {
                 sizes="33vw"
                 src={Mob3Image}
                 alt=""
-                quality={100}
+                quality={95}
               />
             </div>
           </div>
