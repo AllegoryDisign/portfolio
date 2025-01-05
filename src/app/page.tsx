@@ -4,6 +4,9 @@ import Link from "next/link";
 import { Footer } from "@/components/Footer";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Header } from "@/components/Header";
+import AutoplayVideo from "@/components/video/AutoplayVideo";
+
+// import Video1 from "../../public/video/slider/slide1.mp4";
 
 export default function Home() {
   return (
@@ -111,19 +114,23 @@ export default function Home() {
                 className="absolute right-0 top-0 flex w-[120%] gap-5"
                 id="scroll-slider-item-1"
               >
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%]"></div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%]"></div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%]"></div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%]"></div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <AutoplayVideo path="/video/slider/cats.mp4" />
+                </div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
               </div>
               <div
                 className="absolute bottom-0 left-0 flex w-[120%] gap-5"
                 id="scroll-slider-item-2"
               >
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%]"></div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%]"></div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%]"></div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%]"></div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <AutoplayVideo path="/video/slider/maverick.mp4" />
+                </div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
               </div>
             </div>
           </div>
