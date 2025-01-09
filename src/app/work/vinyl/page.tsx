@@ -20,6 +20,7 @@ import Mob3Image from "../../../../public/img/work/vinyl/phone3.png";
 
 import PreviewImage from "../../../../public/img/work/photographer/preview.png";
 import { NextPageSection } from "@/components/sections/NextPageSection";
+import AutoplayVideo from "@/components/video/AutoplayVideo";
 
 export default function Page() {
   return (
@@ -63,14 +64,19 @@ export default function Page() {
         </section>
         <section className=" bg-[#F2F2F2] py-[60px] md:py-[80px] xl:py-[120px]">
           <div className="container flex flex-col items-center">
-            <Image
+            <AutoplayVideo
+              className="mb-[50px] md:mb-[60px] xl:mb-[100px]"
+              path="/img/work/vinyl/vinyl1.mkv"
+            />
+
+            {/* <Image
               className="mb-[50px] md:mb-[60px] xl:mb-[100px] animate__animated opacity-0"
               data-animation="animate__fadeInUp"
               sizes="100vw"
               src={Tablet1Image}
               alt=""
               quality={95}
-            />
+            /> */}
 
             <Image src={IpadImage} sizes="100vw" alt="" quality={95} />
           </div>
@@ -90,13 +96,11 @@ export default function Page() {
 
         <section className=" bg-[#F2F2F2] py-[60px] md:py-[80px] xl:py-[120px]">
           <div className="container flex flex-col items-center">
-            <Image
+            <AutoplayVideo
               className="md:mb-[60px] xl:mb-[100px]"
-              src={Tablet2Image}
-              quality={95}
-              sizes="100vw"
-              alt=""
+              path="/img/work/vinyl/vinyl2.mkv"
             />
+
             <div className=" grid grid-cols-3 gap-[10px] md:gap-[20px] xl:gap-[28px]">
               <Image
                 className="animate__animated opacity-0 "
@@ -130,7 +134,11 @@ export default function Page() {
 
         <section className="bg-[#EEEEE5] py-[60px] md:py-[80px] xl:py-[120px]">
           <div className="container flex items-center flex-col gap-[60px] md:gap-[80px] xl:gap-[120px]">
-            <Image src={LandingImage} sizes="100vw" quality={95} alt="" />
+            {/* <Image src={LandingImage} sizes="100vw" quality={95} alt="" /> */}
+            <AutoplayVideo
+              className="md:mb-[60px] xl:mb-[100px]"
+              path="/img/work/vinyl/vinyl3.mkv"
+            />
             <Image src={Ipad2Image} sizes="100vw" quality={95} alt="" />
           </div>
         </section>

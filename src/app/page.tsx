@@ -116,7 +116,10 @@ export default function Home() {
               >
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                  <AutoplayVideo path="/video/slider/cats.mp4" />
+                  <AutoplayVideo
+                    className="flex w-full h-full absolute top-0 left-0"
+                    path="/video/slider/vinyl1.mkv"
+                  />
                 </div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
@@ -128,7 +131,10 @@ export default function Home() {
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                  <AutoplayVideo path="/video/slider/maverick.mp4" />
+                  <AutoplayVideo
+                    className="flex w-full h-full absolute top-0 left-0"
+                    path="/video/slider/maverick.mp4"
+                  />
                 </div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
               </div>

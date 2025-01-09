@@ -1,9 +1,15 @@
 import React from "react";
 
-const AutoplayVideo = ({ path }: { path: string }) => {
+const AutoplayVideo = ({
+  path,
+  className,
+}: {
+  path: string;
+  className: string;
+}) => {
   return (
     <video
-      className="flex w-full h-full absolute top-0 left-0"
+      className={className}
       autoPlay
       loop
       muted
