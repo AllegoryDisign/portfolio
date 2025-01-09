@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.scss";
 import { AnimationScroll } from "@/components/logics/AnimationScroll";
+import NextTopLoader from "nextjs-toploader";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="relative bg-white">
+        <NextTopLoader color="#2E4EEC" showSpinner={false} />
         {children}
         <AnimationScroll />
       </body>
