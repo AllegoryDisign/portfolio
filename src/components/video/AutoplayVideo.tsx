@@ -1,16 +1,46 @@
-import React from "react";
+"use client";
+import { useEffect, useRef, useState } from "react";
 
-const AutoplayVideo = ({
+export default function AutoplayVideo({
   path,
-  className,
+  className = "",
 }: {
   path: string;
-  className: string;
-}) => {
+  className?: string;
+}) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [hasPlayed, setHasPlayed] = useState(false); // Флаг для отслеживания, воспроизводилось ли видео
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasPlayed) {
+          if (videoRef.current) {
+            videoRef.current.play();
+            setHasPlayed(true); // Устанавливаем флаг, что видео воспроизводилось
+          }
+        }
+      },
+      {
+        threshold: 0.1, // Начинаем воспроизводить, когда 50% видео в области видимости
+      }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, [hasPlayed]); // Добавляем hasPlayed в зависимости
+
   return (
     <video
+      ref={videoRef}
       className={className}
-      autoPlay
       loop
       muted
       style={{
@@ -21,6 +51,4 @@ const AutoplayVideo = ({
       Your browser does not support the video tag...
     </video>
   );
-};
-
-export default AutoplayVideo;
+}

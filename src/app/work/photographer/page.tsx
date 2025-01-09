@@ -14,6 +14,7 @@ import Main2Image from "../../../../public/img/work/photographer/main2.png";
 import Tablet2Image from "../../../../public/img/work/photographer/tablet2.png";
 import PreviewImage from "../../../../public/img/work/web-banners/preview.png";
 import { NextPageSection } from "@/components/sections/NextPageSection";
+import AutoplayVideo from "@/components/video/AutoplayVideo";
 
 export default function Page() {
   return (
@@ -64,14 +65,18 @@ export default function Page() {
         </section>
         <section className=" bg-[#E5E0DC] py-[60px] md:pt-[50px] md:pb-[80px] xl:pt-[80px] xl:pb-[120px] overflow-hidden">
           <div className="container flex flex-col items-center">
-            <Image
+            <AutoplayVideo
+              className="mb-[60px] xl:mb-[90px]"
+              path="/img/work/photographer/video1.mkv"
+            />
+            {/* <Image
               className="mb-[60px] xl:mb-[90px] animate__animated opacity-0"
               data-animation="animate__fadeInUp"
               sizes="50vw"
               src={TabletImage}
               alt=""
               quality={95}
-            />
+            /> */}
 
             <div className=" grid grid-cols-3 gap-[10px] sm:gap-[30px] md:gap-[40px] lg:gap-[52px] xl:gap-[72px]">
               <Image
@@ -113,13 +118,17 @@ export default function Page() {
         </section>
         <section className="flex py-[60px] lg:py-[80px] xl:pb-[100px] bg-[#E5E0DC] overflow-hidden relative">
           <div className="container flex items-center justify-center">
-            <Image
+            {/* <Image
               className="animate__animated opacity-0"
               data-animation="animate__fadeInUp"
               src={Tablet2Image}
               sizes="50vw"
               alt=""
               quality={95}
+            /> */}
+            <AutoplayVideo
+              className=""
+              path="/img/work/photographer/video2.mkv"
             />
           </div>
         </section>

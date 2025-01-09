@@ -4,12 +4,16 @@ import { Header } from "@/components/Header";
 import { MainSection1 } from "@/components/sections/MainSection1";
 import { NextPageSection } from "@/components/sections/NextPageSection";
 
+import B1Image from "../../../../public/img/work/web-banners/02.png";
+import B2Image from "../../../../public/img/work/web-banners/03.png";
+
 import Banner1Image from "../../../../public/img/work/web-banners/banner1.png";
 import Banner2Image from "../../../../public/img/work/web-banners/banner2.png";
 import Banner3Image from "../../../../public/img/work/web-banners/banner3.png";
 import Banner4Image from "../../../../public/img/work/web-banners/banner4.png";
 import Banner5Image from "../../../../public/img/work/web-banners/banner5.png";
 import PreviewImage from "../../../../public/img/work/404/preview.png";
+import AutoplayVideo from "@/components/video/AutoplayVideo";
 
 export default function Page() {
   return (
@@ -25,7 +29,18 @@ export default function Page() {
             { title: "Industry:", value: "Digital Marketing" },
           ]}
         />
+
         <section className="container">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:gap-[60px] md:gap-[20px] mb-[50px] sm:mb-[60px] md:mb-[80px]">
+            <AutoplayVideo path="/img/work/web-banners/banner.mp4" />
+            <Image sizes="100vw" quality={95} src={B1Image} alt="" />
+          </div>
+
+          <div className="grid grid-cols-2 gap-[20px] mb-[50px] sm:mb-[60px] md:mb-[80px">
+            <Image sizes="100vw" quality={95} src={B2Image} alt="" />
+            <AutoplayVideo path="/img/work/web-banners/banner1.mp4" />
+          </div>
+          <div></div>
           <Image className="mb-[60px] md:mb-[80px]" src={Banner1Image} alt="" />
           <div className="grid grid-cols-1 gap-[60px] md:gap-[20px] md:grid-cols-2 mb-[60px] md:mb-[80px]">
             <Image

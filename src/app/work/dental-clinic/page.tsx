@@ -18,6 +18,7 @@ import Tablet2Image from "../../../../public/img/work/dental-clinic/tablet2.png"
 import PrewiewImage from "../../../../public/img/work/dental-clinic/preview.png";
 import { MainSection1 } from "@/components/sections/MainSection1";
 import { NextPageSection } from "@/components/sections/NextPageSection";
+import AutoplayVideo from "@/components/video/AutoplayVideo";
 
 export default function Page() {
   return (
@@ -60,11 +61,36 @@ export default function Page() {
         </section>
         <div className="flex w-full items-center justify-between bg-[#D8DEE4]">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[70px] lg:pb-[120px] lg:pt-[100px]">
-            <Image quality={95} sizes="100vw" src={VideoImage} alt="" />
+            {/* <Image quality={95} sizes="100vw" src={VideoImage} alt="" /> */}
+            <AutoplayVideo path="/img/work/dental-clinic/ortodent1.mp4" />
             <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px]">
-              <Image src={Phone1Image} alt="" sizes="33vw" quality={95} />
-              <Image src={Phone2Image} alt="" sizes="33vw" quality={95} />
-              <Image src={Phone3Image} alt="" sizes="33vw" quality={95} />
+              <Image
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="0"
+                src={Phone1Image}
+                alt=""
+                sizes="33vw"
+                quality={95}
+              />
+              <Image
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="200"
+                src={Phone2Image}
+                alt=""
+                sizes="33vw"
+                quality={95}
+              />
+              <Image
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="400"
+                src={Phone3Image}
+                alt=""
+                sizes="33vw"
+                quality={95}
+              />
             </div>
           </div>
         </div>
@@ -77,10 +103,27 @@ export default function Page() {
         />
         <div className="flex w-full items-center justify-between bg-white">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[90px] lg:pb-[120px] lg:pt-[100px]">
-            <img src="/img/work/dental-clinic/video2.png" alt="" />
+            <AutoplayVideo path="/img/work/dental-clinic/ortodent2.mp4" />
+
             <div className="grid grid-cols-1 gap-[60px] sm:grid-cols-2 sm:gap-[20px]">
-              <Image src={Tablet1Image} alt="" sizes="50vw" quality={95} />
-              <Image src={Tablet2Image} alt="" sizes="50vw" quality={95} />
+              <Image
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="0"
+                src={Tablet1Image}
+                alt=""
+                sizes="50vw"
+                quality={95}
+              />
+              <Image
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="200"
+                src={Tablet2Image}
+                alt=""
+                sizes="50vw"
+                quality={95}
+              />
             </div>
           </div>
         </div>

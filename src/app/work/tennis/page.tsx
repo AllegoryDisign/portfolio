@@ -21,6 +21,7 @@ import Mob4Image from "../../../../public/img/work/tennis/mob4.png";
 import PreviewImage from "../../../../public/img/work/medical-dashboard/preview.png";
 import { MainSection1 } from "@/components/sections/MainSection1";
 import { NextPageSection } from "@/components/sections/NextPageSection";
+import AutoplayVideo from "@/components/video/AutoplayVideo";
 
 export default function Page() {
   return (
@@ -38,7 +39,7 @@ export default function Page() {
         />
         <section>
           <Image
-            className=" h-[350px] sm:h-[800px] w-full object-cover"
+            className="h-[350px] sm:h-[800px] w-full object-cover"
             src={MainBgImage}
             sizes="100vw"
             layout="responsive"
@@ -49,15 +50,19 @@ export default function Page() {
         </section>
         <section className="bg-[#E2E2E2]">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[70px] lg:pb-[120px] lg:pt-[100px]">
-            <Image
+            <AutoplayVideo path="/img/work/tennis/tennis1.mp4" />
+            {/* <Image
               sizes="100vw"
               quality={95}
               layout="responsive"
               src={TableImage}
               alt=""
-            />
+            /> */}
             <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px]">
               <Image
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="0"
                 quality={95}
                 sizes="33vw"
                 src={Mob1Image}
@@ -65,6 +70,9 @@ export default function Page() {
                 alt=""
               />
               <Image
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="200"
                 quality={95}
                 sizes="33vw"
                 src={Mob2Image}
@@ -72,6 +80,9 @@ export default function Page() {
                 alt=""
               />
               <Image
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="400"
                 quality={95}
                 sizes="33vw"
                 src={Mob3Image}
@@ -91,10 +102,27 @@ export default function Page() {
 
         <section className="flex w-full items-center justify-between bg-white">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[90px] lg:pb-[120px] lg:pt-[100px]">
-            <Image sizes="100vw" src={Tablet3Image} alt="" quality={95} />
+            {/* <Image sizes="100vw" src={Tablet3Image} alt="" quality={95} /> */}
+            <AutoplayVideo path="/img/work/tennis/tennis2.mp4" />
             <div className="grid grid-cols-1 gap-[60px] sm:grid-cols-2 sm:gap-[20px]">
-              <Image src={Mob5Image} sizes="50vw" alt="" quality={95} />
-              <Image src={Mob4Image} sizes="50vw" alt="" quality={95} />
+              <Image
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="0"
+                src={Mob5Image}
+                sizes="50vw"
+                alt=""
+                quality={95}
+              />
+              <Image
+                className="animate__animated opacity-0"
+                data-animation="animate__fadeInUp"
+                data-delay="200"
+                src={Mob4Image}
+                sizes="50vw"
+                alt=""
+                quality={95}
+              />
             </div>
           </div>
         </section>
