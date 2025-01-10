@@ -58,3 +58,34 @@ body {
 .duration-3s {
   animation-duration: 3s;
 }
+
+/* Стили для скроллбара */
+::-webkit-scrollbar {
+  width: 12px; /* Ширина вертикального скроллбара */
+  height: 12px; /* Высота горизонтального скроллбара */
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0; /* Цвет фона трека скроллбара (светлее) */
+  border-radius: 10px; /* Закругление углов трека */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaa; /* Цвет ползунка скроллбара (светлее) */
+  border-radius: 10px; /* Закругление углов ползунка */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Цвет ползунка при наведении (светлее) */
+}
+
+/* Для Firefox */
+* {
+  scrollbar-width: thin; /* Устанавливаем тонкий скроллбар */
+  scrollbar-color: #aaa #e0e0e0; /* Цвет ползунка и трека (светлее) */
+}
+
+/* Для Firefox при наведении */
+*::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Цвет ползунка при наведении (светлее) */
+}
