@@ -19,12 +19,12 @@ export default function Home() {
               Web ui ux Web ui ux Web ui ux Web ui ux Web ui ux Web ui ux Web ui
               ux Web ui ux Web ui ux Web ui ux
             </div>
-            <div className="z-20 h-[600px] w-[600px] lg:h-[800px] lg:w-[800px]">
+            <div className="z-20 h-[618px] w-[600px] lg:h-[824px] lg:w-[800px]">
               <Image
                 src="/img/portrait/photo_1.png"
                 alt=""
                 width={800}
-                height={800}
+                height={824}
                 sizes="5vw"
                 layout="responsive"
                 quality={95}

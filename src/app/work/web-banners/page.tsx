@@ -32,7 +32,10 @@ export default function Page() {
 
         <section className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:gap-[60px] md:gap-[20px] mb-[50px] sm:mb-[60px] md:mb-[80px]">
-            <AutoplayVideo path="/img/work/web-banners/banner.mp4" />
+            <AutoplayVideo
+              className=" border border-[#E5E5E7]"
+              path="/img/work/web-banners/banner.mp4"
+            />
             <Image sizes="100vw" quality={95} src={B1Image} alt="" />
           </div>
 

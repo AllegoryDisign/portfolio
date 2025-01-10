@@ -31,6 +31,20 @@ export function AnimationScroll() {
   useEffect(() => {
     window.addEventListener("scroll", animateOnScroll);
     window.addEventListener("load", animateOnScroll);
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const targetId = (event.target as HTMLAnchorElement).getAttribute(
+          "href"
+        );
+        const target = document.querySelector(targetId as string);
+        (target as Element).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
   }, []);
   return null;
 }

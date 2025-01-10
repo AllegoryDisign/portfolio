@@ -14,45 +14,30 @@ export default function About() {
           <nav className="animate__animated animate__fadeIn flex items-center gap-11 text-white">
             <Link href="/work">Work</Link>
             <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/#contact">Contact</Link>
           </nav>
         </header>
       </div>
       <main className="flex flex-col">
         <section className="bg-blackBg pb-[100px] pt-[140px]">
-          {/* <div className='container'>
-            <div className='flex items-center justify-center gap-6'>
-              <svg
-                className='mt-8 hidden h-6 w-6 text-white'
-                width='24'
-                height='24'
-              >
-                <use href='src/assets/icons.svg#icon-arrow'></use>
-              </svg>
-              <div className='xl:pr-[120px] xl:text-[150px] text-[14vw] font-bold uppercase leading-[1.1] text-white'>
-                Helping
+          <div className="container">
+            <h1 className=" text-[44px] font-bold leading-[110%] sm:text-[52px] md:text-[90px] xl:text-[150px] uppercase text-white mb-[10px] sm:mb-[16px] ">
+              Helping <br />
+              businesses
+            </h1>
+            <div className="flex flex-col lg:flex-row lg:items-center">
+              <p className="font-medium inter text-[17px] md:text-[18px] text-white lg:mr-[60px]">
+                I create tailored websites for small businesses and start-ups
+                to help them reach bigger audiences. I have been creating
+                customized websites for over 2 years. It is important for
+                me to do my work not just well, but better than others, for this
+                purpose I am constantly improving my skills
+              </p>
+              <div className=" text-[44px] font-bold leading-[110%] sm:text-[52px] md:text-[90px] xl:text-[150px] uppercase text-[#362EEC] mb-[10px] sm:mb-[16px] text-right mt-[8px] lg:mt-0">
+                thrive
               </div>
             </div>
-            <div className='xl:justify-between flex flex-col items-center gap-6'>
-              <div className='xl:text-[150px] text-[14vw] font-bold uppercase leading-[1.1] text-white'>
-                C<span className='text-blueHover'>o</span>mpanies
-              </div>
-              <div className='inter xl:text-lg hidden text-sm font-medium text-white'>
-                I create tailored websites for small businesses and start-ups to
-                help them reach bigger audiences
-              </div>
-            </div>
-            <div className='flex flex-col items-center justify-between'>
-              <div className='inter xl:text-lg hidden text-sm font-medium text-white'>
-                I have been creating customized websites for over 2 years. It is
-                important for me to do my work not just well, but better than
-                others, for this purpose I am constantly improving my skills.
-              </div>
-              <div className='xl:text-[150px] text-[14vw] font-bold uppercase leading-[1.1] text-blueHover'>
-                Thrive
-              </div>
-            </div>
-          </div> */}
+          </div>
         </section>
         <section className="pt-[60px] sm:pt-[80px] lg:pt-[120px]">
           <div className="container flex flex-col gap-[32px] sm:gap-[40px] lg:flex-row lg:gap-[20px]">

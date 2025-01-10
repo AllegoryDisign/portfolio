@@ -57,7 +57,7 @@ const works: WorkType[] = [
   },
   {
     title: "Web Banners collection",
-    descr: "Digital Marketing",
+    descr: "Design",
     date: "2023-2024",
     href: "/work/web-banners",
     img: "/img/work/web-banners/preview.png",

@@ -15,7 +15,7 @@ import BoshkaImage from "../../../../public/img/work/dental-clinic/boshka.png";
 import Tablet1Image from "../../../../public/img/work/dental-clinic/tablet1.png";
 import Tablet2Image from "../../../../public/img/work/dental-clinic/tablet2.png";
 
-import PrewiewImage from "../../../../public/img/work/dental-clinic/preview.png";
+import PrewiewImage from "../../../../public/img/work/tennis/preview.png";
 import { MainSection1 } from "@/components/sections/MainSection1";
 import { NextPageSection } from "@/components/sections/NextPageSection";
 import AutoplayVideo from "@/components/video/AutoplayVideo";
