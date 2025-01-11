@@ -1,6 +1,7 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import Link from "next/link";
+import Magnetic from "../logics/Magnetic";
 
 export function NextPageSection({
   image,
@@ -38,12 +39,14 @@ export function NextPageSection({
             />
           </Link>
         </div>
-        <Link
-          className="mt-[60px] flex h-[180px] w-[180px] min-w-[180px] cursor-pointer items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover"
-          href="/work"
-        >
-          All work
-        </Link>
+        <Magnetic>
+          <Link
+            className="mt-[60px] flex h-[180px] w-[180px] min-w-[180px] cursor-pointer items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover"
+            href="/work"
+          >
+            All work
+          </Link>
+        </Magnetic>
       </div>
     </div>
   );

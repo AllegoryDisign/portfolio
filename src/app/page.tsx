@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Header } from "@/components/Header";
 import AutoplayVideo from "@/components/video/AutoplayVideo";
-
+import Magnetic from "@/components/logics/Magnetic";
 // import Video1 from "../../public/video/slider/slide1.mp4";
 
 export default function Home() {
@@ -65,18 +65,21 @@ export default function Home() {
               <span className="mb-[30px] max-w-[240px] text-[17px] xs:max-w-[190px] sm:hidden">
                 Passionate about creating intuitive digital solutions
               </span>
-              <Link
-                className="ml-auto flex h-[180px] w-[180px] min-w-[180px] cursor-pointer items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover"
-                href="/about"
-              >
-                About me
-              </Link>
+              <Magnetic>
+                <Link
+                  className="ml-auto flex h-[180px] w-[180px] min-w-[180px] cursor-pointer items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover magnetic"
+                  href="/about"
+                >
+                  About me
+                </Link>
+              </Magnetic>
             </div>
           </div>
           <div>
             <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px]">
               Recent work
             </div>
+
             <ul className="border-b border-b-grayBorder font-medium text-blackText">
               <li className="flex cursor-pointer items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
                 <div className="text-[40px] uppercase">
@@ -100,12 +103,17 @@ export default function Home() {
               </li>
             </ul>
 
-            <Link
-              href="/work"
-              className="mx-auto mb-40 mt-[60px] flex h-[180px] w-[180px] items-center justify-center rounded-full border border-grayBorder bg-white text-lg font-medium text-blackText"
-            >
-              More work
-            </Link>
+            {/* <SectionProj /> */}
+
+            <Magnetic>
+              <Link
+                href="/work"
+                className="mx-auto mb-40 mt-[60px] flex h-[180px] w-[180px] items-center justify-center rounded-full border border-grayBorder bg-white text-lg font-medium text-blackText"
+              >
+                More work
+              </Link>
+            </Magnetic>
+
             <div
               className="relative hidden flex-col gap-5 pb-[calc(36%+20px)] md:flex"
               id="scroll-slider"

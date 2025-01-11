@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { sendEmail } from "@/utils/send-email";
 import SendEmailPopup from "../popups/SendEmailPopup";
 import { useState } from "react";
+import Magnetic from "../logics/Magnetic";
 
 export type FormData = {
   name: string;
@@ -80,12 +81,14 @@ export function ContactSection() {
                 ></textarea>
               </div>
             </div>
-            <button
-              className="inter mx-auto flex h-[180px] w-[180px] items-center justify-center rounded-full bg-blue text-lg font-medium text-white outline-none transition hover:bg-blueHover sm:absolute sm:bottom-0 sm:right-0"
-              type="submit"
-            >
-              Submit
-            </button>
+            <Magnetic>
+              <button
+                className="inter mx-auto flex h-[180px] w-[180px] items-center justify-center rounded-full bg-blue text-lg font-medium text-white outline-none transition hover:bg-blueHover sm:absolute sm:bottom-0 sm:right-0"
+                type="submit"
+              >
+                Submit
+              </button>
+            </Magnetic>
           </form>
         </div>
       </section>

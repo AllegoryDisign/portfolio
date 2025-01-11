@@ -14,9 +14,9 @@ export default function SendEmailPopup({ close }: { close: () => void }) {
     <>
       <div
         onClick={close}
-        className="bg-[#26292E] opacity-90 fixed top-0 left-0 z-10 w-full h-full"
+        className="bg-[#26292E] opacity-90 fixed top-0 left-0 z-[1000] w-full h-full"
       ></div>
-      <div className=" bg-[#2E4EEC] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+      <div className=" bg-[#2E4EEC] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1001]">
         <button
           className="absolute right-[20px] top-[20px] flex w-[30px] h-[30px] items-center justify-center cursor-pointer text-[#26292E] hover:text-black transition-all"
           onClick={close}
