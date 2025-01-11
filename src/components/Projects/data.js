@@ -7,8 +7,8 @@ export const projects = [
     src: Img.src,
   },
   {
-    title: "Dental clinic Ortodent",
-    descr: "Tennis club",
+    title: "Tennis club",
+    descr: "Design & Development",
     src: Img.src,
   },
   {

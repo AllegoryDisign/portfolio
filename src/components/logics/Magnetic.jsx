@@ -9,12 +9,12 @@ export default function Magnetic({ children }) {
   useEffect(() => {
     const xTo = gsap.quickTo(magnetic.current, "x", {
       duration: 1,
-      ease: "elastic.out(1, 0.3)",
+      ease: "elastic.out(1, 0.5)",
     });
 
     const yTo = gsap.quickTo(magnetic.current, "y", {
       duration: 1,
-      ease: "elastic.out(1, 0.3)",
+      ease: "elastic.out(1, 0.5)",
     });
 
     const mouseMove = (e) => {

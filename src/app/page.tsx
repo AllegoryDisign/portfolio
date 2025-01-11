@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Header />
       <main className="flex flex-col">
-        <section className="relative flex flex-col items-center bg-grayBg pt-[70px]">
+        <section className="relative flex flex-col items-center bg-grayBg pt-[70px] z-20">
           <div className="relative flex uppercase">
             <div className="animate-left absolute -left-full top-[110px] z-10 whitespace-nowrap text-[160px] font-bold leading-[80%] text-blackTitle sm:text-[200px] md:top-[152px] lg:text-[280px]">
               Web ui ux Web ui ux Web ui ux Web ui ux Web ui ux Web ui ux Web ui
