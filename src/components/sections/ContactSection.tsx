@@ -29,7 +29,7 @@ export function ContactSection() {
     <>
       <section
         id="contact"
-        className="bg-blackBg pb-[60px] pt-[60px] sm:pb-[80px] sm:pt-[80px] lg:pb-[120px] lg:pt-[100px]"
+        className="bg-blackBg pb-[60px] pt-[60px] sm:pb-[80px] sm:pt-[80px] lg:pb-[120px] lg:pt-[100px] z-20"
       >
         <div className="container">
           <div className="flex flex-col sm:gap-[20px] md:flex-row">

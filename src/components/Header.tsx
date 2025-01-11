@@ -73,7 +73,7 @@ export function Header() {
             </Link>
             <Link
               className=" hover:text-[#3E4EFF] transition-all"
-              href="#contact"
+              href="/#contact"
               onClick={() => setOpen(false)}
             >
               Contact

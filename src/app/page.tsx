@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 import AutoplayVideo from "@/components/video/AutoplayVideo";
 import Magnetic from "@/components/logics/Magnetic";
 // import Video1 from "../../public/video/slider/slide1.mp4";
+import ProjectSection from "@/components/Projects/ProjectSection";
 
 export default function Home() {
   return (
@@ -49,7 +50,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-[60px] sm:py-[80px] lg:py-[120px]">
+        <section className="py-[60px] sm:py-[80px] lg:py-[120px] z-20">
           <div className="inter container flex flex-col justify-between font-medium text-blackText sm:flex-row">
             <div className="sm:mr-[20px]">
               <p className="mb-[24px] max-w-[880px] text-[24px] sm:text-[30px] lg:mb-[30px] lg:text-[40px]">
@@ -75,36 +76,21 @@ export default function Home() {
               </Magnetic>
             </div>
           </div>
+        </section>
+        <section className="z-20">
           <div>
             <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px]">
               Recent work
             </div>
 
-            <ul className="border-b border-b-grayBorder font-medium text-blackText">
-              <li className="flex cursor-pointer items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
-                <div className="text-[40px] uppercase">
-                  Dental clinic Ortodent
-                </div>
-                <div className="inter text-lg">Design & Development</div>
-              </li>
-              <li className="group relative flex cursor-pointer items-center justify-between overflow-hidden border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
-                {/* <div className='absolute bottom-0 left-[60%] flex h-[250px] w-[250px] translate-y-full items-center justify-center bg-[#213D5C] transition-all group-hover:translate-y-0'>
-                  <div className='relative h-[124px] w-[210px]'>
-                    <Image src='/recentWork/work_1.png' layout='fill' alt='' />
-                  </div>
-                </div> */}
-
-                <div className="text-[40px] uppercase">Tennis club</div>
-                <div className="inter text-lg">Design & Development</div>
-              </li>
-              <li className="flex cursor-pointer items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
-                <div className="text-[40px] uppercase">Medical Dasnboard</div>
-                <div className="inter text-lg">Design</div>
-              </li>
-            </ul>
-
+            <div className="relative">
+              <ProjectSection />
+            </div>
             {/* <SectionProj /> */}
-
+          </div>
+        </section>
+        <section className="z-20">
+          <div>
             <Magnetic>
               <Link
                 href="/work"
@@ -149,6 +135,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <ContactSection />
       </main>
       <Footer />
