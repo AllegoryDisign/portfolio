@@ -6,7 +6,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { Header } from "@/components/Header";
 import AutoplayVideo from "@/components/video/AutoplayVideo";
 import Magnetic from "@/components/logics/Magnetic";
-// import Video1 from "../../public/video/slider/slide1.mp4";
+// import Video1 from "../../public/video/slider/slide1.webm";
 import ProjectSection from "@/components/Projects/ProjectSection";
 
 export default function Home() {
@@ -112,7 +112,7 @@ export default function Home() {
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
                   <AutoplayVideo
                     className="flex w-full h-full absolute top-0 left-0"
-                    path="/video/slider/vinyl1.mkv"
+                    path="/video/slider/vinyl1.webm"
                   />
                 </div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
@@ -127,7 +127,7 @@ export default function Home() {
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
                   <AutoplayVideo
                     className="flex w-full h-full absolute top-0 left-0"
-                    path="/video/slider/maverick.mp4"
+                    path="/video/slider/maverick.webm"
                   />
                 </div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>

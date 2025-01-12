@@ -67,7 +67,7 @@ export default function Page() {
           <div className="container flex flex-col items-center">
             <AutoplayVideo
               className="mb-[60px] xl:mb-[90px]"
-              path="/img/work/photographer/video1.mkv"
+              path="/img/work/photographer/video1.webm"
             />
             {/* <Image
               className="mb-[60px] xl:mb-[90px] animate__animated opacity-0"
@@ -128,7 +128,7 @@ export default function Page() {
             /> */}
             <AutoplayVideo
               className=""
-              path="/img/work/photographer/video2.mkv"
+              path="/img/work/photographer/video2.webm"
             />
           </div>
         </section>

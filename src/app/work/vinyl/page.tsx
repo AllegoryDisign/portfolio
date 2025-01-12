@@ -66,7 +66,7 @@ export default function Page() {
           <div className="container flex flex-col items-center">
             <AutoplayVideo
               className="mb-[50px] md:mb-[60px] xl:mb-[100px]"
-              path="/img/work/vinyl/vinyl1.mkv"
+              path="/img/work/vinyl/vinyl1.webm"
             />
 
             {/* <Image
@@ -98,7 +98,7 @@ export default function Page() {
           <div className="container flex flex-col items-center">
             <AutoplayVideo
               className="md:mb-[60px] xl:mb-[100px]"
-              path="/img/work/vinyl/vinyl2.mkv"
+              path="/img/work/vinyl/vinyl2.webm"
             />
 
             <div className=" grid grid-cols-3 gap-[10px] md:gap-[20px] xl:gap-[28px]">
@@ -137,7 +137,7 @@ export default function Page() {
             {/* <Image src={LandingImage} sizes="100vw" quality={95} alt="" /> */}
             <AutoplayVideo
               className="md:mb-[60px] xl:mb-[100px]"
-              path="/img/work/vinyl/vinyl3.mkv"
+              path="/img/work/vinyl/vinyl3.webm"
             />
             <Image src={Ipad2Image} sizes="100vw" quality={95} alt="" />
           </div>
