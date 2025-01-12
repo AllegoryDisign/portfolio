@@ -4,12 +4,12 @@ import { Header } from "@/components/Header";
 import { MainSection1 } from "@/components/sections/MainSection1";
 import { NextPageSection } from "@/components/sections/NextPageSection";
 
-import Banner1Image from "../../../../public/img/work/404/error1.png";
-import Banner2Image from "../../../../public/img/work/404/error2.png";
-import Banner3Image from "../../../../public/img/work/404/error3.png";
-import Banner4Image from "../../../../public/img/work/404/error4.png";
-import Banner5Image from "../../../../public/img/work/404/error5.png";
-import PreviewImage from "../../../../public/img/work/dental-clinic/preview.png";
+import Banner1Image from "../../../../public/img/work/404/error1.webp";
+import Banner2Image from "../../../../public/img/work/404/error2.webp";
+import Banner3Image from "../../../../public/img/work/404/error3.webp";
+import Banner4Image from "../../../../public/img/work/404/error4.webp";
+import Banner5Image from "../../../../public/img/work/404/error5.webp";
+import PreviewImage from "../../../../public/img/work/dental-clinic/preview.webp";
 
 export default function Page() {
   return (

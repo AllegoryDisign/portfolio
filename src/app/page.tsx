@@ -22,7 +22,7 @@ export default function Home() {
             </div>
             <div className="z-20 h-[618px] w-[600px] lg:h-[824px] lg:w-[800px]">
               <Image
-                src="/img/portrait/photo_1.png"
+                src="/img/portrait/photo_1.webp"
                 alt=""
                 width={800}
                 height={824}

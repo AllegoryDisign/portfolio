@@ -6,19 +6,19 @@ import MainTitleList from "@/components/MainTitleList";
 import { Svg } from "@/components/Svg";
 
 import MainBgImage from "../../../../public/img/work/tennis/main.jpg";
-import TableImage from "../../../../public/img/work/tennis/tablet.png";
+import TableImage from "../../../../public/img/work/tennis/tablet.webp";
 
-import Mob1Image from "../../../../public/img/work/tennis/mob1.png";
-import Mob2Image from "../../../../public/img/work/tennis/mob2.png";
-import Mob3Image from "../../../../public/img/work/tennis/mob3.png";
+import Mob1Image from "../../../../public/img/work/tennis/mob1.webp";
+import Mob2Image from "../../../../public/img/work/tennis/mob2.webp";
+import Mob3Image from "../../../../public/img/work/tennis/mob3.webp";
 
-import Tablet2Image from "../../../../public/img/work/tennis/tablet2.png";
-import Tablet3Image from "../../../../public/img/work/tennis/tablet3.png";
+import Tablet2Image from "../../../../public/img/work/tennis/tablet2.webp";
+import Tablet3Image from "../../../../public/img/work/tennis/tablet3.webp";
 
-import Mob5Image from "../../../../public/img/work/tennis/mob5.png";
-import Mob4Image from "../../../../public/img/work/tennis/mob4.png";
+import Mob5Image from "../../../../public/img/work/tennis/mob5.webp";
+import Mob4Image from "../../../../public/img/work/tennis/mob4.webp";
 
-import PreviewImage from "../../../../public/img/work/medical-dashboard/preview.png";
+import PreviewImage from "../../../../public/img/work/medical-dashboard/preview.webp";
 import { MainSection1 } from "@/components/sections/MainSection1";
 import { NextPageSection } from "@/components/sections/NextPageSection";
 import AutoplayVideo from "@/components/video/AutoplayVideo";

@@ -5,14 +5,14 @@ import { Header } from "@/components/Header";
 import { Svg } from "@/components/Svg";
 import { MainSection1 } from "@/components/sections/MainSection1";
 
-import MainBgImage from "../../../../public/img/work/photographer/main.png";
-import TabletImage from "../../../../public/img/work/photographer/tablet.png";
-import Mob1Image from "../../../../public/img/work/photographer/mob1.png";
-import Mob2Image from "../../../../public/img/work/photographer/mob2.png";
-import Mob3Image from "../../../../public/img/work/photographer/mob3.png";
-import Main2Image from "../../../../public/img/work/photographer/main2.png";
-import Tablet2Image from "../../../../public/img/work/photographer/tablet2.png";
-import PreviewImage from "../../../../public/img/work/web-banners/preview.png";
+import MainBgImage from "../../../../public/img/work/photographer/main.webp";
+import TabletImage from "../../../../public/img/work/photographer/tablet.webp";
+import Mob1Image from "../../../../public/img/work/photographer/mob1.webp";
+import Mob2Image from "../../../../public/img/work/photographer/mob2.webp";
+import Mob3Image from "../../../../public/img/work/photographer/mob3.webp";
+import Main2Image from "../../../../public/img/work/photographer/main2.webp";
+import Tablet2Image from "../../../../public/img/work/photographer/tablet2.webp";
+import PreviewImage from "../../../../public/img/work/web-banners/preview.webp";
 import { NextPageSection } from "@/components/sections/NextPageSection";
 import AutoplayVideo from "@/components/video/AutoplayVideo";
 

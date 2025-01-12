@@ -26,7 +26,7 @@ export default function Home() {
               ux Web ui ux Web ui ux Web ui ux
             </div>
             <div className="z-20 h-[600px] w-[583px] lg:h-[800px] lg:w-[777px]">
-              <Image src="/img/portrait/photo_1.png" alt="" layout="fill" />
+              <Image src="/img/portrait/photo_1.webp" alt="" layout="fill" />
             </div>
 
             <div className="animate-right absolute -right-full bottom-[150px] z-20 whitespace-nowrap text-[160px] font-bold leading-[80%] text-white opacity-85 sm:text-[200px] md:bottom-[112px] lg:bottom-[152px] lg:text-[280px]">
@@ -84,7 +84,7 @@ export default function Home() {
               <li className="group relative flex cursor-pointer items-center justify-between overflow-hidden border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
                 {/* <div className='absolute bottom-0 left-[60%] flex h-[250px] w-[250px] translate-y-full items-center justify-center bg-[#213D5C] transition-all group-hover:translate-y-0'>
                   <div className='relative h-[124px] w-[210px]'>
-                    <Image src='/recentWork/work_1.png' layout='fill' alt='' />
+                    <Image src='/recentWork/work_1.webp' layout='fill' alt='' />
                   </div>
                 </div> */}
 

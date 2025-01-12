@@ -81,7 +81,7 @@ export default function About() {
 
             <Image
               className="h-auto w-full lg:h-[740px] lg:w-1/2 lg:object-cover"
-              src="/img/portrait/photo_about.png"
+              src="/img/portrait/photo_about.webp"
               alt=""
               objectFit="cover"
               quality={95}

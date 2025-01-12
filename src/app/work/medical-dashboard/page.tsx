@@ -5,10 +5,10 @@ import { Header } from "@/components/Header";
 import { Svg } from "@/components/Svg";
 import { MainSection1 } from "@/components/sections/MainSection1";
 
-import MainBgImage from "../../../../public/img/work/medical-dashboard/dashboard.png";
-import Dashboard2Image from "../../../../public/img/work/medical-dashboard/dashboard2.png";
-import Dashboard3Image from "../../../../public/img/work/medical-dashboard/dashboard3.png";
-import PreviewImage from "../../../../public/img/work/vinyl/preview.png";
+import MainBgImage from "../../../../public/img/work/medical-dashboard/dashboard.webp";
+import Dashboard2Image from "../../../../public/img/work/medical-dashboard/dashboard2.webp";
+import Dashboard3Image from "../../../../public/img/work/medical-dashboard/dashboard3.webp";
+import PreviewImage from "../../../../public/img/work/vinyl/preview.webp";
 import { NextPageSection } from "@/components/sections/NextPageSection";
 
 export default function Page() {

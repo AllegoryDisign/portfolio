@@ -3,19 +3,19 @@ import Image from "next/image";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 
-import MainBgImage from "../../../../public/img/work/dental-clinic/main.png";
+import MainBgImage from "../../../../public/img/work/dental-clinic/main.webp";
 
-import Phone1Image from "../../../../public/img/work/dental-clinic/phone1.png";
-import Phone2Image from "../../../../public/img/work/dental-clinic/phone2.png";
-import Phone3Image from "../../../../public/img/work/dental-clinic/phone3.png";
+import Phone1Image from "../../../../public/img/work/dental-clinic/phone1.webp";
+import Phone2Image from "../../../../public/img/work/dental-clinic/phone2.webp";
+import Phone3Image from "../../../../public/img/work/dental-clinic/phone3.webp";
 
-import VideoImage from "../../../../public/img/work/dental-clinic/video.png";
-import BoshkaImage from "../../../../public/img/work/dental-clinic/boshka.png";
+import VideoImage from "../../../../public/img/work/dental-clinic/video.webp";
+import BoshkaImage from "../../../../public/img/work/dental-clinic/boshka.webp";
 
-import Tablet1Image from "../../../../public/img/work/dental-clinic/tablet1.png";
-import Tablet2Image from "../../../../public/img/work/dental-clinic/tablet2.png";
+import Tablet1Image from "../../../../public/img/work/dental-clinic/tablet1.webp";
+import Tablet2Image from "../../../../public/img/work/dental-clinic/tablet2.webp";
 
-import PrewiewImage from "../../../../public/img/work/tennis/preview.png";
+import PrewiewImage from "../../../../public/img/work/tennis/preview.webp";
 import { MainSection1 } from "@/components/sections/MainSection1";
 import { NextPageSection } from "@/components/sections/NextPageSection";
 import AutoplayVideo from "@/components/video/AutoplayVideo";

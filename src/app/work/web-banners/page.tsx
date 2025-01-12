@@ -4,15 +4,15 @@ import { Header } from "@/components/Header";
 import { MainSection1 } from "@/components/sections/MainSection1";
 import { NextPageSection } from "@/components/sections/NextPageSection";
 
-import B1Image from "../../../../public/img/work/web-banners/02.png";
-import B2Image from "../../../../public/img/work/web-banners/03.png";
+import B1Image from "../../../../public/img/work/web-banners/02.webp";
+import B2Image from "../../../../public/img/work/web-banners/03.webp";
 
-import Banner1Image from "../../../../public/img/work/web-banners/banner1.png";
-import Banner2Image from "../../../../public/img/work/web-banners/banner2.png";
-import Banner3Image from "../../../../public/img/work/web-banners/banner3.png";
-import Banner4Image from "../../../../public/img/work/web-banners/banner4.png";
-import Banner5Image from "../../../../public/img/work/web-banners/banner5.png";
-import PreviewImage from "../../../../public/img/work/404/preview.png";
+import Banner1Image from "../../../../public/img/work/web-banners/banner1.webp";
+import Banner2Image from "../../../../public/img/work/web-banners/banner2.webp";
+import Banner3Image from "../../../../public/img/work/web-banners/banner3.webp";
+import Banner4Image from "../../../../public/img/work/web-banners/banner4.webp";
+import Banner5Image from "../../../../public/img/work/web-banners/banner5.webp";
+import PreviewImage from "../../../../public/img/work/404/preview.webp";
 import AutoplayVideo from "@/components/video/AutoplayVideo";
 
 export default function Page() {

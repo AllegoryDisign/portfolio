@@ -19,7 +19,7 @@ const works: WorkType[] = [
     descr: "Design & Development",
     date: "2024",
     href: "/work/dental-clinic",
-    img: "/img/work/dental-clinic/preview.png",
+    img: "/img/work/dental-clinic/preview.webp",
     bg: "bg-[#D8DEE4]",
   },
   {
@@ -27,7 +27,7 @@ const works: WorkType[] = [
     descr: "Design & Development",
     date: "2024",
     href: "/work/tennis",
-    img: "/img/work/tennis/preview.png",
+    img: "/img/work/tennis/preview.webp",
     bg: "bg-[#213D5C]",
   },
   {
@@ -35,7 +35,7 @@ const works: WorkType[] = [
     descr: "Design",
     date: "2024",
     href: "/work/medical-dashboard",
-    img: "/img/work/medical-dashboard/preview.png",
+    img: "/img/work/medical-dashboard/preview.webp",
     bg: "bg-[#F0F1EC]",
   },
   {
@@ -43,7 +43,7 @@ const works: WorkType[] = [
     descr: "Design",
     date: "2024",
     href: "/work/vinyl",
-    img: "/img/work/vinyl/preview.png",
+    img: "/img/work/vinyl/preview.webp",
     bg: "bg-[#EFE9D8]",
   },
 
@@ -52,7 +52,7 @@ const works: WorkType[] = [
     descr: "Design & Development",
     date: "2023",
     href: "/work/photographer",
-    img: "/img/work/photographer/preview.png",
+    img: "/img/work/photographer/preview.webp",
     bg: "bg-[#D9E4E3]",
   },
   {
@@ -60,7 +60,7 @@ const works: WorkType[] = [
     descr: "Design",
     date: "2023-2024",
     href: "/work/web-banners",
-    img: "/img/work/web-banners/preview.png",
+    img: "/img/work/web-banners/preview.webp",
     bg: "bg-[#000000]",
   },
   {
@@ -68,7 +68,7 @@ const works: WorkType[] = [
     descr: "Design",
     date: "2023-2024",
     href: "/work/404",
-    img: "/img/work/404/preview.png",
+    img: "/img/work/404/preview.webp",
     bg: "bg-[#ECECEC]",
   },
 ];
