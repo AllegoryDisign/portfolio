@@ -25,8 +25,8 @@ export default function Home() {
                 src="/img/portrait/photo_1.webp"
                 alt=""
                 width={800}
-                height={824}
-                sizes="5vw"
+                height={825}
+                sizes="50vw"
                 layout="responsive"
                 quality={95}
                 priority
