@@ -28,13 +28,13 @@ export default function Model({ activeMenu }) {
     if (activeMenu != null) {
       plane.current.material.uniforms.uTexture.value = textures[activeMenu];
       animate(opacity, 1, {
-        duration: 0.2,
+        duration: 0.3,
         onUpdate: (latest) =>
           (plane.current.material.uniforms.uAlpha.value = latest),
       });
     } else {
       animate(opacity, 0, {
-        duration: 0.2,
+        duration: 0.3,
         onUpdate: (latest) =>
           (plane.current.material.uniforms.uAlpha.value = latest),
       });

@@ -29,9 +29,6 @@ export function SlideOnScroll() {
         const a = row1TranslateX / 100;
         const b = row2TranslateX / 100;
 
-        console.log(a);
-        console.log(b);
-
         row1.style.transform = `translateX(${a}%)`;
         row2.style.transform = `translateX(${b}%)`;
       }

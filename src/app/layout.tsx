@@ -24,11 +24,11 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap"
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:wght@500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@400;500&family=Red+Hat+Display:wght@500&display=swap"
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
