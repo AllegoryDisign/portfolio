@@ -32,6 +32,7 @@ export default function Page() {
             className="mb-[60px] md:mb-[80px]"
             src={Banner1Image}
             alt=""
+            priority
           />
           <Image
             sizes="100vw"
@@ -39,6 +40,7 @@ export default function Page() {
             className="mb-[60px] md:mb-[80px]"
             src={Banner2Image}
             alt=""
+            priority
           />
           <Image
             sizes="100vw"

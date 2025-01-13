@@ -36,6 +36,7 @@ export default function Page() {
               src={MainBgImage}
               alt=""
               quality={95}
+              priority
             />
           </div>
         </section>
