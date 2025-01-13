@@ -3,8 +3,8 @@ import { projects } from "./data";
 
 export default function Projects({ setActiveMenu }) {
   return (
-    <div className="relative mix-blend-difference z-10 text-white h-screen w-full">
-      <ul
+    <div className="relative mix-blend-difference z-10 text-white w-full">
+      <div
         onMouseLeave={() => {
           setActiveMenu(null);
         }}
@@ -12,21 +12,22 @@ export default function Projects({ setActiveMenu }) {
       >
         {projects.map((project, i) => {
           return (
-            <li
+            <a
               onMouseOver={() => {
                 setActiveMenu(i);
               }}
               key={project.title}
               className="flex cursor-pointer items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10"
+              href={project.href}
             >
               <p className="text-[40px] uppercase text-blackTitle">
                 {project.title}
               </p>
               <p className="inter text-lg text-blackTitle">{project.descr}</p>
-            </li>
+            </a>
           );
         })}
-      </ul>
+      </div>
     </div>
   );
 }

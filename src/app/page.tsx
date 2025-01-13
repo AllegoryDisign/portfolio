@@ -77,9 +77,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="z-20">
+        <section className="hidden lg:block">
           <div>
-            <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px]">
+            <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px]  px-[20px] xl:px-[90px]">
               Recent work
             </div>
 
@@ -89,12 +89,12 @@ export default function Home() {
             {/* <SectionProj /> */}
           </div>
         </section>
-        <section className="z-20">
+        <section className="z-20 py-[60px] sm:py-[80px] lg:py-[120px]">
           <div>
             <Magnetic>
               <Link
                 href="/work"
-                className="mx-auto mb-40 mt-[60px] flex h-[180px] w-[180px] items-center justify-center rounded-full border border-grayBorder bg-white text-lg font-medium text-blackText"
+                className="mx-auto mb-40 flex h-[180px] w-[180px] items-center justify-center rounded-full border border-grayBorder bg-white text-lg font-medium text-blackText"
               >
                 More work
               </Link>

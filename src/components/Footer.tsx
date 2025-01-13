@@ -25,7 +25,7 @@ export function Footer() {
             Socials
           </span>
           <a
-            href="/"
+            href="https://t.me/Allegory23"
             className="inter text-lg font-medium text-white text-opacity-85"
           >
             Telegram

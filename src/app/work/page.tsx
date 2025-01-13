@@ -121,7 +121,7 @@ function WorkItem({ title, descr, date, href, img, bg }: WorkType) {
         }
       >
         <Image
-          className="absolute left-1/2 top-1/2 w-[calc(100%-40px)] -translate-x-1/2 -translate-y-1/2 transition-all group-hover:w-[calc(100%-20px)]"
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all w-[calc(100%-30px)] scale-95 group-hover:scale-100"
           src={img}
           width={558}
           height={330}
