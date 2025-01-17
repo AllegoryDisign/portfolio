@@ -6,7 +6,8 @@ const CurrentTime = () => {
 
   const updateTime = () => {
     const utcNow = new Date();
-    const localTime = new Date(utcNow.getTime() * 60 * 60 * 1000); // UTC +3
+    //  + 60 * 60 * 1000
+    const localTime = new Date(utcNow.getTime()); // UTC +3
     const formattedTime = localTime.toLocaleTimeString([], {
       hour: "2-digit",
       minute: "2-digit",
