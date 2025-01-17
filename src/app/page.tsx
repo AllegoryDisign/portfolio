@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { SlideOnScroll } from "@/components/logics/SlideOnScroll";
 import Link from "next/link";
@@ -14,20 +15,12 @@ import Img5 from "../../public/img/slider/img5.png";
 import Img6 from "../../public/img/slider/img6.png";
 import Img7 from "../../public/img/slider/img7.png";
 
-import { WorkItem } from "./work/page";
+import { WorkType } from "./work/page";
+import { WorkItem } from "@/components/WorkItem";
 
 import ImgWork1 from "../../public/img/work/dental-clinic/preview.webp";
 import ImgWork2 from "../../public/img/work/tennis/preview.webp";
 import ImgWork3 from "../../public/img/work/medical-dashboard/preview.webp";
-
-type WorkType = {
-  title: string;
-  descr: string;
-  date: string;
-  href: string;
-  img: string;
-  bg: string;
-};
 
 const works: WorkType[] = [
   {
