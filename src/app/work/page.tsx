@@ -112,7 +112,7 @@ export default function Work() {
   );
 }
 
-function WorkItem({ title, descr, date, href, img, bg }: WorkType) {
+export function WorkItem({ title, descr, date, href, img, bg }: WorkType) {
   return (
     <Link href={href} className="flex flex-col">
       <div

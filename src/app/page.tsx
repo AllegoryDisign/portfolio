@@ -6,8 +6,43 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { Header } from "@/components/Header";
 import AutoplayVideo from "@/components/video/AutoplayVideo";
 import Magnetic from "@/components/logics/Magnetic";
-// import Video1 from "../../public/video/slider/slide1.webm";
-import ProjectSection from "@/components/Projects/ProjectSection";
+
+import Img1 from "../../public/img/slider/img1.png";
+import Img2 from "../../public/img/slider/img2.png";
+import Img3 from "../../public/img/slider/img3.png";
+import Img5 from "../../public/img/slider/img5.png";
+import Img6 from "../../public/img/slider/img6.png";
+import Img7 from "../../public/img/slider/img7.png";
+
+import { WorkItem } from "./work/page";
+
+type WorkType = {
+  title: string;
+  descr: string;
+  date: string;
+  href: string;
+  img: string;
+  bg: string;
+};
+
+const works: WorkType[] = [
+  {
+    title: "Dental clinic Ortodent",
+    descr: "Design & Development",
+    date: "2024",
+    href: "/work/dental-clinic",
+    img: "/img/work/dental-clinic/preview.webp",
+    bg: "bg-[#D8DEE4]",
+  },
+  {
+    title: "tennis club",
+    descr: "Design & Development",
+    date: "2024",
+    href: "/work/tennis",
+    img: "/img/work/tennis/preview.webp",
+    bg: "bg-[#213D5C]",
+  },
+];
 
 export default function Home() {
   return (
@@ -77,18 +112,58 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="hidden lg:block">
-          <div>
-            <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px]  px-[20px] xl:px-[90px]">
+        <section className="hidden xl:block">
+          <div className="container">
+            <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px]">
               Recent work
             </div>
+            <div className="border-b border-b-grayBorder font-medium text-blackText">
+              <Link
+                href="/work/dental-clinic"
+                className="flex cursor-pointer items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50"
+              >
+                <div className="text-[40px] uppercase">
+                  Dental clinic Ortodent
+                </div>
+                <div className="inter text-lg">Design & Development</div>
+              </Link>
+              <Link
+                href="/work/tennis"
+                className="group relative flex cursor-pointer items-center justify-between overflow-hidden border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50"
+              >
+                {/* <div className='absolute bottom-0 left-[60%] flex h-[250px] w-[250px] translate-y-full items-center justify-center bg-[#213D5C] transition-all group-hover:translate-y-0'>
+                  <div className='relative h-[124px] w-[210px]'>
+                    <Image src='/recentWork/work_1.png' layout='fill' alt='' />
+                  </div>
+                </div> */}
 
-            <div className="relative">
-              <ProjectSection />
+                <div className="text-[40px] uppercase">Tennis club</div>
+                <div className="inter text-lg">Design & Development</div>
+              </Link>
+              <Link
+                href="/work/medical-dashboard"
+                className="flex cursor-pointer items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50"
+              >
+                <div className="text-[40px] uppercase">Medical Dasnboard</div>
+                <div className="inter text-lg">Design</div>
+              </Link>
             </div>
-            {/* <SectionProj /> */}
           </div>
         </section>
+
+        <section className="block xl:hidden">
+          <div className="container">
+            <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px]">
+              Recent work
+            </div>
+            <div className="grid grid-cols-1 gap-y-[60px] md:grid-cols-2 md:gap-x-[20px] md:gap-y-[80px] lg:gap-y-[120px]">
+              {works.map((w, i) => (
+                <WorkItem {...w} key={i} />
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="z-20 py-[60px] sm:py-[80px] lg:py-[120px]">
           <div>
             <Magnetic>
@@ -108,29 +183,77 @@ export default function Home() {
                 className="absolute right-0 top-0 flex w-[120%] gap-5"
                 id="scroll-slider-item-1"
               >
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                  <AutoplayVideo
-                    className="flex w-full h-full absolute top-0 left-0"
-                    path="/video/slider/vinyl1.webm"
+                  <Image
+                    className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
+                    src={Img1}
+                    sizes="30vw"
+                    quality={95}
+                    alt=""
                   />
                 </div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <AutoplayVideo
+                    className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
+                    path="/img/slider/vid1.mp4"
+                  />
+                </div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <Image
+                    className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
+                    src={Img5}
+                    sizes="30vw"
+                    quality={95}
+                    alt=""
+                  />
+                </div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <Image
+                    className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
+                    src={Img6}
+                    sizes="30vw"
+                    quality={95}
+                    alt=""
+                  />
+                </div>
               </div>
               <div
                 className="absolute bottom-0 left-0 flex w-[120%] gap-5"
                 id="scroll-slider-item-2"
               >
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                  <AutoplayVideo
-                    className="flex w-full h-full absolute top-0 left-0"
-                    path="/video/slider/maverick.webm"
+                  <Image
+                    className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
+                    src={Img2}
+                    sizes="30vw"
+                    quality={95}
+                    alt=""
                   />
                 </div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative"></div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <Image
+                    className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
+                    src={Img3}
+                    sizes="30vw"
+                    quality={95}
+                    alt=""
+                  />
+                </div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <AutoplayVideo
+                    className="flex w-full h-full absolute top-0 left-0  px-[20px] py-[25px] xl:py-[35px]"
+                    path="/img/slider/vid2.mp4"
+                  />
+                </div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <Image
+                    className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
+                    src={Img7}
+                    sizes="30vw"
+                    quality={95}
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
