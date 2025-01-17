@@ -16,6 +16,10 @@ import Img7 from "../../public/img/slider/img7.png";
 
 import { WorkItem } from "./work/page";
 
+import ImgWork1 from "../../public/img/work/dental-clinic/preview.webp";
+import ImgWork2 from "../../public/img/work/tennis/preview.webp";
+import ImgWork3 from "../../public/img/work/medical-dashboard/preview.webp";
+
 type WorkType = {
   title: string;
   descr: string;
@@ -85,7 +89,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-[60px] sm:py-[80px] lg:py-[120px] z-20">
+        <section className="pt-[60px] sm:pt-[80px] lg:pt-[120px] z-20">
           <div className="inter container flex flex-col justify-between font-medium text-blackText sm:flex-row">
             <div className="sm:mr-[20px]">
               <p className="mb-[24px] max-w-[880px] text-[24px] sm:text-[30px] lg:mb-[30px] lg:text-[40px]">
@@ -113,15 +117,30 @@ export default function Home() {
           </div>
         </section>
         <section className="hidden xl:block">
-          <div className="container">
-            <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px]">
+          <div className="container overflow-hidden  pt-[60px] sm:pt-[80px] lg:pt-[120px]">
+            <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px] ">
               Recent work
             </div>
             <div className="border-b border-b-grayBorder font-medium text-blackText">
               <Link
                 href="/work/dental-clinic"
-                className="flex cursor-pointer items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50"
+                className="group flex cursor-pointer items-center justify-between border-t border-t-grayBorder transition-all h-[167px] hover:h-[195px] after:h-[80px] after:w-1/2 after:bottom-0 after:left-0 after:z-10 after:bg-white after:absolute relative z-[1] bg-white"
               >
+                <div className="flex w-[320px] absolute bottom-0 translate-y-full group-hover:translate-y-0 left-1/2 transition-all duration-300">
+                  <div
+                    className={
+                      "relative w-full px-[20px] pb-[100%] bg-[#D8DEE4]"
+                    }
+                  >
+                    <Image
+                      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all w-[calc(100%-30px)]"
+                      src={ImgWork2}
+                      quality={95}
+                      alt=""
+                      sizes="50vw"
+                    />
+                  </div>
+                </div>
                 <div className="text-[40px] uppercase">
                   Dental clinic Ortodent
                 </div>
@@ -129,21 +148,46 @@ export default function Home() {
               </Link>
               <Link
                 href="/work/tennis"
-                className="group relative flex cursor-pointer items-center justify-between overflow-hidden border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50"
+                className="group flex cursor-pointer items-center justify-between border-t border-t-grayBorder transition-all h-[167px] hover:h-[195px] after:h-[80px] after:w-1/2 after:bottom-0 after:left-0 after:z-10 after:bg-white after:absolute relative z-[2] bg-white"
               >
-                {/* <div className='absolute bottom-0 left-[60%] flex h-[250px] w-[250px] translate-y-full items-center justify-center bg-[#213D5C] transition-all group-hover:translate-y-0'>
-                  <div className='relative h-[124px] w-[210px]'>
-                    <Image src='/recentWork/work_1.png' layout='fill' alt='' />
+                <div className="flex w-[320px] absolute bottom-0 translate-y-full group-hover:translate-y-0 left-1/2 transition-all duration-300">
+                  <div
+                    className={
+                      "relative w-full px-[20px] pb-[100%] bg-[#D8DEE4]"
+                    }
+                  >
+                    <Image
+                      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all w-[calc(100%-30px)]"
+                      src={ImgWork1}
+                      quality={95}
+                      alt=""
+                      sizes="50vw"
+                    />
                   </div>
-                </div> */}
+                </div>
 
                 <div className="text-[40px] uppercase">Tennis club</div>
                 <div className="inter text-lg">Design & Development</div>
               </Link>
               <Link
                 href="/work/medical-dashboard"
-                className="flex cursor-pointer items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50"
+                className="group flex cursor-pointer items-center justify-between border-t border-t-grayBorder transition-all h-[167px] hover:h-[195px] after:h-[80px] after:w-1/2 after:bottom-0 after:left-0 after:z-10 after:bg-white after:absolute relative z-[3] bg-white"
               >
+                <div className="flex w-[320px] absolute bottom-0 translate-y-full group-hover:translate-y-0 left-1/2 transition-all duration-300">
+                  <div
+                    className={
+                      "relative w-full px-[20px] pb-[100%] bg-[#D8DEE4]"
+                    }
+                  >
+                    <Image
+                      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all w-[calc(100%-30px)]"
+                      src={ImgWork3}
+                      quality={95}
+                      alt=""
+                      sizes="50vw"
+                    />
+                  </div>
+                </div>
                 <div className="text-[40px] uppercase">Medical Dasnboard</div>
                 <div className="inter text-lg">Design</div>
               </Link>
