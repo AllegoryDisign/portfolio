@@ -14,6 +14,8 @@ export function WorkItem({ title, descr, date, href, img, bg }: WorkType) {
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all w-[calc(100%-30px)] scale-95 group-hover:scale-100"
           src={img}
           quality={95}
+          width={560}
+          height={330}
           alt=""
           sizes="50vw"
         />
