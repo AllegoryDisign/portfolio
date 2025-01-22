@@ -44,7 +44,7 @@ export default function AutoplayVideo({
       loop
       muted
       style={{
-        objectFit: "cover",
+        objectFit: "fill",
       }}
     >
       <source src={`${process.env.NEXT_PUBLIC_BASE_URL}${path}`} />
