@@ -91,7 +91,7 @@ export default function About() {
           </div>
         </section>
         <section className="container py-[60px] md:py-[80px] lg:py-[120px]">
-          <ul className="grid grid-cols-2 gap-x-[10px] gap-y-[32px] xs:gap-x-[20px] sm:gap-y-[60px] md:grid-cols-4">
+          <ul className="grid grid-cols-2 gap-x-[10px] gap-y-[32px] xs:gap-x-[20px] sm:gap-y-[60px] md:grid-cols-4 lg:grid-cols-[186px_1fr_186px_1fr_186px_1fr_186px]">
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
                 01
@@ -105,6 +105,9 @@ export default function About() {
               <div className="inter text-[17px] font-medium leading-[121%] text-[#404040] sm:text-[18px]">
                 statement of work
               </div>
+            </li>
+            <li className="hidden lg:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC]" />
             </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
@@ -120,6 +123,9 @@ export default function About() {
                 competitor analysis
               </div>
             </li>
+            <li className="hidden lg:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC]" />
+            </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
                 03
@@ -133,6 +139,9 @@ export default function About() {
               <div className="inter text-[17px] font-medium leading-[121%] text-[#404040] sm:text-[18px]">
                 target audience
               </div>
+            </li>
+            <li className="hidden lg:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC]" />
             </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
@@ -148,6 +157,7 @@ export default function About() {
                 sketching
               </div>
             </li>
+
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
                 05
@@ -158,6 +168,9 @@ export default function About() {
               <div className="inter text-[17px] font-medium leading-[121%] text-[#404040] sm:text-[18px]">
                 layout drawing and UI kit
               </div>
+            </li>
+            <li className="hidden lg:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC]" />
             </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
@@ -170,6 +183,9 @@ export default function About() {
                 сreating a clickable <br /> prototype
               </div>
             </li>
+            <li className="hidden lg:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC]" />
+            </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
                 07
@@ -180,6 +196,9 @@ export default function About() {
               <div className="inter text-[17px] font-medium leading-[121%] text-[#404040] sm:text-[18px]">
                 design adaptation for all <br /> resolutions
               </div>
+            </li>
+            <li className="hidden lg:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC]" />
             </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
