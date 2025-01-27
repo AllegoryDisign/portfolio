@@ -27,10 +27,10 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap"
           rel="stylesheet"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@400;500&family=Red+Hat+Display:wght@500&display=swap"
-          rel="stylesheet"
-        />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Red+Hat+Display:wght@500&display=swap"
+  rel="stylesheet"
+/>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="relative bg-white">
