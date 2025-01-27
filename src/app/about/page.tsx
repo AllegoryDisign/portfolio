@@ -13,7 +13,12 @@ export default function About() {
           </Link>
           <nav className="animate__animated animate__fadeIn flex items-center gap-11 text-white">
             <Link href="/work">Work</Link>
-            <Link href="/about">About</Link>
+            <Link
+              className={"hover:text-[#362EEC] text-[#2E4EEC]"}
+              href="/about"
+            >
+              About
+            </Link>
             <Link href="/#contact">Contact</Link>
           </nav>
         </header>

@@ -3,9 +3,11 @@ import Link from "next/link";
 import { useState } from "react";
 import clsx from "clsx";
 import Magnetic from "./logics/Magnetic";
+import { usePathname } from "next/navigation";
 
 export function Header() {
   const [isOpen, setOpen] = useState(false);
+  const pathname = usePathname();
   return (
     <div className="absolute left-0 top-0 z-50 w-full">
       <header className="container flex items-center justify-between pt-10 text-[17px] font-medium text-blackText sm:text-[18px]">
@@ -32,9 +34,25 @@ export function Header() {
           </Magnetic>
 
           <nav className="animate__animated animate__fadeIn hidden items-center gap-11 text-blackText md:flex inter">
-            <Link href="/work">Work</Link>
-            <Link href="/about">About</Link>
-            <Link href="/#contact">Contact</Link>
+            <Link
+              className={clsx("hover:text-[#362EEC]", {
+                "text-[#2E4EEC]": pathname.includes("/work"),
+              })}
+              href="/work"
+            >
+              Work
+            </Link>
+            <Link
+              className={clsx("hover:text-[#362EEC]", {
+                "text-[#2E4EEC]": pathname.includes("/about"),
+              })}
+              href="/about"
+            >
+              About
+            </Link>
+            <Link className="hover:text-[#362EEC]" href="/#contact">
+              Contact
+            </Link>
           </nav>
         </div>
         <div
