@@ -4,7 +4,7 @@ import { useState } from "react";
 import clsx from "clsx";
 import Magnetic from "./logics/Magnetic";
 import { usePathname } from "next/navigation";
-
+// header
 export function Header() {
   const [isOpen, setOpen] = useState(false);
   const pathname = usePathname();
