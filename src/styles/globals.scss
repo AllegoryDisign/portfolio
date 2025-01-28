@@ -4,6 +4,10 @@
 
 @import "animate.css";
 
+$bar-width: 30px;
+$bar-height: 3px;
+$bar-spacing: 5px;
+
 $animationCoef: 2;
 
 .container {
@@ -86,54 +90,6 @@ body {
 *::-webkit-scrollbar-thumb:hover {
   background: #888; /* Цвет ползунка при наведении (светлее) */
 }
-
-// .burger {
-//   position: relative;
-//   border: none;
-//   background: transparent;
-//   width: 40px;
-//   height: 26px;
-// }
-// .burger::before,
-// .burger::after {
-//   content: "";
-//   left: 0;
-//   position: absolute;
-//   display: block;
-//   width: 100%;
-//   height: 4px;
-//   border-radius: 10px;
-//   background: #ffffff;
-// }
-// .burger::before {
-//   top: 0;
-//   box-shadow: 0 11px 0 #ffffff;
-// }
-// .burger::after {
-//   bottom: 0;
-// }
-
-// .burger::before {
-//   transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
-// }
-// .burger::after {
-//   transition: bottom 0.3s 0.15s, transform 0.3s;
-// }
-// .burger.active::before {
-//   top: 11px;
-//   transform: rotate(45deg);
-//   box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
-//   transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
-// }
-// .burger.active::after {
-//   bottom: 11px;
-//   transform: rotate(-45deg);
-//   transition: bottom 0.3s, transform 0.3s 0.15s;
-// }
-
-$bar-width: 30px;
-$bar-height: 3px;
-$bar-spacing: 5px;
 
 body {
   background: #f44336;
