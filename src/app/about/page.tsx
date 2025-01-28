@@ -53,7 +53,7 @@ export default function About() {
               <ul className="border-t border-t-grayBorder">
                 <li className="flex flex-col gap-5 border-b border-b-grayBorder pb-[30px] pt-[24px] sm:pb-[40px] lg:pt-[30px]">
                   <div className="text-[24px] font-medium uppercase leading-[132%] text-blackText sm:text-[40px]">
-                      Design
+                    Design
                   </div>
                   <p className="font-inter text-[17px] font-medium leading-[121%] text-blackText sm:text-[18px]">
                     With a solid track record in designing websites, I deliver
