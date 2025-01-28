@@ -43,12 +43,12 @@ export default function Page() {
 
         <section className=" bg-[#ffffff] py-[60px] md:py-[80px] xl:py-[120px]">
           <div className="container grid grid-cols-1 md:grid-cols-2 gap-[24px] xl:gap-[80px]">
-            <p className="inter text-[24px] md:text-[30px] xl:text-[40px] font-medium mb-[24px] text-[#404040]">
+            <p className="font-inter text-[24px] md:text-[30px] xl:text-[40px] font-medium mb-[24px] text-[#404040]">
               The dashboard helps health care providers{" "}
               <span className="text-[#362EEC]">effectively</span> track their
               performance statistics
             </p>
-            <p className="inter text-[17px] md:text-[18px] font-medium text-[#404040]">
+            <p className="font-inter text-[17px] md:text-[18px] font-medium text-[#404040]">
               This project focuses on both functionality and aesthetic appeal.
               When developing the medical dashboard, it was important to focus
               on solutions that would be user friendly
@@ -66,7 +66,7 @@ export default function Page() {
                 sizes="100vw"
                 alt=""
               />
-              <span className="inter font-medium text-[17px] md:text-[18px] text-[#404040]">
+              <span className="font-inter font-medium text-[17px] md:text-[18px] text-[#404040]">
                 Created the ability to switch between light and dark themes
               </span>
             </div>
@@ -80,11 +80,11 @@ export default function Page() {
                 alt=""
               />
               <div className="flex flex-col lg:flex-row justify-between">
-                <p className="inter font-medium text-[24px] md:text-[30px] xl:text-[40px] lg:max-w-[450px] xl:max-w-[596px] text-[#404040] mb-[20px] lg:mb-0">
+                <p className="font-inter font-medium text-[24px] md:text-[30px] xl:text-[40px] lg:max-w-[450px] xl:max-w-[596px] text-[#404040] mb-[20px] lg:mb-0">
                   This project was developed according to all the design rules
                   in Figma
                 </p>
-                <p className="inter font-medium text-[17px] md:text-[18px] xl:max-w-[495px] lg:max-w-[450px]  text-[#404040]">
+                <p className="font-inter font-medium text-[17px] md:text-[18px] xl:max-w-[495px] lg:max-w-[450px]  text-[#404040]">
                   The clever use of meshes and components has resulted in a
                   dashboard that is not only visually appealing, but also
                   intuitive for the userz

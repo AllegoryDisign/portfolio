@@ -7,6 +7,12 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        redhatdisplay: ["var(--font-red-hat-display)"],
+      },
+    },
     screens: {
       sm: "480px",
       md: "768px",

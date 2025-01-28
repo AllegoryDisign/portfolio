@@ -15,12 +15,20 @@ import Img5 from "../../public/img/slider/img5.png";
 import Img6 from "../../public/img/slider/img6.png";
 import Img7 from "../../public/img/slider/img7.png";
 
-import { WorkType } from "./work/page";
 import { WorkItem } from "@/components/WorkItem";
 
 import ImgWork1 from "../../public/img/work/dental-clinic/preview.webp";
 import ImgWork2 from "../../public/img/work/tennis/preview.webp";
 import ImgWork3 from "../../public/img/work/medical-dashboard/preview.webp";
+
+export type WorkType = {
+  title: string;
+  descr: string;
+  date: string;
+  href: string;
+  img: string;
+  bg: string;
+};
 
 const works: WorkType[] = [
   {
@@ -73,17 +81,17 @@ export default function Home() {
 
           <div className="absolute bottom-0 left-0 right-0 z-20">
             <div className="container flex flex-col items-end pb-10 md:flex-row md:items-center md:justify-between">
-              <span className="inter animate__animated animate__fadeIn text-[17px] font-medium text-white sm:text-[18px] lg:text-blackText">
+              <span className="font-inter animate__animated animate__fadeIn text-[17px] font-medium text-white sm:text-[18px] lg:text-blackText">
                 Located in Belarus
               </span>
-              <span className="inter animate__animated animate__fadeIn text-[17px] font-medium text-white sm:text-[18px] lg:text-blackText">
+              <span className="font-inter animate__animated animate__fadeIn text-[17px] font-medium text-white sm:text-[18px] lg:text-blackText">
                 Design & Development
               </span>
             </div>
           </div>
         </section>
         <section className="pt-[60px] sm:pt-[80px] lg:pt-[120px] z-20">
-          <div className="inter container flex flex-col justify-between font-medium text-blackText sm:flex-row">
+          <div className="font-inter container flex flex-col justify-between font-medium text-blackText sm:flex-row">
             <div className="sm:mr-[20px]">
               <p className="mb-[24px] max-w-[880px] text-[24px] sm:text-[30px] lg:mb-[30px] lg:text-[40px]">
                 Design can fascinatingly change our decisions and emotions. It
@@ -100,7 +108,7 @@ export default function Home() {
               </span>
               <Magnetic>
                 <Link
-                  className="ml-auto flex h-[180px] w-[180px] min-w-[180px] cursor-pointer items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover magnetic"
+                  className="ml-auto flex h-[180px] w-[180px] min-w-[180px] cursor-pofont-inter items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover magnetic"
                   href="/about"
                 >
                   About me
@@ -117,7 +125,7 @@ export default function Home() {
             <div className="border-b border-b-grayBorder font-medium text-blackText">
               <Link
                 href="/work/dental-clinic"
-                className="group flex cursor-pointer items-center justify-between border-t border-t-grayBorder transition-all h-[167px] hover:h-[195px] after:h-[80px] after:w-1/2 after:bottom-0 after:left-0 after:z-10 after:bg-white after:absolute relative z-[1] bg-white"
+                className="group flex cursor-pofont-inter items-center justify-between border-t border-t-grayBorder transition-all h-[167px] hover:h-[195px] after:h-[80px] after:w-1/2 after:bottom-0 after:left-0 after:z-10 after:bg-white after:absolute relative z-[1] bg-white"
               >
                 <div className="flex w-[320px] absolute bottom-0 translate-y-full group-hover:translate-y-0 left-1/2 transition-all duration-300">
                   <div
@@ -137,11 +145,11 @@ export default function Home() {
                 <div className="text-[40px] uppercase">
                   Dental clinic Ortodent
                 </div>
-                <div className="inter text-lg">Design & Development</div>
+                <div className="font-inter text-lg">Design & Development</div>
               </Link>
               <Link
                 href="/work/tennis"
-                className="group flex cursor-pointer items-center justify-between border-t border-t-grayBorder transition-all h-[167px] hover:h-[195px] after:h-[80px] after:w-1/2 after:bottom-0 after:left-0 after:z-10 after:bg-white after:absolute relative z-[2] bg-white"
+                className="group flex cursor-pofont-inter items-center justify-between border-t border-t-grayBorder transition-all h-[167px] hover:h-[195px] after:h-[80px] after:w-1/2 after:bottom-0 after:left-0 after:z-10 after:bg-white after:absolute relative z-[2] bg-white"
               >
                 <div className="flex w-[320px] absolute bottom-0 translate-y-full group-hover:translate-y-0 left-1/2 transition-all duration-300">
                   <div
@@ -160,11 +168,11 @@ export default function Home() {
                 </div>
 
                 <div className="text-[40px] uppercase">Tennis club</div>
-                <div className="inter text-lg">Design & Development</div>
+                <div className="font-inter text-lg">Design & Development</div>
               </Link>
               <Link
                 href="/work/medical-dashboard"
-                className="group flex cursor-pointer items-center justify-between border-t border-t-grayBorder transition-all h-[167px] hover:h-[195px] after:h-[80px] after:w-1/2 after:bottom-0 after:left-0 after:z-10 after:bg-white after:absolute relative z-[3] bg-white"
+                className="group flex cursor-pofont-inter items-center justify-between border-t border-t-grayBorder transition-all h-[167px] hover:h-[195px] after:h-[80px] after:w-1/2 after:bottom-0 after:left-0 after:z-10 after:bg-white after:absolute relative z-[3] bg-white"
               >
                 <div className="flex w-[320px] absolute bottom-0 translate-y-full group-hover:translate-y-0 left-1/2 transition-all duration-300">
                   <div
@@ -182,7 +190,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="text-[40px] uppercase">Medical Dasnboard</div>
-                <div className="inter text-lg">Design</div>
+                <div className="font-inter text-lg">Design</div>
               </Link>
             </div>
           </div>

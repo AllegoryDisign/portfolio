@@ -5,35 +5,35 @@ export function Footer() {
     <footer className="relative overflow-hidden border-t border-t-grayInput bg-blackBg pt-[100px] z-20">
       <div className="container flex flex-col items-center justify-between gap-[24px] sm:flex-row sm:flex-wrap sm:gap-[40px]">
         <div className="flex w-full justify-between sm:inline-flex sm:w-auto sm:flex-col sm:gap-[12px] lg:gap-[20px]">
-          <span className="inter text-lg font-medium text-grayFooterText">
+          <span className="font-inter text-lg font-medium text-grayFooterText">
             Version
           </span>
-          <span className="inter text-lg font-medium text-white text-opacity-85">
+          <span className="font-inter text-lg font-medium text-white text-opacity-85">
             © 2025, Alina Gavrilovich
           </span>
         </div>
         <div className="flex w-full justify-between sm:inline-flex sm:w-auto sm:flex-col sm:gap-[12px] lg:gap-[20px]">
-          <span className="inter text-lg font-medium text-grayFooterText">
+          <span className="font-inter text-lg font-medium text-grayFooterText">
             Local time
           </span>
-          <span className="inter text-lg font-medium text-white text-opacity-85">
+          <span className="font-inter text-lg font-medium text-white text-opacity-85">
             <CurrentTime />
           </span>
         </div>
         <div className="flex w-full justify-between sm:inline-flex sm:w-auto sm:flex-col sm:gap-[12px] lg:gap-[20px]">
-          <span className="inter text-lg font-medium text-grayFooterText">
+          <span className="font-inter text-lg font-medium text-grayFooterText">
             Socials
           </span>
           <a
             href="https://t.me/Allegory23"
-            className="inter text-lg font-medium text-white text-opacity-85"
+            className="font-inter text-lg font-medium text-white text-opacity-85"
           >
             Telegram
           </a>
         </div>
 
         <a
-          className="inter mb-[20px] inline-flex justify-center text-[26px] font-normal text-white sm:mb-0 lg:text-[30px]"
+          className="font-inter mb-[20px] inline-flex justify-center text-[26px] font-normal text-white sm:mb-0 lg:text-[30px]"
           href="mailto:gavrilovich.ali@gmail.com"
         >
           gavrilovich.ali@gmail.com

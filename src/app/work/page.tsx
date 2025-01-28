@@ -5,14 +5,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { WorkItem } from "@/components/WorkItem";
 
-export interface WorkType {
+export type WorkType = {
   title: string;
   descr: string;
   date: string;
   href: string;
   img: string;
   bg: string;
-}
+};
 
 const works: WorkType[] = [
   {
@@ -93,7 +93,7 @@ export default function Work() {
             </div>
           </h1>
           <div className="flex flex-col justify-between md:flex-row md:items-center">
-            <p className="inter mt-[10px] text-[17px] font-medium leading-[121%] text-[#404040] sm:mt-[16px] sm:text-[18px] md:max-w-[327px]">
+            <p className="font-inter mt-[10px] text-[17px] font-medium leading-[121%] text-[#404040] sm:mt-[16px] sm:text-[18px] md:max-w-[327px]">
               I use my passion and skills to create digital products. Explore my
               projects below to witness firsthand the impact of my skills
             </p>

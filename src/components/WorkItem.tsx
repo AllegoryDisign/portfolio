@@ -24,7 +24,7 @@ export function WorkItem({ title, descr, date, href, img, bg }: WorkType) {
         {title}
       </div>
       <hr className="mt-auto text-[#C3C6CC]" />
-      <div className="inter mt-[16px] flex items-center justify-between text-[17px] font-medium leading-[120%] text-[#404040] md:text-[18px]">
+      <div className="font-inter mt-[16px] flex items-center justify-between text-[17px] font-medium leading-[120%] text-[#404040] md:text-[18px]">
         <div>{descr}</div>
         <div>{date}</div>
       </div>

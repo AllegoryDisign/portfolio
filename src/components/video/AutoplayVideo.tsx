@@ -12,19 +12,21 @@ export default function AutoplayVideo({
   const [hasPlayed, setHasPlayed] = useState(false); // Флаг для отслеживания, воспроизводилось ли видео
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasPlayed) {
-          if (videoRef.current) {
-            videoRef.current.play();
-            setHasPlayed(true); // Устанавливаем флаг, что видео воспроизводилось
+    const observer =
+      new font() -
+      intersectionObserver(
+        ([entry]) => {
+          if (entry.isfont - intersecting && !hasPlayed) {
+            if (videoRef.current) {
+              videoRef.current.play();
+              setHasPlayed(true); // Устанавливаем флаг, что видео воспроизводилось
+            }
           }
+        },
+        {
+          threshold: 0.1, // Начинаем воспроизводить, когда 50% видео в области видимости
         }
-      },
-      {
-        threshold: 0.1, // Начинаем воспроизводить, когда 50% видео в области видимости
-      }
-    );
+      );
 
     if (videoRef.current) {
       observer.observe(videoRef.current);

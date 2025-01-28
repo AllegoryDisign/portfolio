@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <div className="absolute left-0 top-0 z-10 w-full">
-        <header className="inter container flex items-center justify-between pt-10 text-[17px] font-medium text-blackText sm:text-[18px]">
+        <header className="font-inter container flex items-center justify-between pt-10 text-[17px] font-medium text-blackText sm:text-[18px]">
           <Link href="/" className="animate__animated animate__fadeIn">
             © Alina Gavrilovich
           </Link>
@@ -37,17 +37,17 @@ export default function Home() {
 
           <div className="absolute bottom-0 left-0 right-0 z-20">
             <div className="container flex flex-col items-end pb-10 md:flex-row md:items-center md:justify-between">
-              <span className="inter animate__animated animate__fadeIn text-[17px] font-medium text-white sm:text-[18px] lg:text-blackText">
+              <span className="font-inter animate__animated animate__fadeIn text-[17px] font-medium text-white sm:text-[18px] lg:text-blackText">
                 Located in Belarus
               </span>
-              <span className="inter animate__animated animate__fadeIn text-[17px] font-medium text-white sm:text-[18px] lg:text-blackText">
+              <span className="font-inter animate__animated animate__fadeIn text-[17px] font-medium text-white sm:text-[18px] lg:text-blackText">
                 Design & Development
               </span>
             </div>
           </div>
         </section>
         <section className="py-[60px] sm:py-[80px] lg:py-[120px]">
-          <div className="inter container flex flex-col justify-between font-medium text-blackText sm:flex-row">
+          <div className="font-inter container flex flex-col justify-between font-medium text-blackText sm:flex-row">
             <div className="sm:mr-[20px]">
               <p className="mb-[24px] max-w-[880px] text-[24px] sm:text-[30px] lg:mb-[30px] lg:text-[40px]">
                 Design can fascinatingly change our decisions and emotions. It
@@ -63,7 +63,7 @@ export default function Home() {
                 Passionate about creating intuitive digital solutions
               </span>
               <Link
-                className="ml-auto flex h-[180px] w-[180px] min-w-[180px] cursor-pointer items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover"
+                className="ml-auto flex h-[180px] w-[180px] min-w-[180px] cursor-pofont-inter items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover"
                 href="/about"
               >
                 About me
@@ -75,13 +75,13 @@ export default function Home() {
               Recent work
             </div>
             <ul className="border-b border-b-grayBorder font-medium text-blackText">
-              <li className="flex cursor-pointer items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
+              <li className="flex cursor-pofont-inter items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
                 <div className="text-[40px] uppercase">
                   Dental clinic Ortodent
                 </div>
-                <div className="inter text-lg">Design & Development</div>
+                <div className="font-inter text-lg">Design & Development</div>
               </li>
-              <li className="group relative flex cursor-pointer items-center justify-between overflow-hidden border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
+              <li className="group relative flex cursor-pofont-inter items-center justify-between overflow-hidden border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
                 {/* <div className='absolute bottom-0 left-[60%] flex h-[250px] w-[250px] translate-y-full items-center justify-center bg-[#213D5C] transition-all group-hover:translate-y-0'>
                   <div className='relative h-[124px] w-[210px]'>
                     <Image src='/recentWork/work_1.webp' layout='fill' alt='' />
@@ -89,11 +89,11 @@ export default function Home() {
                 </div> */}
 
                 <div className="text-[40px] uppercase">Tennis club</div>
-                <div className="inter text-lg">Design & Development</div>
+                <div className="font-inter text-lg">Design & Development</div>
               </li>
-              <li className="flex cursor-pointer items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
+              <li className="flex cursor-pofont-inter items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
                 <div className="text-[40px] uppercase">Medical Dasnboard</div>
-                <div className="inter text-lg">Design</div>
+                <div className="font-inter text-lg">Design</div>
               </li>
             </ul>
 

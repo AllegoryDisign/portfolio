@@ -18,7 +18,7 @@ export default function SendEmailPopup({ close }: { close: () => void }) {
       ></div>
       <div className=" bg-[#2E4EEC] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1001]">
         <button
-          className="absolute right-[20px] top-[20px] flex w-[30px] h-[30px] items-center justify-center cursor-pointer text-[#26292E] hover:text-black transition-all"
+          className="absolute right-[20px] top-[20px] flex w-[30px] h-[30px] items-center justify-center cursor-pofont-inter text-[#26292E] hover:text-black transition-all"
           onClick={close}
         >
           <svg
@@ -49,7 +49,7 @@ export default function SendEmailPopup({ close }: { close: () => void }) {
           <div className="text-[#26292E]">You</div>
         </div>
         <hr className=" m-0 flex w-full h-[1px] bg-[#26292E]" />
-        <div className="text-white inter font-medium text-[20px] md:text-[30px] m-[30px] mb-[40px]  md:m-[50px] md:mb-[80px] flex flex-col">
+        <div className="text-white font-inter font-medium text-[20px] md:text-[30px] m-[30px] mb-[40px]  md:m-[50px] md:mb-[80px] flex flex-col">
           <div className=" flex-shrink-0 text-nowrap">
             Your message has been sent.
           </div>

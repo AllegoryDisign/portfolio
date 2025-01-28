@@ -4,6 +4,20 @@ import "@/styles/globals.scss";
 import { AnimationScroll } from "@/components/logics/AnimationScroll";
 import NextTopLoader from "nextjs-toploader";
 
+import { Inter, Red_Hat_Display } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const redHatDisplay = Red_Hat_Display({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-red-hat-display",
+});
+
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "",
@@ -15,22 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      className={`${inter.variable} ${redHatDisplay.variable} font-red-hat-display`}
+      lang="en"
+    >
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-<link
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Red+Hat+Display:wght@500&display=swap"
-  rel="stylesheet"
-/>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="relative bg-white">

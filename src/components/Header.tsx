@@ -11,7 +11,7 @@ export function Header() {
   return (
     <div className="absolute left-0 top-0 z-50 w-full">
       <header className="container flex items-center justify-between pt-10 text-[17px] font-medium text-blackText sm:text-[18px]">
-        <Link href="/" className="animate__animated animate__fadeIn inter">
+        <Link href="/" className="animate__animated animate__fadeIn font-inter">
           © Alina Gavrilovich
         </Link>
         <div>
@@ -33,7 +33,7 @@ export function Header() {
             </div>
           </Magnetic>
 
-          <nav className="animate__animated animate__fadeIn hidden items-center gap-11 text-blackText md:flex inter">
+          <nav className="animate__animated animate__fadeIn hidden items-center gap-11 text-blackText md:flex font-inter">
             <Link
               className={clsx("hover:text-[#362EEC]", {
                 "text-[#2E4EEC]": pathname.includes("/work"),
@@ -61,7 +61,7 @@ export function Header() {
             isOpen ? "-translate-y-0" : "-translate-y-full"
           )}
         >
-          <div className="text-[#A5A5A5] text-[17px] font-medium inter">
+          <div className="text-[#A5A5A5] text-[17px] font-medium font-inter">
             Navigation
           </div>
           <hr className="border-none my-[24px] h-[1px] w-full bg-[#656565]" />
@@ -98,7 +98,7 @@ export function Header() {
             </Link>
           </div>
           <a
-            className="text-white text-[26px] inter hover:text-[#3E4EFF] transition-all"
+            className="text-white text-[26px] font-inter hover:text-[#3E4EFF] transition-all"
             href="mailto:gavrilovich.ali@gmail.com"
           >
             gavrilovich.ali@gmail.com

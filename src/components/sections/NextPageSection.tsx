@@ -17,7 +17,7 @@ export function NextPageSection({
   return (
     <div className="flex flex-col items-center justify-center bg-[#26292E] py-[60px]">
       <div className="container flex flex-col items-center">
-        <span className="inter font-medium leading-[120%] text-white sm:text-[18px]">
+        <span className="font-inter font-medium leading-[120%] text-white sm:text-[18px]">
           Next work
         </span>
 
@@ -41,7 +41,7 @@ export function NextPageSection({
         </div>
         <Magnetic>
           <Link
-            className="mt-[60px] flex h-[180px] w-[180px] min-w-[180px] cursor-pointer items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover"
+            className="mt-[60px] flex h-[180px] w-[180px] min-w-[180px] cursor-pofont-inter items-center justify-center rounded-full bg-blue text-lg text-white transition hover:bg-blueHover"
             href="/work"
           >
             All work

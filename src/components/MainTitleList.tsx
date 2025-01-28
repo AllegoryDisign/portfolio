@@ -8,7 +8,7 @@ export default function MainTitleList({ items }: { items: Item[] }) {
     <ul className="flex flex-col md:flex-row justify-between lg:flex-col lg:justify-normal w-full">
       {items.map(({ title, value }, i) => (
         <li
-          className="flex items-center lg:items-start sm:flex-row lg:flex-col inter mb-[16px] lg:mb-[5px]"
+          className="flex items-center lg:items-start sm:flex-row lg:flex-col font-inter mb-[16px] lg:mb-[5px]"
           key={i}
         >
           <div className="flex border-b border-[#C3C6CC] pb-[8px]">
