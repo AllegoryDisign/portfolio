@@ -54,7 +54,7 @@ export default function Home() {
     <>
       <Header />
       <main className="flex flex-col">
-        <section className="relative flex flex-col items-center bg-grayBg pt-[70px] z-20">
+        <section className="relative flex flex-col items-center bg-grayBg pt-[70px] z-20 overflow-hidden">
           <div className="relative flex uppercase">
             <div className="animate-left absolute -left-full top-[110px] z-10 whitespace-nowrap text-[160px] font-bold leading-[80%] text-blackTitle sm:text-[200px] md:top-[152px] lg:text-[280px]">
               Web ui ux Web ui ux Web ui ux Web ui ux Web ui ux Web ui ux Web ui
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
 
           <div className="absolute bottom-0 left-0 right-0 z-20">
-            <div className="container flex flex-col items-end pb-10 md:flex-row md:items-center md:justify-between">
+            <div className="container flex flex-col items-end pb-10 md:flex-row md:items-center md:justify-between overflow-hidden">
               <span className="font-inter animate__animated animate__fadeIn text-[17px] font-medium text-white sm:text-[18px] lg:text-blackText">
                 Located in Belarus
               </span>

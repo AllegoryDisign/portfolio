@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      className={`${inter.variable} ${redHatDisplay.variable} font-red-hat-display`}
+      className={`${inter.variable} ${redHatDisplay.variable} font-red-hat-display overflow-x-hidden`}
       lang="en"
     >
       <head>
