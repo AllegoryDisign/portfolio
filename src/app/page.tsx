@@ -118,11 +118,11 @@ export default function Home() {
           </div>
         </section>
         <section className="hidden xl:block">
-          <div className="container overflow-hidden  pt-[60px] sm:pt-[80px] lg:pt-[120px]">
+          <div className="container overflow-hidden pt-[60px] sm:pt-[80px] lg:pt-[120px]">
             <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px] ">
               Recent work
             </div>
-            <div className="border-b border-b-grayBorder font-medium text-blackText">
+            <div className="border-b border-b-grayBorder font-medium text-blackText overflow-hidden">
               <Link
                 href="/work/dental-clinic"
                 className="group flex cursor-pofont-inter items-center justify-between border-t border-t-grayBorder transition-all h-[167px] hover:h-[195px] after:h-[80px] after:w-1/2 after:bottom-0 after:left-0 after:z-10 after:bg-white after:absolute relative z-[1] bg-white"
@@ -135,7 +135,7 @@ export default function Home() {
                   >
                     <Image
                       className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all w-[calc(100%-30px)]"
-                      src={ImgWork2}
+                      src={ImgWork1}
                       quality={95}
                       alt=""
                       sizes="50vw"
@@ -154,12 +154,12 @@ export default function Home() {
                 <div className="flex w-[320px] absolute bottom-0 translate-y-full group-hover:translate-y-0 left-1/2 transition-all duration-300">
                   <div
                     className={
-                      "relative w-full px-[20px] pb-[100%] bg-[#D8DEE4]"
+                      "relative w-full px-[20px] pb-[100%] bg-[#213D5C]"
                     }
                   >
                     <Image
                       className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all w-[calc(100%-30px)]"
-                      src={ImgWork1}
+                      src={ImgWork2}
                       quality={95}
                       alt=""
                       sizes="50vw"
@@ -177,7 +177,7 @@ export default function Home() {
                 <div className="flex w-[320px] absolute bottom-0 translate-y-full group-hover:translate-y-0 left-1/2 transition-all duration-300">
                   <div
                     className={
-                      "relative w-full px-[20px] pb-[100%] bg-[#D8DEE4]"
+                      "relative w-full px-[20px] pb-[100%] bg-[#F0F1EC]"
                     }
                   >
                     <Image
