@@ -31,12 +31,8 @@ export default function About() {
               businesses
             </h1>
             <div className="flex flex-col lg:flex-row lg:items-center">
-              <p className="font-medium font-inter text-[17px] md:text-[18px] text-white lg:mr-[60px]">
-                I create tailored websites for small businesses and start-ups
-                to help them reach bigger audiences. I have been creating
-                customized websites for over 2 years. It is important for
-                me to do my work not just well, but better than others, for this
-                purpose I am constantly improving my skills
+              <p className="font-medium font-inter text-[17px] md:text-[18px] text-white lg:mr-[60px] max-w-[598px]">
+              I&nbsp;create tailored websites for small businesses and start-ups to&nbsp;help them reach bigger audiences. I&nbsp;have been creating customized websites for over 2&nbsp;years. It&nbsp;is&nbsp;important for me&nbsp;to&nbsp;do&nbsp;my&nbsp;work not just well, but better than others, for this purpose I&nbsp;am constantly improving my&nbsp;skills
               </p>
               <div className=" text-[44px] font-bold leading-[110%] sm:text-[52px] md:text-[90px] xl:text-[150px] uppercase text-[#362EEC] mb-[10px] sm:mb-[16px] text-right mt-[8px] lg:mt-0">
                 thrive
@@ -56,8 +52,7 @@ export default function About() {
                     Design
                   </div>
                   <p className="font-inter text-[17px] font-medium leading-[121%] text-blackText sm:text-[18px]">
-                    With a solid track record in designing websites, I deliver
-                    strong and user-friendly digital designs
+                    With a&nbsp;solid track record in&nbsp;designing websites, I&nbsp;deliver strong and user-friendly digital designs
                   </p>
                 </li>
                 <li className="flex flex-col gap-5 border-b border-b-grayBorder py-10">
@@ -65,10 +60,7 @@ export default function About() {
                     Development
                   </div>
                   <p className="font-inter text-[17px] font-medium leading-[121%] text-blackText sm:text-[18px]">
-                    I build scalable websites from scratch that fit seamlessly
-                    into the design. I pay special attention to
-                    micro-animations, transitions, and font-interactions. I work
-                    with the Tilda website builder
+                    I&nbsp;build scalable websites from scratch that fit seamlessly into the design. I&nbsp;pay special attention to&nbsp;micro-animations, transitions, and font-interactions. I&nbsp;work with the Tilda website builder
                   </p>
                 </li>
                 <li className="flex flex-col gap-5 border-b border-b-grayBorder py-10">
@@ -76,9 +68,7 @@ export default function About() {
                     The full package
                   </div>
                   <p className="font-inter text-[17px] font-medium leading-[121%] text-blackText sm:text-[18px]">
-                    A complete website from concept to implementation. My great
-                    design sense and Tilda skills allow me to create amazing
-                    projects
+                    A&nbsp;complete website from concept to&nbsp;implementation. My&nbsp;great design sense and Tilda skills allow me&nbsp;to&nbsp;create amazing projects
                   </p>
                 </li>
               </ul>
@@ -102,13 +92,13 @@ export default function About() {
                 01
               </div>
               <div className="text-[24px] font-medium uppercase leading-[133%] text-[#404040] md:text-[30px]">
-                font-interview
+                interview
               </div>
               <div className="font-inter text-[17px] font-medium leading-[121%] text-[#404040] sm:text-[18px]">
                 brief
               </div>
               <div className="font-inter text-[17px] font-medium leading-[121%] text-[#404040] sm:text-[18px]">
-                statement of work
+                statement of&nbsp;work
               </div>
             </li>
             <li className="hidden lg:flex">
@@ -168,10 +158,10 @@ export default function About() {
                 05
               </div>
               <div className="text-[24px] font-medium uppercase leading-[133%] text-[#404040] md:text-[30px]">
-                UI design
+                UI&nbsp;design
               </div>
               <div className="font-inter text-[17px] font-medium leading-[121%] text-[#404040] sm:text-[18px]">
-                layout drawing and UI kit
+                layout drawing and&nbsp;UI kit
               </div>
             </li>
             <li className="hidden lg:flex">
@@ -185,7 +175,7 @@ export default function About() {
                 Prototype
               </div>
               <div className="font-inter text-[17px] font-medium leading-[121%] text-[#404040] sm:text-[18px]">
-                сreating a clickable <br /> prototype
+                сreating a&nbsp;clickable prototype
               </div>
             </li>
             <li className="hidden lg:flex">
@@ -199,7 +189,7 @@ export default function About() {
                 Adaptive
               </div>
               <div className="font-inter text-[17px] font-medium leading-[121%] text-[#404040] sm:text-[18px]">
-                design adaptation for all <br /> resolutions
+                design adaptation for all resolutions
               </div>
             </li>
             <li className="hidden lg:flex">
@@ -213,7 +203,7 @@ export default function About() {
                 layout
               </div>
               <div className="font-inter text-[17px] font-medium leading-[121%] text-[#404040] sm:text-[18px]">
-                site layout on tilda <br /> builder
+                site layout on&nbsp;tilda builder
               </div>
             </li>
           </ul>

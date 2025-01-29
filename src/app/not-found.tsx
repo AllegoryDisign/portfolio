@@ -38,10 +38,10 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 right-0 z-20">
             <div className="container flex flex-col items-end pb-10 md:flex-row md:items-center md:justify-between">
               <span className="font-inter animate__animated animate__fadeIn text-[17px] font-medium text-white sm:text-[18px] lg:text-blackText">
-                Located in Belarus
+                Located in&nbsp;Belarus
               </span>
               <span className="font-inter animate__animated animate__fadeIn text-[17px] font-medium text-white sm:text-[18px] lg:text-blackText">
-                Design & Development
+                Design &amp;&nbsp;Development
               </span>
             </div>
           </div>
@@ -50,8 +50,7 @@ export default function Home() {
           <div className="font-inter container flex flex-col justify-between font-medium text-blackText sm:flex-row">
             <div className="sm:mr-[20px]">
               <p className="mb-[24px] max-w-[880px] text-[24px] sm:text-[30px] lg:mb-[30px] lg:text-[40px]">
-                Design can fascinatingly change our decisions and emotions. It
-                converts website visitors into your customers
+                Design can fascinatingly change our decisions and emotions. It&nbsp;converts website visitors into your customers
               </p>
               <span className="hidden text-[18px] sm:flex">
                 Passionate about creating intuitive digital solutions
@@ -79,7 +78,7 @@ export default function Home() {
                 <div className="text-[40px] uppercase">
                   Dental clinic Ortodent
                 </div>
-                <div className="font-inter text-lg">Design & Development</div>
+                <div className="font-inter text-lg">Design &amp;&nbsp;Development</div>
               </li>
               <li className="group relative flex cursor-pofont-inter items-center justify-between overflow-hidden border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
                 {/* <div className='absolute bottom-0 left-[60%] flex h-[250px] w-[250px] translate-y-full items-center justify-center bg-[#213D5C] transition-all group-hover:translate-y-0'>
@@ -89,7 +88,7 @@ export default function Home() {
                 </div> */}
 
                 <div className="text-[40px] uppercase">Tennis club</div>
-                <div className="font-inter text-lg">Design & Development</div>
+                <div className="font-inter text-lg">Design &amp;&nbsp;Development</div>
               </li>
               <li className="flex cursor-pofont-inter items-center justify-between border-t border-t-grayBorder px-20 py-[70px] transition-all hover:px-10 hover:opacity-50">
                 <div className="text-[40px] uppercase">Medical Dasnboard</div>

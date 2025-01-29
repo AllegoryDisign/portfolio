@@ -32,7 +32,7 @@ export function ContactSection() {
         className="bg-blackBg pb-[60px] pt-[60px] sm:pb-[80px] sm:pt-[80px] lg:pb-[120px] lg:pt-[100px] z-20"
       >
         <div className="container">
-          <div className="flex flex-col sm:gap-[20px] md:flex-row">
+          <div className="flex flex-col justify-between sm:gap-[20px] md:flex-row">
             <h2 className="max-w-[750px] flex-shrink-0 text-left text-[48px] font-bold uppercase leading-[120%] tracking-normal text-white sm:mb-0 sm:text-[56px] lg:text-[120px]">
               Let&apos;s <span className="text-blueHover">work</span> <br />
               together
