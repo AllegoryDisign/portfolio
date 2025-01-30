@@ -11,16 +11,16 @@ export function Header() {
   return (
     <div className="absolute left-0 top-0 z-50 w-full">
       <header className="container flex items-center justify-between pt-10 text-[17px] font-medium text-blackText sm:text-[18px]">
-        <Link href="/" className="animate__animated animate__fadeIn font-inter">
+        <Link href="/" className="animate__animated animate__fadeIn font-inter hover:text-[#362EEC] transition-all">
           © Alina Gavrilovich
         </Link>
         <div>
           <Magnetic>
-            <div className="flex fixed top-[20px] right-[20px]  z-[1000] md:hidden">
+            <div className="flex fixed top-[20px] right-[20px] z-[1000] md:hidden">
               <button
                 className={clsx(
-                  "magnetic flex items-center justify-center w-[60px] h-[60px] border border-[#656565] rounded-full transition-all",
-                  isOpen ? "bg-[#3E4EFF] border-[#3E4EFF]" : "bg-[#26292E]"
+                  "magnetic flex items-center justify-center w-[60px] h-[60px] rounded-full transition-all",
+                  isOpen ? "bg-[#3E4EFF] border-[#3E4EFF]" : "bg-[#fff]"
                 )}
                 onClick={() => setOpen(!isOpen)}
               >
@@ -98,7 +98,7 @@ export function Header() {
             </Link>
           </div>
           <a
-            className="text-white text-[26px] font-inter hover:text-[#3E4EFF] transition-all"
+            className="flex justify-center text-white text-[26px] font-inter hover:text-[#362EEC] transition-all"
             href="mailto:gavrilovich.ali@gmail.com"
           >
             gavrilovich.ali@gmail.com

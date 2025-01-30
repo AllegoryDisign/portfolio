@@ -26,14 +26,14 @@ export function Footer() {
           </span>
           <a
             href="https://t.me/Allegory23"
-            className="font-inter text-lg font-medium text-white text-opacity-85"
+            className="font-inter text-lg font-medium text-white text-opacity-85 hover:text-[#362EEC] transition-all"
           >
             Telegram
           </a>
         </div>
 
         <a
-          className="font-inter mb-[20px] inline-flex justify-center text-[26px] font-normal text-white sm:mb-0 lg:text-[30px]"
+          className="font-inter mb-[20px] inline-flex justify-center text-[26px] font-normal text-white sm:mb-0 lg:text-[30px] hover:text-[#362EEC] transition-all"
           href="mailto:gavrilovich.ali@gmail.com"
         >
           gavrilovich.ali@gmail.com

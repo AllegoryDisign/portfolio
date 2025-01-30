@@ -126,7 +126,7 @@ body {
   position: absolute;
   left: 0;
   bottom: $bar-spacing;
-  background: rgba(255, 255, 255, 1);
+  background: #404040;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
     transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -136,7 +136,7 @@ body {
   position: absolute;
   left: 0;
   top: $bar-spacing;
-  background: rgba(255, 255, 255, 1);
+  background: #404040;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
     transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -144,6 +144,7 @@ body {
 .hamburger-menu.active:after {
   top: 0;
   transform: rotate(45deg);
+  background: #fff;
   transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
     transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -151,6 +152,7 @@ body {
 .hamburger-menu.active:before {
   bottom: 0;
   transform: rotate(-45deg);
+  background: #fff;
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
     transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
