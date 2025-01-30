@@ -2,7 +2,7 @@ import CurrentTime from "./CurrT";
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-t-grayInput bg-blackBg pt-[100px] z-20">
+    <footer className="relative overflow-hidden border-t border-t-grayInput bg-blackBg pt-[60px] md:pt-[80px] xl:pt-[100px] z-20">
       <div className="container flex flex-col items-center justify-between gap-[24px] sm:flex-row sm:flex-wrap sm:gap-[40px]">
         <div className="flex w-full justify-between sm:inline-flex sm:w-auto sm:flex-col sm:gap-[12px] lg:gap-[20px]">
           <span className="font-inter text-lg font-medium text-grayFooterText">
