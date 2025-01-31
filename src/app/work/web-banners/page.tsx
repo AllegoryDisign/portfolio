@@ -62,7 +62,7 @@ export default function Page() {
             />
           </div>
           <Image className="mb-[60px] md:mb-[80px]" src={Banner4Image} alt="" />
-          <Image className="mb-[60px] md:mb-[80px]" src={Banner5Image} alt="" />
+          <Image quality={95} sizes="100vw" className="mb-[60px] md:mb-[80px]" src={Banner5Image} alt="" />
         </section>
         <NextPageSection
           image={PreviewImage}

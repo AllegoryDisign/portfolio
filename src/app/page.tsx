@@ -66,7 +66,7 @@ export default function Home() {
                 alt=""
                 width={800}
                 height={825}
-                sizes="50vw"
+                sizes="100vw"
                 layout="responsive"
                 quality={95}
                 priority
