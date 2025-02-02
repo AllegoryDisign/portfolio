@@ -1,4 +1,5 @@
 "use client";
+import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 
 export default function AutoplayVideo({
@@ -40,7 +41,7 @@ export default function AutoplayVideo({
   return (
     <video
       ref={videoRef}
-      className={className}
+      className={clsx(className, "border-none after:border-none")}
       loop
       muted
       style={{

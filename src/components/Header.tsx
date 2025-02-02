@@ -1,26 +1,86 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import clsx from "clsx";
 import Magnetic from "./logics/Magnetic";
 import { usePathname } from "next/navigation";
-// header ffwfwfew
-export function Header() {
+import { useRouter } from "next/router";
+
+type Props = {
+  isWhite?: boolean;
+};
+
+export function Header({ isWhite = false }: Props) {
   const [isOpen, setOpen] = useState(false);
+  const [showBurger, setShowBurger] = useState(false);
   const pathname = usePathname();
+
+  const onContact = (e: any) => {
+    e.preventDefault();
+    if (!document.querySelector("#contact")) {
+      window.location.href = "/#contact";
+    }
+    (document.querySelector("#contact") as HTMLElement).scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const btnStyles = isWhite
+    ? "bg-white text-[#404040] white-lines"
+    : "bg-[#26292E] text-white";
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        // Порог, после которого бургер-меню будет показано
+        setShowBurger(true);
+      } else {
+        setShowBurger(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="absolute left-0 top-0 z-50 w-full">
-      <header className="container flex items-center justify-between pt-10 text-[17px] font-medium text-blackText sm:text-[18px]">
-        <Link href="/" className="animate__animated animate__fadeIn font-inter hover:text-[#362EEC] transition-all">
+      <header
+        className={clsx(
+          "container flex items-center justify-between pt-10 text-[17px] font-medium  sm:text-[18px]",
+          isWhite ? "text-white" : "text-blackText"
+        )}
+      >
+        <Link
+          href="/"
+          className="animate__animated animate__fadeIn font-inter hover:text-[#362EEC] transition-all"
+        >
           © Alina Gavrilovich
         </Link>
+
         <div>
+          <button className="flex md:hidden" onClick={() => setOpen(true)}>
+            <div
+              className={clsx(
+                "menu-wrapper w-[60px] h-[60px]",
+                !isWhite && "white-lines"
+              )}
+            >
+              <div className={clsx("hamburger-menu")}></div>
+            </div>
+          </button>
           <Magnetic>
-            <div className="flex fixed top-[20px] right-[20px] z-[1000] md:hidden">
+            <div
+              className={clsx(
+                "flex fixed top-[20px] right-[20px] z-[1000]",
+                !showBurger && !isOpen && "hidden"
+              )}
+            >
               <button
                 className={clsx(
                   "magnetic flex items-center justify-center w-[60px] h-[60px] rounded-full transition-all",
-                  isOpen ? "bg-[#3E4EFF] border-[#3E4EFF]" : "bg-[#fff]"
+                  isOpen ? "bg-[#3E4EFF] border-[#3E4EFF]" : btnStyles
                 )}
                 onClick={() => setOpen(!isOpen)}
               >
@@ -33,7 +93,12 @@ export function Header() {
             </div>
           </Magnetic>
 
-          <nav className="animate__animated animate__fadeIn hidden items-center gap-11 text-blackText md:flex font-inter">
+          <nav
+            className={clsx(
+              "animate__animated animate__fadeIn hidden items-center gap-11  md:flex font-inter",
+              isWhite ? "text-white" : "text-blackText"
+            )}
+          >
             <Link
               className={clsx("hover:text-[#362EEC]", {
                 "text-[#2E4EEC]": pathname.includes("/work"),
@@ -50,59 +115,78 @@ export function Header() {
             >
               About
             </Link>
-            <Link className="hover:text-[#362EEC]" href="/#contact">
+            <Link
+              className="hover:text-[#362EEC]"
+              href="#contact"
+              onClick={onContact}
+            >
               Contact
             </Link>
           </nav>
         </div>
         <div
           className={clsx(
-            "fixed md:hidden transition duration-700 bg-[#26292E] h-[360px] z-[100] w-full pt-[80px] pb-[30px] px-[20px] left-0 top-0",
-            isOpen ? "-translate-y-0" : "-translate-y-full"
+            "fixed transition duration-700 bg-[#26292E] h-[360px] z-[100] w-full pt-[80px] pb-[30px] px-[20px] left-0 top-0 megaXl:p-[40px] megaXl:pr-[160px] megaXl:h-auto",
+            isOpen ? "-translate-y-0" : "-translate-y-full",
+            !showBurger && !isOpen && "hidden"
           )}
         >
-          <div className="text-[#A5A5A5] text-[17px] font-medium font-inter">
+          <div className="text-[#A5A5A5] text-[17px] font-medium font-inter  megaXl:text-[18px]">
             Navigation
           </div>
-          <hr className="border-none my-[24px] h-[1px] w-full bg-[#656565]" />
-          <div className="flex justify-between text-white uppercase text-[24px] mb-[20px] font-medium">
-            <Link
-              className=" hover:text-[#3E4EFF] transition-all"
-              href="/"
-              onClick={() => setOpen(false)}
+          <hr className="border-none my-[24px] h-[1px] w-full bg-[#656565] megaXl:mt-[30px] md:mb-[20px]" />
+          <div className="flex-col megaXl:flex-row megaXl:justify-between flex megaXl:items-center">
+            <div className="megaXl:flex">
+              <div className="flex justify-between text-white uppercase text-[24px] megaXl:text-[40px] mb-[20px] font-medium md:mb-0">
+                <Link
+                  className={clsx(
+                    " hover:text-[#3E4EFF] transition-all megaXl:mr-[30px]",
+                    pathname === "/" && "text-[#2E4EEC]"
+                  )}
+                  href="/"
+                  onClick={() => setOpen(false)}
+                >
+                  Home
+                </Link>
+                <Link
+                  className={clsx(
+                    " hover:text-[#3E4EFF] transition-all megaXl:mr-[30px]",
+                    pathname.includes("work") && "text-[#2E4EEC]"
+                  )}
+                  href="/work"
+                  onClick={() => setOpen(false)}
+                >
+                  Work
+                </Link>
+              </div>
+              <div className="flex justify-between text-white uppercase text-[24px] mb-[24px] megaXl:text-[40px]  font-medium  megaXl:mb-0">
+                <Link
+                  className={clsx(
+                    " hover:text-[#3E4EFF] transition-all megaXl:mr-[30px]",
+                    pathname === "/about" && "text-[#2E4EEC]"
+                  )}
+                  href="/about"
+                  onClick={() => setOpen(false)}
+                >
+                  About
+                </Link>
+                <Link
+                  className=" hover:text-[#3E4EFF] transition-all"
+                  href="/#contact"
+                  onClick={() => setOpen(false)}
+                >
+                  Contact
+                </Link>
+              </div>
+            </div>
+
+            <a
+              className="flex justify-center text-white text-[26px] font-inter hover:text-[#362EEC] transition-all megaXl:text-[30px]"
+              href="mailto:gavrilovich.ali@gmail.com"
             >
-              Home
-            </Link>
-            <Link
-              className=" hover:text-[#3E4EFF] transition-all"
-              href="/work"
-              onClick={() => setOpen(false)}
-            >
-              Work
-            </Link>
+              gavrilovich.ali@gmail.com
+            </a>
           </div>
-          <div className="flex justify-between text-white uppercase text-[24px] mb-[24px]  font-medium">
-            <Link
-              className=" hover:text-[#3E4EFF] transition-all"
-              href="/about"
-              onClick={() => setOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              className=" hover:text-[#3E4EFF] transition-all"
-              href="/#contact"
-              onClick={() => setOpen(false)}
-            >
-              Contact
-            </Link>
-          </div>
-          <a
-            className="flex justify-center text-white text-[26px] font-inter hover:text-[#362EEC] transition-all"
-            href="mailto:gavrilovich.ali@gmail.com"
-          >
-            gavrilovich.ali@gmail.com
-          </a>
         </div>
       </header>
     </div>

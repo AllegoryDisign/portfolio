@@ -103,8 +103,8 @@ body {
 }
 
 .hamburger-menu,
-.hamburger-menu:after,
-.hamburger-menu:before {
+.hamburger-menu::after,
+.hamburger-menu::before {
   width: $bar-width;
   height: $bar-height;
 }
@@ -121,14 +121,18 @@ body {
   }
 }
 
-.hamburger-menu:before {
+.hamburger-menu::before {
   content: "";
   position: absolute;
   left: 0;
   bottom: $bar-spacing;
-  background: #404040;
+  background: white;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
     transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.white-lines .hamburger-menu::before {
+  background: #404040;
 }
 
 .hamburger-menu:after {
@@ -136,12 +140,17 @@ body {
   position: absolute;
   left: 0;
   top: $bar-spacing;
-  background: #404040;
+  background: white;
+
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
     transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.hamburger-menu.active:after {
+.white-lines .hamburger-menu::after {
+  background: #404040;
+}
+
+.hamburger-menu.active::after {
   top: 0;
   transform: rotate(45deg);
   background: #fff;
@@ -149,7 +158,7 @@ body {
     transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.hamburger-menu.active:before {
+.hamburger-menu.active::before {
   bottom: 0;
   transform: rotate(-45deg);
   background: #fff;

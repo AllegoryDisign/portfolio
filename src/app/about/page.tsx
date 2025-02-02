@@ -2,37 +2,35 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { Footer } from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import { Svg } from "@/components/Svg";
+import { Header } from "@/components/Header";
 
 export default function About() {
   return (
     <>
-      <div className="absolute left-0 top-0 z-10 w-full">
-        <header className="font-inter container flex items-center justify-between pt-10 text-lg font-medium text-white">
-          <Link className="animate__animated animate__fadeIn" href="/">
-            © Alina Gavrilovich
-          </Link>
-          <nav className="animate__animated animate__fadeIn flex items-center gap-11 text-white">
-            <Link href="/work">Work</Link>
-            <Link
-              className={"hover:text-[#362EEC] text-[#2E4EEC]"}
-              href="/about"
-            >
-              About
-            </Link>
-            <Link href="/#contact">Contact</Link>
-          </nav>
-        </header>
-      </div>
+      <Header isWhite />
       <main className="flex flex-col">
         <section className="bg-blackBg pb-[100px] pt-[140px]">
-          <div className="container">
-            <h1 className=" text-[44px] font-bold leading-[110%] sm:text-[52px] md:text-[90px] xl:text-[150px] uppercase text-white mb-[10px] sm:mb-[16px] ">
+          <div className="container  relative">
+            <h1 className=" text-[44px] font-bold leading-[110%] sm:text-[52px] md:text-[90px] xl:text-[150px] uppercase text-white mb-[10px] sm:mb-[16px] relative">
+              <Svg
+                className="absolute right-0 text-white rotate-90 hidden sm:flex mt-[8px] md:mt-[18px] xl:mt-[24px]"
+                iconId="icon-arrow"
+                width={30}
+                height={30}
+              />
               Helping <br />
               businesses
             </h1>
             <div className="flex flex-col lg:flex-row lg:items-center">
               <p className="font-medium font-inter text-[17px] md:text-[18px] text-white lg:mr-[60px] max-w-[598px]">
-              I&nbsp;create tailored websites for small businesses and start-ups to&nbsp;help them reach bigger audiences. I&nbsp;have been creating customized websites for over 2&nbsp;years. It&nbsp;is&nbsp;important for me&nbsp;to&nbsp;do&nbsp;my&nbsp;work not just well, but better than others, for this purpose I&nbsp;am constantly improving my&nbsp;skills
+                I&nbsp;create tailored websites for small businesses and
+                start-ups to&nbsp;help them reach bigger audiences. I&nbsp;have
+                been creating customized websites for over 2&nbsp;years.
+                It&nbsp;is&nbsp;important for
+                me&nbsp;to&nbsp;do&nbsp;my&nbsp;work not just well, but better
+                than others, for this purpose I&nbsp;am constantly improving
+                my&nbsp;skills
               </p>
               <div className=" text-[44px] font-bold leading-[110%] sm:text-[52px] md:text-[90px] xl:text-[150px] uppercase text-[#362EEC] mb-[10px] sm:mb-[16px] text-right mt-[8px] lg:mt-0">
                 thrive
@@ -52,7 +50,8 @@ export default function About() {
                     Design
                   </div>
                   <p className="font-inter text-[17px] font-medium leading-[121%] text-blackText sm:text-[18px]">
-                    With a&nbsp;solid track record in&nbsp;designing websites, I&nbsp;deliver strong and user-friendly digital designs
+                    With a&nbsp;solid track record in&nbsp;designing websites,
+                    I&nbsp;deliver strong and user-friendly digital designs
                   </p>
                 </li>
                 <li className="flex flex-col gap-5 border-b border-b-grayBorder py-10">
@@ -60,15 +59,21 @@ export default function About() {
                     Development
                   </div>
                   <p className="font-inter text-[17px] font-medium leading-[121%] text-blackText sm:text-[18px]">
-                    I&nbsp;build scalable websites from scratch that fit seamlessly into the design. I&nbsp;pay special attention to&nbsp;micro-animations, transitions, and font-interactions. I&nbsp;work with the Tilda website builder
+                    I&nbsp;build scalable websites from scratch that fit
+                    seamlessly into the design. I&nbsp;pay special attention
+                    to&nbsp;micro-animations, transitions, and
+                    font-interactions. I&nbsp;work with the Tilda website
+                    builder
                   </p>
                 </li>
-                <li className="flex flex-col gap-5 border-b border-b-grayBorder py-10">
+                <li className="flex flex-col gap-5 md:border-b md:border-b-grayBorder pt-10 md:pb-10">
                   <div className="font-medium uppercase leading-[132%] text-blackText sm:text-[40px]">
                     The full package
                   </div>
                   <p className="font-inter text-[17px] font-medium leading-[121%] text-blackText sm:text-[18px]">
-                    A&nbsp;complete website from concept to&nbsp;implementation. My&nbsp;great design sense and Tilda skills allow me&nbsp;to&nbsp;create amazing projects
+                    A&nbsp;complete website from concept to&nbsp;implementation.
+                    My&nbsp;great design sense and Tilda skills allow
+                    me&nbsp;to&nbsp;create amazing projects
                   </p>
                 </li>
               </ul>
@@ -86,7 +91,7 @@ export default function About() {
           </div>
         </section>
         <section className="container py-[60px] md:py-[80px] lg:py-[120px]">
-          <ul className="grid grid-cols-2 gap-x-[10px] gap-y-[32px] xs:gap-x-[20px] sm:gap-y-[60px] md:grid-cols-4 lg:grid-cols-[186px_1fr_186px_1fr_186px_1fr_186px]">
+          <ul className="grid grid-cols-2 gap-x-[10px] gap-y-[32px] sm:gap-y-[60px] md:grid-cols-4 xl:grid-cols-[186px_1fr_186px_1fr_186px_1fr_186px] sm:gap-x-[20px]">
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="font-inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
                 01
@@ -101,8 +106,8 @@ export default function About() {
                 statement of&nbsp;work
               </div>
             </li>
-            <li className="hidden lg:flex">
-              <hr className="mt-[143px] border-t-[#E5E0DC]" />
+            <li className="hidden xl:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC] flex-1" />
             </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="font-inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
@@ -118,8 +123,8 @@ export default function About() {
                 competitor analysis
               </div>
             </li>
-            <li className="hidden lg:flex">
-              <hr className="mt-[143px] border-t-[#E5E0DC]" />
+            <li className="hidden xl:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC]  flex-1" />
             </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="font-inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
@@ -135,8 +140,8 @@ export default function About() {
                 target audience
               </div>
             </li>
-            <li className="hidden lg:flex">
-              <hr className="mt-[143px] border-t-[#E5E0DC]" />
+            <li className="hidden xl:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC]  flex-1  " />
             </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="font-inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
@@ -164,8 +169,8 @@ export default function About() {
                 layout drawing and&nbsp;UI kit
               </div>
             </li>
-            <li className="hidden lg:flex">
-              <hr className="mt-[143px] border-t-[#E5E0DC]" />
+            <li className="hidden xl:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC]  flex-1" />
             </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="font-inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
@@ -178,8 +183,8 @@ export default function About() {
                 сreating a&nbsp;clickable prototype
               </div>
             </li>
-            <li className="hidden lg:flex">
-              <hr className="mt-[143px] border-t-[#E5E0DC]" />
+            <li className="hidden xl:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC]  flex-1  " />
             </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="font-inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">
@@ -192,8 +197,8 @@ export default function About() {
                 design adaptation for all resolutions
               </div>
             </li>
-            <li className="hidden lg:flex">
-              <hr className="mt-[143px] border-t-[#E5E0DC]" />
+            <li className="hidden xl:flex">
+              <hr className="mt-[143px] border-t-[#E5E0DC] flex-1" />
             </li>
             <li className="flex flex-col items-center gap-[8px] text-center sm:gap-[15px]">
               <div className="font-inter flex h-[110px] w-[110px] items-center justify-center rounded-full bg-blue text-[18px] font-medium leading-[121%] text-white">

@@ -40,7 +40,7 @@ export function Footer() {
         </a>
       </div>
       <div className="relative pt-[10%]">
-        <div className="absolute bottom-0 left-0 z-10 w-full translate-y-1/2 text-center text-[14.5vw] font-bold uppercase text-white text-opacity-85">
+        <div className="absolute bottom-0 left-0 z-10 w-full translate-y-1/2 text-center text-[14.5vw] font-bold uppercase text-white text-opacity-85 leading-[100%]">
           Gavrilovich
         </div>
       </div>

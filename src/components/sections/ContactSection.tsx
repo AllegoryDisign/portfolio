@@ -5,6 +5,7 @@ import { sendEmail } from "@/utils/send-email";
 import SendEmailPopup from "../popups/SendEmailPopup";
 import { useState } from "react";
 import Magnetic from "../logics/Magnetic";
+import { Svg } from "../Svg";
 
 export type FormData = {
   name: string;
@@ -32,19 +33,25 @@ export function ContactSection() {
         className="bg-blackBg pb-[60px] pt-[60px] sm:pb-[70px] md:pb-[80px] md:pt-[80px] lg:pb-[120px] xl:pt-[100px] z-20"
       >
         <div className="container">
-          <div className="flex flex-col justify-between md:gap-[20px] md:flex-row">
+          <div className="flex flex-col justify-between md:gap-[20px] md:flex-row relative">
             <h2 className="max-w-[750px] flex-shrink-0 text-left text-[48px] font-bold uppercase leading-[120%] tracking-normal text-white sm:mb-0 md:text-[56px] xl:text-[120px]">
               Let&apos;s <span className="text-blueHover">work</span> <br />
               together
             </h2>
             <div>
-              <p className="font-inter mt-6 flex-grow text-[17px] font-medium leading-[120%] text-white md:mt-0 md:text-[18px] md:mt-[13px] md:max-w-[450px] md:text-right lg:mt-[27px] lg:max-w-[393px] lg:text-right">
+              <p className="font-inter mt-6 flex-grow text-[17px] font-medium leading-[120%] text-white md:mt-0 md:text-[18px] md:mt-[13px] md:max-w-[450px] md:text-right xl:mt-[24px] lg:max-w-[393px] lg:text-right lg:mt-[10px]">
                 Thank you for taking the time to view my site and getting in
                 touch, you&apos;ve taken the first step in taking your business
                 to the next level. If you have a project in mind, shoot me a
                 message and I will get back to you shortly
               </p>
             </div>
+            <Svg
+              iconId="icon-arrow"
+              className="text-blue right-0 bottom-[62px] absolute rotate-90 hidden xl:flex"
+              width={24}
+              height={24}
+            />
           </div>
           <form
             onSubmit={handleSubmit(onSubmit)}
