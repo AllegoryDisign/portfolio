@@ -118,7 +118,7 @@ export default function Home() {
           </div>
         </section>
         <section className="hidden xl:block">
-          <div className="container overflow-hidden pt-[60px] sm:pt-[80px] lg:pt-[120px]">
+          <div className="container overflow-hidden pt-[60px] sm:pt-[80px] lg:pt-[50px]">
             <div className="border-b border-b-grayBorder font-medium text-blackText overflow-hidden pt-[120px] relative">
               <div className="text-[18px] font-medium text-[#A5A5A5]  absolute top-[50px]">
                 Recent work
@@ -200,9 +200,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="block xl:hidden">
+        <section className="block xl:hidden mt-[60px] md:mt-[80px]">
           <div className="container">
-            <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px]">
+            <div className="mb-[40px] text-[18px] font-medium text-[#A5A5A5] lg:mb-[30px] hidden md:flex">
               Recent work
             </div>
             <div className="grid grid-cols-1 gap-y-[60px] md:grid-cols-2 md:gap-x-[20px] md:gap-y-[80px] lg:gap-y-[120px]">
@@ -225,7 +225,7 @@ export default function Home() {
             </Magnetic>
 
             <div
-              className="relative hidden flex-col gap-5 md:flex"
+              className="relative hidden flex-col gap-5 pb-[calc(36%+20px)] md:flex"
               id="scroll-slider"
             >
               <div
@@ -236,6 +236,7 @@ export default function Home() {
                   <Image
                     className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
                     src={Img1}
+                    sizes="30vw"
                     quality={95}
                     alt=""
                   />
@@ -250,6 +251,7 @@ export default function Home() {
                   <Image
                     className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
                     src={Img5}
+                    sizes="30vw"
                     quality={95}
                     alt=""
                   />
@@ -258,78 +260,48 @@ export default function Home() {
                   <Image
                     className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
                     src={Img6}
+                    sizes="30vw"
                     quality={95}
                     alt=""
                   />
                 </div>
               </div>
               <div
-                className="relative hidden flex-col gap-5 pb-[calc(36%+20px)] md:flex"
-                id="scroll-slider"
+                className="absolute bottom-0 left-0 flex w-[120%] gap-5"
+                id="scroll-slider-item-2"
               >
-                <div
-                  className="absolute right-0 top-0 flex w-[120%] gap-5"
-                  id="scroll-slider-item-1"
-                >
-                  <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                    <img
-                      className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
-                      src={Img1.src}
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                    <AutoplayVideo
-                      className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
-                      path="/img/slider/vid1.mp4"
-                    />
-                  </div>
-                  <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                    <img
-                      className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
-                      src={Img5.src}
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                    <img
-                      className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
-                      src={Img6.src}
-                      alt=""
-                    />
-                  </div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <Image
+                    className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
+                    src={Img2}
+                    sizes="30vw"
+                    quality={95}
+                    alt=""
+                  />
                 </div>
-                <div
-                  className="absolute bottom-0 left-0 flex w-[120%] gap-5"
-                  id="scroll-slider-item-2"
-                >
-                  <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                    <img
-                      className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
-                      src={Img2.src}
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                    <img
-                      className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
-                      src={Img3.src}
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                    <AutoplayVideo
-                      className="flex w-full h-full absolute top-0 left-0  px-[20px] py-[25px] xl:py-[35px]"
-                      path="/img/slider/vid2.mp4"
-                    />
-                  </div>
-                  <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
-                    <img
-                      className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
-                      src={Img7.src}
-                      alt=""
-                    />
-                  </div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <Image
+                    className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
+                    src={Img3}
+                    sizes="30vw"
+                    quality={95}
+                    alt=""
+                  />
+                </div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <AutoplayVideo
+                    className="flex w-full h-full absolute top-0 left-0  px-[20px] py-[25px] xl:py-[35px]"
+                    path="/img/slider/vid2.mp4"
+                  />
+                </div>
+                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                  <Image
+                    className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
+                    src={Img7}
+                    sizes="30vw"
+                    quality={95}
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
