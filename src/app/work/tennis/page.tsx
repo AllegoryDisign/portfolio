@@ -5,7 +5,7 @@ import { Header } from "@/components/Header";
 import MainTitleList from "@/components/MainTitleList";
 import { Svg } from "@/components/Svg";
 
-import MainBgImage from "../../../../public/img/work/tennis/main.jpg";
+import MainBgImage from "../../../../public/img/work/tennis/main.webp";
 import TableImage from "../../../../public/img/work/tennis/tablet.webp";
 
 import Mob1Image from "../../../../public/img/work/tennis/mob1.webp";
