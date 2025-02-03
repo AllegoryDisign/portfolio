@@ -1,7 +1,7 @@
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Footer } from "@/components/Footer";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import { Svg } from "@/components/Svg";
 import { Header } from "@/components/Header";
 
@@ -14,11 +14,23 @@ export default function About() {
           <div className="container  relative">
             <h1 className=" text-[44px] font-bold leading-[110%] sm:text-[52px] md:text-[90px] xl:text-[150px] uppercase text-white mb-[10px] sm:mb-[16px] relative">
               <Svg
-                className="absolute right-0 text-white rotate-90 hidden sm:flex mt-[8px] md:mt-[18px] xl:mt-[24px]"
-                iconId="icon-arrow"
-                width={30}
-                height={30}
+                className="absolute right-0 text-white +rotate-90 hidden sm:flex mt-[8px] md:mt-[18px] xl:mt-[24px]"
+                iconId="icon-arrow-about"
+                size={30}
               />
+
+              {/* <svg className="absolute right-0 sm:flex mt-[8px] md:mt-[18px] xl:mt-[24px]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_430_1975)">
+              <path d="M8.24938 25.1669L29.999 3.41723L26.5819 0.00012207L4.83227 21.7498V3.41723L-0.000980139 3.41723L-0.000980139 30.0001L26.5819 30.0001L26.5819 25.1669H8.24938Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_430_1975">
+              <rect width="30" height="30" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg> */}
+
+
               Helping <br />
               businesses
             </h1>

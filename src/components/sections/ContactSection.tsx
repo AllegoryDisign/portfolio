@@ -45,13 +45,12 @@ export function ContactSection() {
                 to the next level. If you have a project in mind, shoot me a
                 message and I will get back to you shortly
               </p>
-            </div>
-            <Svg
+              <Svg
               iconId="icon-arrow"
-              className="text-blue right-0 bottom-[62px] absolute rotate-90 hidden xl:flex"
-              width={24}
-              height={24}
+              size={30}
+              className="right-0 bottom-[62px] absolute +rotate-90 hidden xl:flex"
             />
+            </div>
           </div>
           <form
             onSubmit={handleSubmit(onSubmit)}

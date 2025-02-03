@@ -2,8 +2,8 @@ import { Svg } from "@/components/Svg";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ContactSection } from "@/components/sections/ContactSection";
-import Link from "next/link";
-import Image from "next/image";
+// import Link from "next/link";
+// import Image from "next/image";
 import { WorkItem } from "@/components/WorkItem";
 
 export type WorkType = {
@@ -84,13 +84,15 @@ export default function Work() {
         <section className="container pb-[50px] pt-[106px]">
           <h1 className="relative text-[44px] font-bold uppercase leading-[120%] text-[#404040] sm:text-[52px] md:text-[90px] xl:text-[150px]">
             <div>Creating next</div>
-            <div className="flex justify-between sm:text-[52px] md:text-[90px] xl:text-[150px]">
+            <div className="flex sm:text-[52px] md:text-[90px] xl:text-[150px]">
               leveldigital
+
               <Svg
-                className="mt-[10px] hidden rotate-90 text-blue sm:mt-[12px] sm:flex md:mt-[12px] lg:mt-[24px] xl:mt-[28px]"
-                size={24}
-                iconId="icon-arrow"
+                className="mt-[10px] right-0 md:right-[20px] absolute hidden +rotate-90 text-blue sm:mt-[12px] sm:flex md:mt-[12px] lg:mt-[24px] xl:mt-[28px]"
+                size={30}
+                iconId="icon-arrow-work"
               />
+
             </div>
           </h1>
           <div className="flex flex-col justify-between lg:flex-row lg:items-center">

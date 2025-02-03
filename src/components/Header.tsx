@@ -26,8 +26,8 @@ export function Header({ isWhite = false }: Props) {
   };
 
   const btnStyles = isWhite
-    ? "bg-white text-[#404040] white-lines"
-    : "bg-[#26292E] text-white";
+    // ? "bg-white text-[#404040] white-lines"
+    // : "bg-[#26292E] text-white";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,8 +79,8 @@ export function Header({ isWhite = false }: Props) {
             >
               <button
                 className={clsx(
-                  "magnetic flex items-center justify-center w-[60px] h-[60px] rounded-full transition-all",
-                  isOpen ? "bg-[#3E4EFF] border-[#3E4EFF]" : btnStyles
+                  "magnetic flex items-center justify-center w-[60px] h-[60px] border border-[#656565] bg-[#26292E] rounded-full transition-all",
+                  isOpen ? "bg-[#3E4EFF] border-[#3E4EFF] border-0" : btnStyles
                 )}
                 onClick={() => setOpen(!isOpen)}
               >

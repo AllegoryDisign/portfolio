@@ -1,10 +1,27 @@
 <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <symbol id="icon-arrow" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- <symbol id="icon-arrow" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M26 2.675V26M26 26H2.74766M26 26L2 2" stroke="currentColor" stroke-width="3"/>
+  </symbol> -->
+
+  <symbol id="icon-arrow" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8.24987 25.1669L29.9995 3.41723L26.5824 0.00012207L4.83276 21.7498V3.41723L-0.000491858 3.41723L-0.000491858 30.0001L26.5824 30.0001L26.5824 25.1669H8.24987Z" fill="#2E4EEC"/>
   </symbol>
 
 
+                <symbol id="icon-arrow-about" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_430_1975)">
+              <path d="M8.24938 25.1669L29.999 3.41723L26.5819 0.00012207L4.83227 21.7498V3.41723L-0.000980139 3.41723L-0.000980139 30.0001L26.5819 30.0001L26.5819 25.1669H8.24938Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_430_1975">
+              <rect width="30" height="30" fill="white"/>
+              </clipPath>
+              </defs>
+              </symbol>
 
+              <symbol id="icon-arrow-work" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.25036 25.1667L30 3.41711L26.5829 0L4.83325 21.7496V3.41711L0 3.41711L0 30L26.5829 30V25.1667H8.25036Z" fill="#2E4EEC"/>
+              </symbol>
 
   <symbol id="icon-logo-photographer" viewBox="0 0 197 97" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M34.0828 97V6.09714L36.8537 8.86857H0V0H78.2795V8.86857H41.5643L44.1968 6.09714V97H34.0828ZM96.2756 97V0H104.727L149.062 75.66H144.629L188.549 0H197V97H187.163V15.3814H189.518L149.062 84.6671H144.213L103.48 15.3814H106.113V97H96.2756Z" fill="white"/>
