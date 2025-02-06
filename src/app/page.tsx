@@ -8,12 +8,12 @@ import { Header } from "@/components/Header";
 import AutoplayVideo from "@/components/video/AutoplayVideo";
 import Magnetic from "@/components/logics/Magnetic";
 
-import Img1 from "../../public/img/slider/img1.png";
-import Img2 from "../../public/img/slider/img2.png";
-import Img3 from "../../public/img/slider/img3.png";
-import Img5 from "../../public/img/slider/img5.png";
-import Img6 from "../../public/img/slider/img6.png";
-import Img7 from "../../public/img/slider/img7.png";
+import Img1 from "../../public/img/slider/img1.webp";
+import Img2 from "../../public/img/slider/img2.webp";
+import Img3 from "../../public/img/slider/img3.webp";
+import Img5 from "../../public/img/slider/img5.webp";
+import Img6 from "../../public/img/slider/img6.webp";
+import Img7 from "../../public/img/slider/img7.webp";
 
 import { WorkItem } from "@/components/WorkItem";
 
@@ -139,6 +139,8 @@ export default function Home() {
                       quality={95}
                       alt=""
                       sizes="50vw"
+                      loading="lazy"
+                      unoptimized
                     />
                   </div>
                 </div>
@@ -165,6 +167,9 @@ export default function Home() {
                       quality={95}
                       alt=""
                       sizes="50vw"
+                      unoptimized
+                      loading="lazy"
+                      unoptimized
                     />
                   </div>
                 </div>
@@ -190,6 +195,8 @@ export default function Home() {
                       quality={95}
                       alt=""
                       sizes="50vw"
+                      loading="lazy"
+                      unoptimized
                     />
                   </div>
                 </div>
@@ -239,6 +246,8 @@ export default function Home() {
                     sizes="30vw"
                     quality={95}
                     alt=""
+                    loading="lazy"
+                    unoptimized
                   />
                 </div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
@@ -254,6 +263,8 @@ export default function Home() {
                     sizes="30vw"
                     quality={95}
                     alt=""
+                    loading="lazy"
+                    unoptimized
                   />
                 </div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
@@ -263,6 +274,8 @@ export default function Home() {
                     sizes="30vw"
                     quality={95}
                     alt=""
+                    loading="lazy"
+                    unoptimized
                   />
                 </div>
               </div>
@@ -277,6 +290,8 @@ export default function Home() {
                     sizes="30vw"
                     quality={95}
                     alt=""
+                    loading="lazy"
+                    unoptimized
                   />
                 </div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
@@ -286,6 +301,8 @@ export default function Home() {
                     sizes="30vw"
                     quality={95}
                     alt=""
+                    loading="lazy"
+                    unoptimized
                   />
                 </div>
                 <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
@@ -301,6 +318,8 @@ export default function Home() {
                     sizes="30vw"
                     quality={95}
                     alt=""
+                    loading="lazy"
+                    unoptimized
                   />
                 </div>
               </div>
