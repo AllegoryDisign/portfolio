@@ -93,11 +93,11 @@ export default function Home() {
         <section className="pt-[60px] sm:pt-[80px] lg:pt-[120px] z-20">
           <div className="font-inter container flex flex-col justify-between font-medium text-blackText sm:flex-row">
             <div className="sm:mr-[20px]">
-              <p className="mb-[24px] max-w-[880px] text-[24px] sm:text-[30px] lg:mb-[30px] lg:text-[40px]">
+              <p className="mb-[24px] max-w-[907px] text-[24px] md:text-[30px] xl:mb-[26px] xl:text-[40px]/[48.41px]">
                 Design can fascinatingly change our decisions and emotions.
                 It&nbsp;converts website visitors into your customers
               </p>
-              <span className="hidden text-[18px] sm:flex">
+              <span className="mt-[5px] hidden text-[18px] sm:flex">
                 Passionate about creating intuitive digital solutions
               </span>
             </div>
@@ -118,7 +118,7 @@ export default function Home() {
           </div>
         </section>
         <section className="hidden xl:block">
-          <div className="container overflow-hidden pt-[60px] sm:pt-[80px] lg:pt-[50px]">
+          <div className="container overflow-hidden pt-[60px] sm:pt-[80px] lg:pt-[50px] xl:pt-[67px]">
             <div className="border-b border-b-grayBorder font-medium text-blackText overflow-hidden pt-[120px] relative">
               <div className="text-[18px] font-medium text-[#A5A5A5]  absolute top-[50px]">
                 Recent work
@@ -219,12 +219,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="z-20 py-[60px] sm:py-[80px] lg:py-[120px]">
+        <section className="z-20 pt-[50px] md:pt-[60px] pb-[60px] md:pb-[80px] xl:pb-[120px]">
           <div>
             <Magnetic>
               <Link
                 href="/work"
-                className="mx-auto mb-40 flex h-[180px] w-[180px] items-center justify-center rounded-full border border-grayBorder bg-white text-lg font-medium text-blackText hover:bg-blueHover hover:border-blueHover transition-all hover:text-white"
+                className="mx-auto mb-[120px] flex h-[180px] w-[180px] items-center justify-center rounded-full border border-grayBorder bg-white text-lg font-medium text-blackText hover:bg-blueHover hover:border-blueHover transition-all hover:text-white"
               >
                 More work
               </Link>

@@ -37,6 +37,7 @@ export default function Page() {
             { title: "Services:", value: "Design" },
             { title: "Industry:", value: "Music" },
           ]}
+          arrow={true}
         />
         <section className="relative">
           <Image

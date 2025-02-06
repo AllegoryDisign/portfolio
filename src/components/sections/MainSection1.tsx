@@ -19,11 +19,14 @@ export function MainSection1({ title, subTitle, table, arrow = false }: Props) {
           </h1>
 
           {arrow && (
-            <Svg
-              className=" rotate-90 text-[#2E4EEC] mt-[20px]"
-              size={24}
-              iconId="icon-arrow"
-            />
+            <div className="hidden lg:block">
+              <Svg
+                className="+rotate-90 text-[#2E4EEC] mt-[20px] ${arrow ? 'hidden lg:block' : 'hidden'}`"
+                size={30}
+                iconId="icon-arrow-tennis"
+              />
+            </div>
+
           )}
         </div>
 

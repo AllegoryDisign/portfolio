@@ -36,6 +36,7 @@ export default function Page() {
             { title: "Services:", value: "Design & Development" },
             { title: "Industry:", value: "Sport" },
           ]}
+          arrow={true}
         />
         <section>
           <Image

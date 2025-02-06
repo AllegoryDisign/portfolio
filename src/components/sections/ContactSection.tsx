@@ -48,7 +48,7 @@ export function ContactSection() {
               <Svg
               iconId="icon-arrow"
               size={30}
-              className="right-0 bottom-[62px] absolute +rotate-90 hidden xl:flex"
+              className="right-0 bottom-[32px] absolute +rotate-90 hidden xl:flex"
             />
             </div>
           </div>

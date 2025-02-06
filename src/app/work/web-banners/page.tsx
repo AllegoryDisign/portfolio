@@ -28,6 +28,7 @@ export default function Page() {
             { title: "Services:", value: "Design" },
             { title: "Industry:", value: "Digital Marketing" },
           ]}
+          arrow={true}
         />
 
         <section className="container">

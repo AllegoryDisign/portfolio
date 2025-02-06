@@ -26,6 +26,7 @@ export default function Page() {
             { title: "Services:", value: "Design" },
             { title: "Industry:", value: "Medical / Healthcare" },
           ]}
+          arrow={true}
         />
         <section className=" bg-[#254078] py-[60px] md:py-[80px] xl:py-[120px]">
           <div className="container flex flex-col items-center">

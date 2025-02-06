@@ -33,6 +33,7 @@ export default function Page() {
             { title: "Services:", value: "Design & Development" },
             { title: "Industry:", value: "Medical / Healthcare" },
           ]}
+          arrow={true}
         />
 
         <section className="relative">

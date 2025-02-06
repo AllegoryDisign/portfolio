@@ -24,6 +24,7 @@ export default function Page() {
             { title: "Services:", value: "Design" },
             { title: "Industry:", value: "Error page" },
           ]}
+          arrow={true}
         />
         <section className="container">
           <Image
