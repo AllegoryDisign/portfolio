@@ -45,7 +45,6 @@ export default function Page() {
             layout="responsive"
             quality={80}
             priority
-            loading="lazy"
             alt=""
           />
         </section>
