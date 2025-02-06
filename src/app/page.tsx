@@ -169,7 +169,6 @@ export default function Home() {
                       sizes="50vw"
                       unoptimized
                       loading="lazy"
-                      unoptimized
                     />
                   </div>
                 </div>
