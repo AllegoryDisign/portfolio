@@ -43,8 +43,9 @@ export default function Page() {
             src={MainBgImage}
             sizes="100vw"
             layout="responsive"
-            quality={95}
+            quality={80}
             priority
+            loading="lazy"
             alt=""
           />
         </section>
