@@ -90,20 +90,20 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="pt-[60px] sm:pt-[80px] lg:pt-[120px] z-20">
-          <div className="font-inter container flex flex-col justify-between font-medium text-blackText sm:flex-row">
+        <section className="pt-[60px] md:pt-[80px] xl:pt-[120px] z-20 sm:relative sm:pb-[120px] md:pb-[20px] lg:pb-[25px]">
+          <div className="font-inter container xl:relative flex flex-col justify-between font-medium text-blackText">
             <div className="sm:mr-[20px]">
-              <p className="mb-[24px] max-w-[907px] text-[24px] md:text-[30px] xl:mb-[26px] xl:text-[40px]/[48.41px]">
+              <p className="mb-[24px] xl:max-w-[907px] lg:max-w-[682px] md:max-w-[541px] lg:max-w-[682px] text-[24px]/[29.05px] md:text-[30px]/[36.31px] xl:mb-[26px] xl:text-[40px]/[48.41px]">
                 Design can fascinatingly change our decisions and emotions.
                 It&nbsp;converts website visitors into your customers
               </p>
-              <span className="mt-[5px] hidden text-[18px] sm:flex">
+              <span className="mt-[5px] sm:max-w-[210px] md:max-w-full hidden sm:text-[17px]/[20.57px] text-[18px] sm:flex">
                 Passionate about creating intuitive digital solutions
               </span>
             </div>
 
-            <div className="flex flex-col xs:flex-row">
-              <span className="mb-[30px] max-w-[240px] text-[17px] xs:max-w-[190px] sm:hidden">
+            <div className="flex flex-col xs:flex-row sm:absolute xl:absolute xl:left-0 xl:bottom-0 xl:top-0 xl:w-full xl:h-full sm:bottom-0 sm:right-[20px] md:top-[80px]">
+              <span className="mb-[30px] max-w-[240px] text-[17px]/[20.57px] xs:max-w-[190px] sm:hidden">
                 Passionate about creating intuitive digital solutions
               </span>
               <Magnetic>
@@ -118,7 +118,7 @@ export default function Home() {
           </div>
         </section>
         <section className="hidden xl:block">
-          <div className="container overflow-hidden pt-[60px] sm:pt-[80px] lg:pt-[50px] xl:pt-[67px]">
+          <div className="container overflow-hidden pt-[60px] sm:pt-[80px] lg:pt-[50px] xl:pt-[48px]">
             <div className="border-b border-b-grayBorder font-medium text-blackText overflow-hidden pt-[120px] relative">
               <div className="text-[18px] font-medium text-[#A5A5A5]  absolute top-[50px]">
                 Recent work
@@ -224,7 +224,7 @@ export default function Home() {
             <Magnetic>
               <Link
                 href="/work"
-                className="mx-auto mb-[120px] flex h-[180px] w-[180px] items-center justify-center rounded-full border border-grayBorder bg-white text-lg font-medium text-blackText hover:bg-blueHover hover:border-blueHover transition-all hover:text-white"
+                className="mx-auto mb-[120px] sm:mb-[0px] miniSm:mb-[0px] md:mb-[80px] xl:mb-[120px] flex h-[180px] w-[180px] items-center justify-center rounded-full border border-grayBorder bg-white text-lg font-medium text-blackText hover:bg-blueHover hover:border-blueHover transition-all hover:text-white"
               >
                 More work
               </Link>

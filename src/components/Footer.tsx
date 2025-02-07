@@ -2,44 +2,47 @@ import CurrentTime from "./CurrT";
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-t-grayInput bg-blackBg pt-[60px] md:pt-[80px] xl:pt-[100px] z-20">
-      <div className="container flex flex-col items-center justify-between gap-[24px] sm:flex-row sm:flex-wrap sm:gap-[40px]">
-        <div className="flex w-full justify-between sm:inline-flex sm:w-auto sm:flex-col sm:gap-[12px] lg:gap-[20px]">
-          <span className="font-inter text-lg font-medium text-grayFooterText">
+    <footer className="relative overflow-hidden border-t border-t-grayInput bg-blackBg pt-[50px] md:pt-[80px] lg:pt-[72px] xl:pt-[100px] z-20">
+      <div className="container flex flex-col items-center justify-between gap-[20px] sm:items-start md:flex-row md:items-center sm:flex-wrap sm:gap-[20px]">
+        <div className="flex w-full md:w-auto justify-between sm:inline-flex sm:flex-row md:flex-col sm:gap-[12px]">
+          <span className="font-inter text-[17px]/[21.78px] md:text-[18px]/[21.78px] font-medium text-grayFooterText">
             Version
           </span>
-          <span className="font-inter text-lg font-medium text-white text-opacity-85">
+          <span className="font-inter text-[17px]/[21.78px] md:text-[18px]/[21.78px] font-medium text-white text-opacity-85">
             © 2025, Alina Gavrilovich
           </span>
         </div>
-        <div className="flex w-full justify-between sm:inline-flex sm:w-auto sm:flex-col sm:gap-[12px] lg:gap-[20px]">
-          <span className="font-inter text-lg font-medium text-grayFooterText">
+        <div className="flex w-full md:w-auto justify-between sm:inline-flex sm:flex-row md:flex-col sm:gap-[12px]">
+          <span className="font-inter text-[17px]/[21.78px] md:text-[18px]/[21.78px] font-medium text-grayFooterText">
             Local time
           </span>
-          <span className="font-inter text-lg font-medium text-white text-opacity-85">
+          <span className="font-inter text-[17px]/[21.78px] md:text-[18px]/[21.78px] font-medium text-white text-opacity-85">
             <CurrentTime />
           </span>
         </div>
-        <div className="flex w-full justify-between sm:inline-flex sm:w-auto sm:flex-col sm:gap-[12px] lg:gap-[20px]">
-          <span className="font-inter text-lg font-medium text-grayFooterText">
-            Socials
+        <div className="flex w-full md:w-auto md:w- justify-between sm:flex-row md:flex-col sm:inline-flex sm:gap-[12px]">
+          <span className="font-inter text-[17px]/[21.78px] md:text-[18px]/[21.78px] font-medium text-grayFooterText">
+            Messenger
           </span>
           <a
             href="https://t.me/Allegory23"
-            className="font-inter text-lg font-medium text-white text-opacity-85 hover:text-[#362EEC] transition-all"
+            className="font-inter text-[17px]/[21.78px] md:text-[18px]/[21.78px] font-medium text-white text-opacity-85 hover:text-[#362EEC] transition-all"
           >
             Telegram
           </a>
         </div>
 
-        <a
-          className="font-inter mb-[20px] inline-flex justify-center text-[26px] font-normal text-white sm:mb-0 lg:text-[30px] hover:text-[#362EEC] transition-all"
+<div className="text-center w-full lg:w-auto">
+<a
+          className="font-inter mb-[20px] inline-flex justify-center text-center text-[26px] font-normal text-white sm:mb-0 lg:text-[30px] hover:text-[#362EEC] transition-all"
           href="mailto:gavrilovich.ali@gmail.com"
         >
           gavrilovich.ali@gmail.com
         </a>
+</div>
+
       </div>
-      <div className="relative pt-[10%]">
+      <div className="relative pt-[8%]">
         <div className="absolute bottom-0 left-0 z-10 w-full translate-y-1/2 text-center text-[14.5vw] font-bold uppercase text-white text-opacity-85 leading-[100%]">
           Gavrilovich
         </div>

@@ -30,7 +30,7 @@ export function ContactSection() {
     <>
       <section
         id="contact"
-        className="bg-blackBg pb-[60px] pt-[60px] sm:pb-[70px] md:pb-[80px] md:pt-[80px] lg:pb-[120px] xl:pt-[100px] z-20"
+        className="bg-blackBg pb-[60px] pt-[60px] sm:pb-[70px] md:pb-[80px] md:pt-[80px] lg:pb-[80px] xl:pb-[120px] xl:pt-[100px] z-20"
       >
         <div className="container">
           <div className="flex flex-col justify-between md:gap-[20px] md:flex-row relative">
@@ -39,7 +39,7 @@ export function ContactSection() {
               together
             </h2>
             <div>
-              <p className="font-inter mt-6 flex-grow text-[17px] font-medium leading-[120%] text-white md:mt-0 md:text-[18px] md:mt-[13px] md:max-w-[450px] md:text-right xl:mt-[24px] lg:max-w-[393px] lg:text-right lg:mt-[10px]">
+              <p className="font-inter mt-6 flex-grow text-[17px] font-medium leading-[120%] text-white md:mt-0 md:text-[18px] md:mt-[13px] md:max-w-[354px] lg:max-w-[450px] xl:max-w-[393px] md:text-right xl:mt-[24px] lg:max-w-[393px] lg:text-right lg:mt-[10px]">
                 Thank you for taking the time to view my site and getting in
                 touch, you&apos;ve taken the first step in taking your business
                 to the next level. If you have a project in mind, shoot me a
@@ -54,7 +54,7 @@ export function ContactSection() {
           </div>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="relative flex flex-col justify-between gap-[40px] md:flex-row md:items-end mt-[24px] xl:mt-[60px]"
+            className="relative flex flex-col justify-between gap-[40px] md:flex-row md:items-end mt-[24px] md:mt-[42px] lg:mt-[50px] xl:mt-[60px]"
           >
             <div className="flex w-full flex-col gap-[24px] md:gap-[24px] lg:w-3/4 lg:gap-[70px]">
               <div className="flex flex-col gap-[24px] md:flex-row md:gap-[20px] lg:gap-[120px]">
