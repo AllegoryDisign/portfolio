@@ -36,16 +36,28 @@ export default function Page() {
           arrow={true}
         />
 
-        <section className="relative">
-          <Image
-            className="w-full min-h-[350px] object-cover md:min-h-[800px]"
+            {/* <picture className="w-full">
+
+              <source className="w-full " srcSet="/img/work/dental-clinic/main-480.webp" media="(max-width: 480px)" />
+              <img className="w-full" src="/img/portrait/photoAbout-360.webp" alt="" />
+            </picture> */}
+
+        <section className="relative pb-[120px]">
+
+        <picture className="w-full">
+          <source className="w-[476px] min-h-[350px]" srcSet="/img/work/dental-clinic/main-480.webp" media="(max-width: 480px)" />
+          <img className="w-[1216px] mx-auto min-h-[350px] object-cover md:min-h-[800px]" src="/img/work/dental-clinic/main.webp" alt="" />
+        </picture>
+
+          {/* <Image
+            className="w-[1216px] mx-auto min-h-[350px] object-cover md:min-h-[800px]"
             src={MainBgImage}
             alt=""
             quality={90}
-            sizes="100vw"
+            // sizes="100vw"
             layout="responsive"
             priority
-          />
+          /> */}
           <div className="flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[200px] md:h-[100px]">
             <div
               className="animate__animated opacity-0"
