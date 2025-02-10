@@ -58,7 +58,7 @@ export default function Page() {
             layout="responsive"
             priority
           /> */}
-          <div className="flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[200px] md:h-[100px]">
+          <div className="flex items-center justify-center absolute top-[35%] left-[50%] md:top-[45%] md:left-[50%] -translate-x-1/2 -translate-y-1/2 md:w-[200px] md:h-[100px]">
             <div
               className="animate__animated opacity-0"
               data-animation="animate__fadeInUp"

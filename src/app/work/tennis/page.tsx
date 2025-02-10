@@ -38,8 +38,16 @@ export default function Page() {
           ]}
           arrow={true}
         />
-        <section>
-          <Image
+        <section className="pb-[120px]">
+
+
+        <picture className="w-full">
+          <source className="w-[476px] min-h-[350px]" srcSet="/img/work/tennis/main-480.webp" media="(max-width: 480px)" />
+          <img className="w-[1216px] mx-auto min-h-[350px] object-cover md:min-h-[800px]" src="/img/work/tennis/main.webp" alt="" />
+        </picture>
+
+        
+          {/* <Image
             className="h-[350px] sm:h-[800px] w-full object-cover"
             src={MainBgImage}
             sizes="100vw"
@@ -47,7 +55,7 @@ export default function Page() {
             quality={80}
             priority
             alt=""
-          />
+          /> */}
         </section>
         <section className="bg-[#E2E2E2]">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[70px] lg:pb-[120px] lg:pt-[100px]">
