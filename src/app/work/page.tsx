@@ -17,6 +17,30 @@ export type WorkType = {
 
 const works: WorkType[] = [
   {
+    title: "Code Storage Services",
+    descr: "Design",
+    date: "2025",
+    href: "/work/code-storage",
+    img: "/img/work/code-storage/preview.webp",
+    bg: "bg-[#D8DEE4]",
+  },
+  {
+    title: "Project Roadmap",
+    descr: "Design",
+    date: "2025",
+    href: "/work/project-roadmap",
+    img: "/img/work/project-roadmap/preview.webp",
+    bg: "bg-[#D8DEE4]",
+  },
+  {
+    title: "Marketing Education",
+    descr: "Design",
+    date: "2025",
+    href: "/work/marketing-education",
+    img: "/img/work/marketing-education/preview.webp",
+    bg: "bg-[#D8DEE4]",
+  },
+  {
     title: "Dental clinic Ortodent",
     descr: "Design & Development",
     date: "2024",
