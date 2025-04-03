@@ -5,17 +5,16 @@ import { Header } from "@/components/Header";
 
 import MainBgImage from "../../../../public/img/work/dental-clinic/main.webp";
 
-import Phone1Image from "../../../../public/img/work/dental-clinic/phone1.webp";
-import Phone2Image from "../../../../public/img/work/dental-clinic/phone2.webp";
-import Phone3Image from "../../../../public/img/work/dental-clinic/phone3.webp";
+import Phone1Image from "../../../../public/img/work/marketing-education/phone1.webp";
+import Phone2Image from "../../../../public/img/work/marketing-education/phone2.webp";
+import Phone3Image from "../../../../public/img/work/marketing-education/phone3.webp";
 
 import VideoImage from "../../../../public/img/work/dental-clinic/video.webp";
-import BoshkaImage from "../../../../public/img/work/dental-clinic/boshka.webp";
+import BoshkaImage from "../../../../public/img/work/marketing-education/boshka.webp";
 
-import Tablet1Image from "../../../../public/img/work/dental-clinic/tablet1.webp";
-import Tablet2Image from "../../../../public/img/work/dental-clinic/tablet2.webp";
+import Tablet1Image from "../../../../public/img/work/marketing-education/tablet1.webp";
 
-import PrewiewImage from "../../../../public/img/work/tennis/preview.webp";
+import PrewiewImage from "../../../../public/img/work/dental-clinic/preview.webp";
 import { MainSection1 } from "@/components/sections/MainSection1";
 import { NextPageSection } from "@/components/sections/NextPageSection";
 import AutoplayVideo from "@/components/video/AutoplayVideo";
@@ -57,7 +56,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <div className="flex w-full items-center justify-between bg-[#D8DEE4]">
+        <div className="flex w-full items-center justify-between bg-[linear-gradient(89.8deg,_#000019_-4.56%,_#000125_50.37%,_#00021F_104.21%)]">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[70px] lg:pb-[120px] lg:pt-[100px]">
             {/* <Image quality={95} sizes="100vw" src={VideoImage} alt="" /> */}
             <AutoplayVideo path="/img/work/dental-clinic/ortodent1.webm" />
@@ -103,7 +102,7 @@ export default function Page() {
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[90px] lg:pb-[120px] lg:pt-[100px]">
             <AutoplayVideo path="/img/work/dental-clinic/ortodent2.webm" />
 
-            <div className="grid grid-cols-1 gap-[60px] sm:grid-cols-2 sm:gap-[20px]">
+            <div>
               <Image
                 className="animate__animated opacity-0"
                 data-animation="animate__fadeInUp"
@@ -113,20 +112,11 @@ export default function Page() {
                 sizes="50vw"
                 quality={95}
               />
-              <Image
-                className="animate__animated opacity-0"
-                data-animation="animate__fadeInUp"
-                data-delay="200"
-                src={Tablet2Image}
-                alt=""
-                sizes="50vw"
-                quality={95}
-              />
             </div>
           </div>
         </div>
         <NextPageSection
-          title="tennis club"
+          title="dental clinic ortodent"
           bgColor="#213d5c"
           image={PrewiewImage}
           href="/work/tennis"
