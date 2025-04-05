@@ -119,7 +119,7 @@ export default function Page() {
           title="dental clinic ortodent"
           bgColor="#213d5c"
           image={PrewiewImage}
-          href="/work/tennis"
+          href="/work/dental-clinic"
         />
       </main>
       <Footer />

@@ -39,7 +39,7 @@ export default function About() {
               <p className="font-medium font-inter text-[17px]/[20.57px] md:text-[18px]/[21.78px] text-white xl:mr-[60px] max-w-[598px] mb-[9px] md:max-w-full">
                 I&nbsp;create tailored websites for small businesses and
                 start-ups to&nbsp;help them reach bigger audiences. I&nbsp;have
-                been creating customized websites for over 2&nbsp;years.
+                been creating customized websites for over 4&nbsp;years.
                 It&nbsp;is&nbsp;important for
                 me&nbsp;to&nbsp;do&nbsp;my&nbsp;work not just well, but better
                 than others, for this purpose I&nbsp;am constantly improving

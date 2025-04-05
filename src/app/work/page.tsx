@@ -20,7 +20,7 @@ const works: WorkType[] = [
     title: "Code Storage Services",
     descr: "Design",
     date: "2025",
-    href: "/work/code-storage",
+    href: "https://kwork.ru/portfolio/16123224",
     img: "/img/work/code-storage/preview.webp",
     bg: "bg-[#DFE2E8]",
   },
@@ -28,7 +28,7 @@ const works: WorkType[] = [
     title: "Project Roadmap",
     descr: "Design",
     date: "2025",
-    href: "/work/project-roadmap",
+    href: "https://kwork.ru/portfolio/15773530",
     img: "/img/work/project-roadmap/preview.webp",
     bg: "bg-[#21415C]",
   },
@@ -109,7 +109,7 @@ export default function Work() {
           <h1 className="relative text-[44px] font-bold uppercase leading-[120%] text-[#404040] sm:text-[52px] lg:text-[90px]/[100px] md:text-[90px]/[110px] xl:text-[150px]">
             <div className="lg:text-[90px]/[86px] xl:text-[150px]/[180px]">Creating next</div>
             <div className="flex sm:text-[52px] md:text-[90px] lg:text-[90px]/[125px] xl:text-[150px]/[160px]">
-              leveldigital
+              level digital
 
               <Svg
                 className="mt-[10px] right-0 lg:right-0 md:right-[20px] absolute hidden +rotate-90 text-blue sm:mt-[12px] sm:flex md:mt-[12px] lg:mt-[24px] xl:mt-[28px]"

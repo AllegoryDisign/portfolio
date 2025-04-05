@@ -42,11 +42,11 @@ export default function Page() {
           </div>
         </section>
 
-        <section className=" bg-[#ffffff] py-[60px] md:py-[80px] xl:py-[120px]">
-          <div className="container grid grid-cols-1 md:grid-cols-2 gap-[24px] xl:gap-[80px]">
-            <p className="font-inter text-[24px] md:text-[30px] xl:text-[40px] font-medium mb-[24px] text-[#404040]">
-              The dashboard helps health care providers{" "}
-              <span className="text-[#362EEC]">effectively</span> track their
+        <section className=" bg-[#ffffff] py-[60px] md:py-[80px] xl:pt-[120px]">
+          <div className="container flex">
+            <p className="font-inter text-[24px]/[48px] xl:mr-[80px] md:text-[30px] xl:max-w-[640px] xl:text-[40px] font-medium mb-[24px] text-[#404040]">
+              The dashboard helps health care providers
+              <span className="text-[#362EEC]"> effectively</span> track their
               performance statistics
             </p>
             <p className="font-inter text-[17px] md:text-[18px] font-medium text-[#404040]">
