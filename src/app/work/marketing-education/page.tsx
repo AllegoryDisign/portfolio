@@ -48,19 +48,19 @@ export default function Page() {
               data-animation="animate__fadeInUp"
             >
               <Svg
-                className="w-full h-full md:w-[153px] md:h-[122px]"
-                width={153.48}
-                height={122.52}
+                className="w-full h-full md:w-[153.48px] md:h-[122.52px]"
+                width={76.74}
+                height={61.26}
                 iconId="icon-logo-marketing"
               />
             </div>
           </div>
         </section>
         <div className="flex w-full items-center justify-between bg-[linear-gradient(89.8deg,_#000019_-4.56%,_#000125_50.37%,_#00021F_104.21%)]">
-          <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[70px] lg:pb-[120px] lg:pt-[100px]">
+          <div className="container flex flex-col items-center justify-center pt-[40px] sm:pt-[60px] lg:pt-[100px]">
             {/* <Image quality={95} sizes="100vw" src={VideoImage} alt="" /> */}
             <AutoplayVideo path="/img/work/marketing-education/marketing2.webm" />
-            <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px]">
+            <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px] pt-[100px]">
               <Image
                 className="animate__animated opacity-0"
                 data-animation="animate__fadeInUp"
