@@ -59,7 +59,7 @@ export default function Page() {
         <div className="flex w-full items-center justify-between bg-[linear-gradient(89.8deg,_#000019_-4.56%,_#000125_50.37%,_#00021F_104.21%)]">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[70px] lg:pb-[120px] lg:pt-[100px]">
             {/* <Image quality={95} sizes="100vw" src={VideoImage} alt="" /> */}
-            <AutoplayVideo path="/img/work/dental-clinic/ortodent1.webm" />
+            <AutoplayVideo path="/img/work/marketing-education/marketing1.webm" />
             <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px]">
               <Image
                 className="animate__animated opacity-0"
