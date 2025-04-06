@@ -60,7 +60,7 @@ export default function Page() {
           <div className="container flex flex-col items-center justify-center pt-[40px] sm:pt-[60px] lg:pt-[100px]">
             {/* <Image quality={95} sizes="100vw" src={VideoImage} alt="" /> */}
             <AutoplayVideo path="/img/work/marketing-education/marketing2.webm" />
-            <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px] pt-[100px]">
+            <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px] pt-[40px] xl:pt-[40px]">
               <Image
                 className="animate__animated opacity-0"
                 data-animation="animate__fadeInUp"
@@ -91,16 +91,23 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <Image
-          className="w-full"
+        {/* <Image
+          className="w-[360px]"
           src={BoshkaImage}
           alt=""
           sizes="100vw"
           quality={95}
-        />
+        /> */}
+        <picture className="w-full">
+          <source className="w-[360px] min-h-[350px]" srcSet="/img/work/marketing-education/boshka-360.webp" media="(max-width: 360px)" />
+          <source className="w-[360px] min-h-[350px]" srcSet="/img/work/marketing-education/boshka-480.webp" media="(max-width: 480px)" />
+          <source className="w-[360px] min-h-[350px]" srcSet="/img/work/marketing-education/boshka-768.webp" media="(max-width: 768px)" />
+          <source className="w-[360px] min-h-[350px]" srcSet="/img/work/marketing-education/boshka-960.webp" media="(max-width: 960px)" />
+          <img className="w-[1920px] mx-auto min-h-[px] object-cover md:min-h-[800px]" src="/img/work/marketing-education/boshka.webp" alt="" />
+        </picture>
         <div className="flex w-full items-center justify-between bg-white">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[90px] lg:pb-[120px] lg:pt-[100px]">
-            <AutoplayVideo path="/img/work/dental-clinic/ortodent2.webm" />
+            <AutoplayVideo path="/img/work/marketing-education/marketing1.webm" />
 
             <div>
               <Image
