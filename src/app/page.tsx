@@ -238,7 +238,7 @@ export default function Home() {
                 className="absolute right-0 top-0 flex w-[120%] gap-5"
                 id="scroll-slider-item-1"
               >
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                <div className="flex w-1/4 bg-[#D8DEE4] pt-[15%] relative">
                   <Image
                     className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
                     src={Img1}
@@ -255,7 +255,7 @@ export default function Home() {
                     path="/img/slider/vid1.mp4"
                   />
                 </div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                <div className="flex w-1/4 bg-[#D8DEE4] pt-[15%] relative">
                   <Image
                     className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
                     src={Img5}
@@ -266,7 +266,7 @@ export default function Home() {
                     unoptimized
                   />
                 </div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                <div className="flex w-1/4 bg-[#21252A] pt-[15%] relative">
                   <Image
                     className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
                     src={Img6}
@@ -282,7 +282,7 @@ export default function Home() {
                 className="absolute bottom-0 left-0 flex w-[120%] gap-5"
                 id="scroll-slider-item-2"
               >
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                <div className="flex w-1/4 bg-[#D6D4CE] pt-[15%] relative">
                   <Image
                     className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
                     src={Img2}
@@ -293,7 +293,7 @@ export default function Home() {
                     unoptimized
                   />
                 </div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                <div className="flex w-1/4 bg-[#D8DEE4] pt-[15%] relative">
                   <Image
                     className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
                     src={Img3}
@@ -310,7 +310,7 @@ export default function Home() {
                     path="/img/slider/vid2.mp4"
                   />
                 </div>
-                <div className="flex w-1/4 bg-[#E7E8EA] pt-[15%] relative">
+                <div className="flex w-1/4 bg-[#CED4D6] pt-[15%] relative">
                   <Image
                     className="flex w-full h-full absolute top-0 left-0 px-[20px] py-[25px] xl:py-[35px] "
                     src={Img7}
