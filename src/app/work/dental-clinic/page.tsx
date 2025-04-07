@@ -119,7 +119,14 @@ export default function Page() {
             <AutoplayVideo path="/img/work/dental-clinic/ortodent2.webm" />
 
             <div className="grid grid-cols-1 gap-[60px] sm:grid-cols-2 sm:gap-[20px]">
-              <Image
+            <picture className="w-full">
+              <source className="animate__animated opacity-0" data-animation="animate__fadeInUp" data-delay="0" srcSet="/img/work/dental-clinic/tablet1-360.webp" media="(max-width: 360px)" />
+              <source className="animate__animated opacity-0" data-animation="animate__fadeInUp" data-delay="0" srcSet="/img/work/dental-clinic/tablet1-480.webp" media="(max-width: 480px)" />
+              <source className="animate__animated opacity-0" data-animation="animate__fadeInUp" data-delay="0" srcSet="/img/work/dental-clinic/tablet1-768.webp" media="(max-width: 768px)" />
+              <source className="animate__animated opacity-0" data-animation="animate__fadeInUp" data-delay="0" srcSet="/img/work/dental-clinic/tablet1-960.webp" media="(max-width: 960px)" />
+              <img className="animate__animated opacity-0" data-animation="animate__fadeInUp" data-delay="0" src="/img/work/dental-clinic/tablet1.webp" alt="" />
+            </picture>
+              {/* <Image
                 className="animate__animated opacity-0"
                 data-animation="animate__fadeInUp"
                 data-delay="0"
@@ -127,7 +134,7 @@ export default function Page() {
                 alt=""
                 sizes="50vw"
                 quality={95}
-              />
+              /> */}
               <Image
                 className="animate__animated opacity-0"
                 data-animation="animate__fadeInUp"
