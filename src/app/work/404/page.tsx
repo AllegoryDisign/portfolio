@@ -67,7 +67,7 @@ export default function Page() {
         </section>
         <NextPageSection
           image={PreviewImage}
-          href="/work/dental-clinic"
+          href="/work/marketing-education"
           bgColor="#ECECEC"
           title="Dental clinic Ortodent"
         />

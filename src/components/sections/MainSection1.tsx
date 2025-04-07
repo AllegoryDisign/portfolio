@@ -14,7 +14,7 @@ export function MainSection1({ title, subTitle, table, arrow = false }: Props) {
     <section className="container pb-[50px] pt-[106px] lg:pt-[140px] lg:pb-[100px] md:pt-[122px] md:pb-[70px]">
       <div>
         <div className="flex justify-between">
-          <h1 className="flex font-bold text-[44px] text-[#404040] uppercase leading-[110%] sm:text-[60px] xl:text-[140px] lg:text-[105px] md:text-[90px]">
+          <h1 className="flex font-bold text-[36px] text-[#404040] uppercase leading-[110%] sm:text-[52px] xl:text-[140px] md:text-[84px]">
             {title}
           </h1>
 
@@ -30,7 +30,7 @@ export function MainSection1({ title, subTitle, table, arrow = false }: Props) {
           )}
         </div>
 
-        <div className="flex lg:hidden font-bold text-[44px] uppercase leading-[110%] sm:text-[60px] xl:text-[150px] lg:text-[105px] md:text-[90px] mt-[4px] text-[#404040]">
+        <div className="flex lg:hidden font-bold text-[36px] uppercase leading-[110%] sm:text-[52px] xl:text-[140px] md:text-[84px] mt-[4px] text-[#404040]">
           {subTitle}
         </div>
       </div>

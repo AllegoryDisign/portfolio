@@ -39,16 +39,18 @@ export default function Page() {
           ]}
           arrow={true}
         />
-        <section className="relative">
-          <Image
-            className="w-full min-h-[350px] object-cover md:min-h-[800px]"
-            src={MainBgImage}
-            alt=""
-            quality={90}
-            sizes="100vw"
-            layout="responsive"
-            priority
-          />
+        <section className="relative xl:mb-[120px]">
+          <div className="container miniSm:p-[0]">
+            <Image
+              className="w-full min-h-[350px] object-cover md:min-h-[800px]"
+              src={MainBgImage}
+              alt=""
+              quality={90}
+              sizes="100vw"
+              layout="responsive"
+              priority
+            />
+          </div>
           <div className="flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[200px] md:h-[100px]">
             <div
               className="animate__animated opacity-0"
@@ -98,11 +100,10 @@ export default function Page() {
         <section className=" bg-[#F2F2F2] py-[60px] md:py-[80px] xl:py-[120px]">
           <div className="container flex flex-col items-center">
             <AutoplayVideo
-              className="md:mb-[60px] xl:mb-[100px]"
               path="/img/work/vinyl/vinyl2.webm"
             />
 
-            <div className=" grid grid-cols-3 gap-[10px] md:gap-[20px] xl:gap-[28px]">
+            <div className=" grid grid-cols-3 gap-[10px] mt-[50px] md:mt-[60px] md:gap-[20px] xl:gap-[28px]">
               <Image
                 className="animate__animated opacity-0 "
                 data-animation="animate__fadeInUp"
@@ -137,7 +138,7 @@ export default function Page() {
           <div className="container flex items-center flex-col gap-[60px] md:gap-[80px] xl:gap-[120px]">
             {/* <Image src={LandingImage} sizes="100vw" quality={95} alt="" /> */}
             <AutoplayVideo
-              className="md:mb-[60px] xl:mb-[100px]"
+              className="vinyl-border"
               path="/img/work/vinyl/vinyl3.webm"
             />
             <Image src={Ipad2Image} sizes="100vw" quality={95} alt="" />

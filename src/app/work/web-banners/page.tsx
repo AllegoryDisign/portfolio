@@ -10,7 +10,7 @@ import B2Image from "../../../../public/img/work/web-banners/03.webp";
 import Banner1Image from "../../../../public/img/work/web-banners/banner1.webp";
 import Banner2Image from "../../../../public/img/work/web-banners/banner2.webp";
 import Banner3Image from "../../../../public/img/work/web-banners/banner3.webp";
-import Banner4Image from "../../../../public/img/work/web-banners/banner4.webp";
+// import Banner4Image from "../../../../public/img/work/web-banners/banner4.jpg";
 import Banner5Image from "../../../../public/img/work/web-banners/banner5.webp";
 import PreviewImage from "../../../../public/img/work/404/preview.webp";
 import AutoplayVideo from "@/components/video/AutoplayVideo";
@@ -62,7 +62,8 @@ export default function Page() {
               alt=""
             />
           </div>
-          <Image className="mb-[60px] md:mb-[80px]" src={Banner4Image} alt="" />
+          <img className="mb-[60px] md:mb-[80px] w-full" src="/img/work/web-banners/banner4.jpg" alt="" />
+          {/* <Image className="mb-[60px] md:mb-[80px] w-full" src={Banner4Image} alt="" /> */}
           <Image quality={95} sizes="100vw" className="mb-[60px] md:mb-[80px]" src={Banner5Image} alt="" />
         </section>
         <NextPageSection
