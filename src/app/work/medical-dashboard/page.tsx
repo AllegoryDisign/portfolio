@@ -28,8 +28,8 @@ export default function Page() {
           ]}
           arrow={true}
         />
-        <section className=" bg-[#254078] py-[60px] md:py-[80px] xl:py-[120px]">
-          <div className="container flex flex-col items-center">
+        <section>
+          <div className="container flex flex-col items-center bg-[#254078] pt-[60px] pb-[60px] md:pt-[80px] md:pb-[80px] xl:pt-[120px] xl:pb-[120px]">
             <Image
               className="animate__animated opacity-0"
               data-animation="animate__fadeInUp"
@@ -43,8 +43,8 @@ export default function Page() {
         </section>
 
         <section className=" bg-[#ffffff] py-[60px] md:py-[80px] xl:pt-[120px]">
-          <div className="container flex">
-            <p className="font-inter text-[24px]/[48px] xl:mr-[80px] md:text-[30px] xl:max-w-[640px] xl:text-[40px] font-medium mb-[24px] text-[#404040]">
+          <div className="container md:flex">
+            <p className="font-inter xl:mr-[80px] leading-[100%] text-[24px] md:text-[30px] md:mr-[20px] xl:text-[40px] md:mb-[0px] miniSm:mb-[20px] font-medium text-[#404040]">
               The dashboard helps health care providers
               <span className="text-[#362EEC]"> effectively</span> track their
               performance statistics
