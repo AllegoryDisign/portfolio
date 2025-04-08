@@ -58,16 +58,9 @@ export default function Page() {
           /> */}
         </section>
         <section className="bg-[#E2E2E2]">
-          <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[70px] lg:pb-[120px] lg:pt-[100px]">
+          <div className="container flex flex-col items-center justify-center pb-[60px] pt-[40px] md:pb-[80px] md:pt-[60px] xl:pb-[120px] xl:pt-[100px]">
             <AutoplayVideo path="/img/work/tennis/tennis1.webm" />
-            {/* <Image
-              sizes="100vw"
-              quality={95}
-              layout="responsive"
-              src={TableImage}
-              alt=""
-            /> */}
-            <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px]">
+            <div className="grid grid-cols-3 gap-[10px] md:gap-[20px] xl:gap-[28px] mt-[30px] mb-[50px] md:mt-[40px] md:mb-[80px] xl:mt-[70px] xl:mb-[120px]">
               <Image
                 className="animate__animated opacity-0"
                 data-animation="animate__fadeInUp"

@@ -97,13 +97,13 @@ export default function Page() {
           />
         </section>
 
-        <section className=" bg-[#F2F2F2] py-[60px] md:py-[80px] xl:py-[120px]">
+        <section className=" bg-[#F2F2F2] py-[50px] md:pt-[60px] md:pb-[70px] xl:pt-[100px] xl:pb-[110px]">
           <div className="container flex flex-col items-center">
             <AutoplayVideo
               path="/img/work/vinyl/vinyl2.webm"
             />
 
-            <div className=" grid grid-cols-3 gap-[10px] mt-[50px] md:mt-[60px] md:gap-[20px] xl:gap-[28px]">
+            <div className=" grid grid-cols-3 gap-[10px] mt-[50px] md:mt-[60px] xl:mt-[100px] md:gap-[20px] xl:gap-[28px]">
               <Image
                 className="animate__animated opacity-0 "
                 data-animation="animate__fadeInUp"

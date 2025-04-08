@@ -32,7 +32,7 @@ export default function Page() {
         />
 
         <section className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:gap-[60px] md:gap-[20px] mb-[50px] sm:mb-[60px] md:mb-[80px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] md:gap-[20px] mb-[60px] md:mb-[80px] xl:mb-[120px]">
             <AutoplayVideo
               className=" border border-[#E5E5E7]"
               path="/img/work/web-banners/banner.webm"
@@ -40,13 +40,12 @@ export default function Page() {
             <Image sizes="100vw" quality={95} src={B1Image} alt="" />
           </div>
 
-          <div className="grid grid-cols-2 gap-[20px] mb-[50px] sm:mb-[60px] md:mb-[80px">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] md:gap-[20px] mb-[60px] md:mb-[80px] xl:mb-[120px]">
             <Image sizes="100vw" quality={95} src={B2Image} alt="" />
             <AutoplayVideo path="/img/work/web-banners/banner1.webm" />
           </div>
-          <div></div>
-          <Image className="mb-[60px] md:mb-[80px]" src={Banner1Image} alt="" />
-          <div className="grid grid-cols-1 gap-[60px] md:gap-[20px] md:grid-cols-2 mb-[60px] md:mb-[80px]">
+          <Image className="mb-[60px] md:mb-[80px] xl:mb-[120px]" src={Banner1Image} alt="" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] md:gap-[20px] mb-[60px] md:mb-[80px] xl:mb-[120px]">
             <Image
               sizes="100vw"
               quality={95}
@@ -62,9 +61,8 @@ export default function Page() {
               alt=""
             />
           </div>
-          <img className="mb-[60px] md:mb-[80px] w-full" src="/img/work/web-banners/banner4.jpg" alt="" />
-          {/* <Image className="mb-[60px] md:mb-[80px] w-full" src={Banner4Image} alt="" /> */}
-          <Image quality={95} sizes="100vw" className="mb-[60px] md:mb-[80px]" src={Banner5Image} alt="" />
+          <img className="mb-[60px] md:mb-[80px] xl:mb-[120px] w-full" src="/img/work/web-banners/banner4.jpg" alt="" />
+          <Image quality={95} sizes="100vw" className="mb-[60px] md:mb-[80px] xl:mb-[120px]" src={Banner5Image} alt="" />
         </section>
         <NextPageSection
           image={PreviewImage}

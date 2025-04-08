@@ -9,7 +9,7 @@ import Banner2Image from "../../../../public/img/work/404/error2.webp";
 import Banner3Image from "../../../../public/img/work/404/error3.webp";
 import Banner4Image from "../../../../public/img/work/404/error4.webp";
 import Banner5Image from "../../../../public/img/work/404/error5.webp";
-import PreviewImage from "../../../../public/img/work/dental-clinic/preview.webp";
+import PreviewImage from "../../../../public/img/work/marketing-education/preview.webp";
 
 export default function Page() {
   return (
@@ -30,7 +30,7 @@ export default function Page() {
           <Image
             sizes="100vw"
             quality={95}
-            className="mb-[60px] md:mb-[80px]"
+            className="mb-[60px] md:mb-[80px] xl:mb-[120px]"
             src={Banner1Image}
             alt=""
             priority
@@ -38,7 +38,7 @@ export default function Page() {
           <Image
             sizes="100vw"
             quality={95}
-            className="mb-[60px] md:mb-[80px]"
+            className="mb-[60px] md:mb-[80px] xl:mb-[120px]"
             src={Banner2Image}
             alt=""
             priority
@@ -46,21 +46,21 @@ export default function Page() {
           <Image
             sizes="100vw"
             quality={95}
-            className="mb-[60px] md:mb-[80px]"
+            className="mb-[60px] md:mb-[80px] xl:mb-[120px]"
             src={Banner3Image}
             alt=""
           />
           <Image
             sizes="100vw"
             quality={95}
-            className="mb-[60px] md:mb-[80px]"
+            className="mb-[60px] md:mb-[80px] xl:mb-[120px]"
             src={Banner4Image}
             alt=""
           />
           <Image
             sizes="100vw"
             quality={95}
-            className="mb-[60px] md:mb-[80px]"
+            className="mb-[60px] md:mb-[80px] xl:mb-[120px]"
             src={Banner5Image}
             alt=""
           />
@@ -68,8 +68,8 @@ export default function Page() {
         <NextPageSection
           image={PreviewImage}
           href="/work/marketing-education"
-          bgColor="#ECECEC"
-          title="Dental clinic Ortodent"
+          bgColor="#000"
+          title="Marketing Education"
         />
       </main>
       <Footer />

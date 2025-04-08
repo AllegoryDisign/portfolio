@@ -42,7 +42,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section className=" bg-[#ffffff] py-[60px] md:py-[80px] xl:pt-[120px]">
+        <section className=" bg-[#ffffff] pt-[60px] pb-[60px] lg:pt-[80px] lg:pb-[80px] xl:pt-[120px] xl:pb-[120px]">
           <div className="container md:flex">
             <p className="font-inter xl:mr-[80px] leading-[100%] text-[24px] md:text-[30px] md:mr-[20px] xl:text-[40px] md:mb-[0px] miniSm:mb-[20px] font-medium text-[#404040]">
               The dashboard helps health care providers
