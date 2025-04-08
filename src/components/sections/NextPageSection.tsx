@@ -15,7 +15,7 @@ export function NextPageSection({
   title: string;
 }) {
   return (
-    <div className="flex flex-col items-center justify-center bg-[#26292E] py-[60px]">
+    <div className="flex flex-col items-center justify-center bg-[#26292E] pt-[60px] pb-[60px] md:pb-[80px] xl:pb-[100px] md:pt-[80px] xl:pt-[120px]">
       <div className="container flex flex-col items-center">
         <span className="font-inter font-medium leading-[120%] text-white sm:text-[18px]">
           Next work

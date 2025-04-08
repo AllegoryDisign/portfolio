@@ -60,7 +60,7 @@ export default function Page() {
           <div className="container flex flex-col items-center justify-center pt-[40px] sm:pt-[60px] lg:pt-[100px]">
             {/* <Image quality={95} sizes="100vw" src={VideoImage} alt="" /> */}
             <AutoplayVideo path="/img/work/marketing-education/marketing2.webm" />
-            <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px] pt-[40px] xl:pt-[40px]">
+            <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px] pt-[40px] md:pt-[80px] lg:pt-[60px] xl:pt-[100px]">
               <Image
                 className="animate__animated opacity-0"
                 data-animation="animate__fadeInUp"
