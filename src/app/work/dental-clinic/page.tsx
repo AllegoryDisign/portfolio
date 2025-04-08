@@ -73,10 +73,10 @@ export default function Page() {
           </div>
         </section>
         <div className="flex w-full items-center justify-between bg-[#D8DEE4]">
-          <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[70px] lg:pb-[120px] lg:pt-[100px]">
+          <div className="container flex flex-col items-center justify-center pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:pb-[120px] lg:pt-[100px]">
             {/* <Image quality={95} sizes="100vw" src={VideoImage} alt="" /> */}
             <AutoplayVideo path="/img/work/dental-clinic/ortodent1.webm" />
-            <div className="grid grid-cols-3 gap-[10px] xs:gap-[20px] sm:gap-[30px] lg:gap-[72px]">
+            <div className="grid grid-cols-3 gap-[10px] sm:gap-[20px] md:gap-[30px] xl:gap-[72px] mt-[40px] xl:mt-[70px]">
               <Image
                 className="animate__animated opacity-0"
                 data-animation="animate__fadeInUp"

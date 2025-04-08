@@ -65,22 +65,12 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <section className=" bg-[#F2F2F2] py-[60px] md:py-[80px] xl:py-[120px]">
+        <section className=" bg-[#F2F2F2] pt-[40px] pb-[60px] md:pt-[60px] md:pb-[80px] xl:pt-[100px] xl:pb-[120px]">
           <div className="container flex flex-col items-center">
             <AutoplayVideo
               className="mb-[50px] md:mb-[60px] xl:mb-[100px]"
               path="/img/work/vinyl/vinyl1.webm"
             />
-
-            {/* <Image
-              className="mb-[50px] md:mb-[60px] xl:mb-[100px] animate__animated opacity-0"
-              data-animation="animate__fadeInUp"
-              sizes="100vw"
-              src={Tablet1Image}
-              alt=""
-              quality={95}
-            /> */}
-
             <Image src={IpadImage} sizes="100vw" alt="" quality={95} />
           </div>
         </section>
@@ -136,7 +126,6 @@ export default function Page() {
 
         <section className="bg-[#EEEEE5] py-[60px] md:py-[80px] xl:py-[120px]">
           <div className="container flex items-center flex-col gap-[60px] md:gap-[80px] xl:gap-[120px]">
-            {/* <Image src={LandingImage} sizes="100vw" quality={95} alt="" /> */}
             <AutoplayVideo
               className="vinyl-border"
               path="/img/work/vinyl/vinyl3.webm"

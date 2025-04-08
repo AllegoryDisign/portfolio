@@ -103,10 +103,9 @@ export default function Page() {
         </section>
 
         <section className="flex w-full items-center justify-between bg-white">
-          <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[90px] lg:pb-[120px] lg:pt-[100px]">
-            {/* <Image sizes="100vw" src={Tablet3Image} alt="" quality={95} /> */}
+          <div className="container flex flex-col items-center justify-center pt-[50px] pb-[60px] md:pt-[60px] md:pb-[80px] xl:pt-[100px] xl:pb-[120px]">
             <AutoplayVideo path="/img/work/tennis/tennis2.webm" />
-            <div className="grid grid-cols-1 gap-[60px] sm:grid-cols-2 sm:gap-[20px]">
+            <div className="grid grid-cols-1 gap-[10px] sm:grid-cols-2 sm:gap-[20px] mt-[50px] md:mt-[60px] xl:mt-[95px]">
               <Image
                 className="animate__animated opacity-0"
                 data-animation="animate__fadeInUp"
