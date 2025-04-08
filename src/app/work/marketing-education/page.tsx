@@ -101,7 +101,7 @@ export default function Page() {
           <source className="w-[360px] min-h-[350px]" srcSet="/img/work/marketing-education/boshka-480.webp" media="(max-width: 480px)" />
           <source className="w-[360px] min-h-[350px]" srcSet="/img/work/marketing-education/boshka-768.webp" media="(max-width: 768px)" />
           <source className="w-[360px] min-h-[350px]" srcSet="/img/work/marketing-education/boshka-960.webp" media="(max-width: 960px)" />
-          <img className="w-[1920px] mx-auto min-h-[px] object-cover md:min-h-[800px]" src="/img/work/marketing-education/boshka.webp" alt="" />
+          <img className="w-full mx-auto min-h-[px] object-cover md:min-h-[800px]" src="/img/work/marketing-education/boshka.webp" alt="" />
         </picture>
         <div className="flex w-full items-center justify-between bg-white">
           <div className="container flex flex-col items-center justify-center gap-[40px] pb-[60px] pt-[40px] sm:pb-[80px] sm:pt-[60px] lg:gap-[90px] lg:pb-[120px] lg:pt-[100px]">
