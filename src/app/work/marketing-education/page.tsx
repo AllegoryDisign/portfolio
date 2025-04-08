@@ -49,8 +49,6 @@ export default function Page() {
             >
               <Svg
                 className="w-full h-full md:w-[153.48px] md:h-[122.52px]"
-                width={76.74}
-                height={61.26}
                 iconId="icon-logo-marketing"
               />
             </div>
