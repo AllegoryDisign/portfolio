@@ -42,7 +42,7 @@ export default function Page() {
               <img className="w-full" src="/img/portrait/photoAbout-360.webp" alt="" />
             </picture> */}
 
-        <section className="relative pb-[120px]">
+        <section className="relative xl:pb-[120px]">
 
         <picture className="w-full">
           <source className="w-[476px] min-h-[350px]" srcSet="/img/work/dental-clinic/main-480.webp" media="(max-width: 480px)" />

@@ -48,7 +48,7 @@ export default function Page() {
               data-animation="animate__fadeInUp"
             >
               <Svg
-                className="w-full h-full md:w-[153.48px] md:h-[122.52px]"
+                className="w-full h-full w-[76.74px] h-[61.26px]"
                 iconId="icon-logo-marketing"
               />
             </div>
