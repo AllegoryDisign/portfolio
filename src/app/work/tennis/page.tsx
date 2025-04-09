@@ -38,24 +38,57 @@ export default function Page() {
           ]}
           arrow={true}
         />
-        <section className="pb-[120px]">
+        <section className="relative">
 
 
-        <picture className="w-full">
+        {/* <picture className="w-full">
           <source className="w-[476px] min-h-[350px]" srcSet="/img/work/tennis/main-480.webp" media="(max-width: 480px)" />
           <img className="w-[1216px] mx-auto min-h-[350px] object-cover md:min-h-[800px]" src="/img/work/tennis/main.webp" alt="" />
-        </picture>
+        </picture> */}
+
+        <div className="container miniSm:p-[0] xl:pb-[120px]">
+           <Image
+              className="object-cover min-h-[350px] md:min-h-[800px]"
+              src={MainBgImage}
+              sizes="100vw"
+              layout="responsive"
+              quality={80}
+              priority
+              alt=""
+            />
+          </div>
+          <div className="flex items-center justify-center absolute xl:top-[45%] top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[200px] md:h-[100px]">
+            <div
+              className="animate__animated opacity-0"
+              data-animation="animate__fadeInUp"
+            >
+              <svg className="md:w-[156px] md:h-[149px]" width="72" height="69" viewBox="0 0 156 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 133.753H0V17.3256H20V65.3937H30.8333V17.3256L50.8333 0V133.753H30.8333V85.3527H20V133.753Z" fill="url(#paint0_linear_331_1772)"/>
+              <path d="M66.3333 19.9591H50.8333V0H101.667V19.9591H86.3333V149H66.3333V19.9591Z" fill="url(#paint1_linear_331_1772)"/>
+              <path d="M101.667 0L122 17.3256V71.5477L135 17.3256H155.833L141.5 75.3732L156 133.753H135.167L122 78.0344V133.587H101.667V0Z" fill="url(#paint2_linear_331_1772)"/>
+              <defs>
+              <linearGradient id="paint0_linear_331_1772" x1="14.717" y1="8.96802e-07" x2="206.227" y2="106.194" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#E2FF2E"/>
+              <stop offset="1" stop-color="#C2F828"/>
+              <stop offset="1" stop-color="#CEFB2A"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_331_1772" x1="14.717" y1="8.96802e-07" x2="206.227" y2="106.194" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#E2FF2E"/>
+              <stop offset="1" stop-color="#C2F828"/>
+              <stop offset="1" stop-color="#CEFB2A"/>
+              </linearGradient>
+              <linearGradient id="paint2_linear_331_1772" x1="14.717" y1="8.96802e-07" x2="206.227" y2="106.194" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#E2FF2E"/>
+              <stop offset="1" stop-color="#C2F828"/>
+              <stop offset="1" stop-color="#CEFB2A"/>
+              </linearGradient>
+              </defs>
+              </svg>
+            </div>
+          </div>
 
         
-          {/* <Image
-            className="h-[350px] sm:h-[800px] w-full object-cover"
-            src={MainBgImage}
-            sizes="100vw"
-            layout="responsive"
-            quality={80}
-            priority
-            alt=""
-          /> */}
+
         </section>
         <section className="bg-[#E2E2E2]">
           <div className="container flex flex-col items-center justify-center pb-[60px] pt-[40px] md:pb-[80px] md:pt-[60px] xl:pb-[120px] xl:pt-[100px]">
