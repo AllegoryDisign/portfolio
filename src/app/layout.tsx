@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    images: ["/public/favicons/head.png"],
+    images: ["/public/img/favicons/head.png"],
     title: "Portfolio",
     description: "",
     type: "website",
