@@ -20,7 +20,7 @@ const works: WorkType[] = [
     title: "Code Storage Services",
     descr: "Design",
     date: "2025",
-    href: "https://kwork.ru/portfolio/16123224",
+    href: "https://snipit.ru",
     img: "/img/work/code-storage/preview.webp",
     bg: "bg-[#DFE2E8]",
   },
