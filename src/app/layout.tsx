@@ -21,6 +21,21 @@ const redHatDisplay = Red_Hat_Display({
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+    other: [
+      { rel: "icon", url: "/favicon.ico", sizes: "32x32", type: "image/png" },
+      { rel: "icon", url: "/favicon.ico", sizes: "16x16", type: "image/png" },
+    ],
+  },
+  openGraph: {
+    images: ["/public/favicons/head.png"],
+    title: "Portfolio",
+    description: "",
+    type: "website",
+    url: "https://gavrilovichalina.vercel.app/",
+  },
 };
 
 export default function RootLayout({
@@ -33,9 +48,6 @@ export default function RootLayout({
       className={`${inter.variable} ${redHatDisplay.variable} font-red-hat-display overflow-x-hidden`}
       lang="en"
     >
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
       <body className="relative bg-white">
         <NextTopLoader color="#2E4EEC" showSpinner={false} />
         {children}
